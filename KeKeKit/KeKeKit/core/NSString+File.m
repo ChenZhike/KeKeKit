@@ -2,7 +2,7 @@
 //  NSString+File.m
 //  FirstProject
 //
-//  Created by CZK on 2019/12/10.
+//  Created by 陈志科 on 2019/12/10.
 //  Copyright © 2019 czk. All rights reserved.
 //
 
@@ -28,6 +28,9 @@
     NSArray*parts=[target componentsSeparatedByString:@"\n\n"];
 
     NSMutableDictionary*result=[[NSMutableDictionary alloc]init];
+//    NSMutableString*shuxings=[[NSMutableString alloc]initWithString:@""];
+//    NSMutableString*shuxing_dics=[[NSMutableString alloc]initWithString:@""];
+//    [shuxing_dics appendString:@"@{"];
     for (NSString*apart in parts) {
         if (apart.length) {
             //第一行的内容作为name
@@ -48,6 +51,9 @@
 
     }
     return result;
+//    NSString*qudouhao=[shuxing_dics substringToIndex:shuxing_dics.length-1];
+//    [shuxing_dics setString:qudouhao];
+//    [shuxing_dics appendString:@"}"];
 
 }
 -(NSArray*)parseBy_DanHang_Just

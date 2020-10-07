@@ -2,7 +2,7 @@
 //  NSString+File.h
 //  FirstProject
 //
-//  Created by CZK on 2019/12/10.
+//  Created by 陈志科 on 2019/12/10.
 //  Copyright © 2019 czk. All rights reserved.
 //
 
