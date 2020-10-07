@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/ChenZhike/KeKeKit'
   s.source   = { :git => 'https://github.com/ChenZhike/KeKeKit.git', :tag => s.version, :submodules => true }
   s.public_header_files = 'KeKeKit/KeKeKit.h'
-  s.source_files = 'KeKeKit/category/*.{h,m}'
+  s.source_files = 'KeKeKit/category/*.{h,m},KeKeKit/*.{h,m}'
   s.social_media_url = 'https://github.com/ChenZhike/KeKeKit'
   s.authors  = { 'KeKe' => 'a62396@126.com' }
   s.requires_arc = true
