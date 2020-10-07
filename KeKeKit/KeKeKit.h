@@ -1,0 +1,1 @@
+#import "NSString+File.h"
