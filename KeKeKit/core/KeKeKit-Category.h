@@ -1,0 +1,61 @@
+//
+//  Category.h
+//  KeKeKit
+//
+//  Created by KeKe on 15/8/17.
+//  Copyright (c) 2015年 KeKeKit. All rights reserved.
+//
+
+#ifndef KeKeKit_Category_h
+#define KeKeKit_Category_h
+#import "UIColor+HexStr.h"
+#import "UIColor+RGBValues.h"
+//#import "NSObject+Convert.h"
+//#import "NSArray+IndexOutOfCount.h"
+//#import "NSArray+Compare.h"
+//#import "NSArray+Parse.h"
+//#import "NSMutableArray+Change.h"
+//#import "NSDate+TianShi.h"
+//#import "NSDictionary+Null.h"
+//#import "NSDictionary+Parameters.h"
+//#import "NSMutableDictionary+Null.h"
+//#import "NSUserDefaults+Null.h"
+//#import "NSNumber+Calcutate.h"
+//#import "NSNumber+moneyValue.h"
+//#import "NSString+Calcute.h"
+//#import "NSString+CheckFormat.h"
+//#import "NSString+Compare.h"
+//#import "NSString+Date.h"
+//#import "NSString+Edit.h"
+//#import "NSString+Encry.h"
+#import "NSString+File.h"
+//#import "NSString+ShowFit.h"
+//#import "NSString+PopularStyle.h"
+//#import "NSString+Version.h"
+//#import "NSString+tool.h"
+//#import "NSString+Parameters.h"
+//#import "NSIndexPath+Equal.h"
+//#import "NSAttributedString+HeightCalculated.h"
+//#import "NSData+AES256.h"
+//#import "EBDate.h"
+//
+//
+//#import "UIView+Frame.h"
+//#import "UIView+i7Rotate360.h"
+//#import "UIView+SonSuperView.h"
+//#import "UIView+Animation.h"
+//#import "UIView+QuickUI.h"
+#import "UIImage+Color.h"
+//#import "UILabel+QuickUI.h"
+//#import "UIButton+Color.h"
+//#import "UIButton+Block.h"
+//#import "UIButton+QuickUI.h"
+//#import "UITextField+PlaceHolderColor.h"
+//#import "UIView+CommonUI.h"
+//#import "UITableViewCell+CleanSelectionStyle.h"
+//#import "UIImageView+setImage.h"
+//#import "UIButton+WebCache.h"
+//#import "UIViewController+ShiPei.h"
+//#import "UITextView+Style.h"
+//#import "UITextField+PlaceHolderColor.h"
+#endif
