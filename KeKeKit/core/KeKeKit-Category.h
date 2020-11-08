@@ -14,7 +14,7 @@
 #define LOG(...)
 #endif
 #import "ViewDefine.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 #import "GlobalConst.h"
 #import "InfoHelper.h"
 #import "GlobalAttributeDic.h"

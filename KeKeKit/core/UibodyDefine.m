@@ -246,17 +246,19 @@ NSString *getImageUrl(NSString *imgName)
 }
 void closeUserInteraction()//关闭用户交互
 {
-    AppDelegate*delegate=  (AppDelegate*)[UIApplication sharedApplication].delegate;
-    if (delegate.window) {
-        delegate.window.userInteractionEnabled=false;
-    }
+    [[UIApplication sharedApplication]beginIgnoringInteractionEvents];
+//    AppDelegate*delegate=  (AppDelegate*)[UIApplication sharedApplication].delegate;
+//    if (delegate.window) {
+//        delegate.window.userInteractionEnabled=false;
+//    }
 }
 void openUserInteraction()//打开用户交互
 {
-    AppDelegate*delegate=  (AppDelegate*)[UIApplication sharedApplication].delegate;
-    if (delegate.window) {
-        delegate.window.userInteractionEnabled=YES;
-    }
+    [[UIApplication sharedApplication]endIgnoringInteractionEvents];
+//    AppDelegate*delegate=  (AppDelegate*)[UIApplication sharedApplication].delegate;
+//    if (delegate.window) {
+//        delegate.window.userInteractionEnabled=YES;
+//    }
 }
 NSString *getChartersDetail(NSString *bookId ,int place)
 {
