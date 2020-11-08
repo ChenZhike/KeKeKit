@@ -23,10 +23,6 @@
 
 -(NSString *)translateToNum;
 
-
--(NSString*)substringAfterStr:(NSString*)str;
--(NSString*)substringWithStartIndex:(int)startindex endindex:(int)endindex;
-
 -(BOOL)pinyinEqual:(NSString*)str;
 -(NSString *)pinyin;
 +(float)likePercentByCompareOriginText:(NSString *)originText targetText:(NSString *)targetText;

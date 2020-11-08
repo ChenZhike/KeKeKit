@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 @interface UIView (Frame)
-@property (nonatomic) CGFloat height;
-@property (nonatomic) CGFloat width;
+@property (nonatomic,assign) CGFloat height;
+@property (nonatomic,assign) CGFloat width;
 
 @property (nonatomic, getter = left, setter = setLeft:) CGFloat x;
 @property (nonatomic) CGFloat left;

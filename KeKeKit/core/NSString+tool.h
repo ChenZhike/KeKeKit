@@ -9,8 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (tool)
--(NSString *)deleteSpecialCharacters;
--(NSString*)deleteLastToken;
--(BOOL)hasTokenSuffix;
 - (void)boda;
 @end

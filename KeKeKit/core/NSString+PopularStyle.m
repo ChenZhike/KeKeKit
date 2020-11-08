@@ -140,27 +140,6 @@
     return sumStr;
 
 }
--(NSString*)substringAfterStr:(NSString*)str
-{
-    NSInteger location=[self rangeOfString:str].location;
-    NSString*result=nil;
-    if (location!=NSNotFound) {
-        NSInteger subindex=location+str.length;
-        result=[self substringFromIndex:subindex];
-    }
-    return result;
-}
--(NSString*)substringWithStartIndex:(int)startindex endindex:(int)endindex
-{
-    NSString*result=nil;
-    NSRange content_range=NSMakeRange(startindex, endindex-startindex+1);
-    NSInteger maxindex=self.length-1;
-    if (startindex<=maxindex&&endindex<maxindex) {
-        result=[self substringWithRange:content_range];
-    }
-    return  result;
-
-}
 -(BOOL)pinyinEqual:(NSString*)str
 {
     NSString *self_pinyin = [self pinyin];
