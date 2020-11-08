@@ -11,6 +11,12 @@ s.platform     = :ios, '10.0'            #支持的平台及版本
     s.social_media_url   = "https://github.com/ChenZhike/KeKeKit"
 
     s.source_files  = "KeKeKit/core/*.{h,m}"
+s.prefix_header_contents = <<-EOS
+ #ifdef __OBJC__
+#import "KeKeKit-Category.h"   //KeKeKit-Category.h包含了所有头文件
+ #endif 
+EOS
+end
 	s.frameworks = 'UIKit'
 	s.dependency 'SDWebImage'
 	s.dependency 'Wonderful'
