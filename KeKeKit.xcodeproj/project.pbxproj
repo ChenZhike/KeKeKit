@@ -7,6 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */; };
+		BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713C25579A1C009E6696 /* NSObject+Convert.m */; };
+		BD46714425579A1C009E6696 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713E25579A1C009E6696 /* UIImage+Color.m */; };
+		BD46714525579A1C009E6696 /* UIColor+HexStr.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46714125579A1C009E6696 /* UIColor+HexStr.m */; };
+		BD46714925579AED009E6696 /* NSArray+IndexOutOfCount.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46714725579AED009E6696 /* NSArray+IndexOutOfCount.m */; };
+		BD46714E25579B13009E6696 /* NSArray+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46714D25579B13009E6696 /* NSArray+Compare.m */; };
+		BD46715325579B2E009E6696 /* NSArray+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46715225579B2E009E6696 /* NSArray+Parse.m */; };
+		BD46715825579B45009E6696 /* NSMutableArray+Change.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46715625579B45009E6696 /* NSMutableArray+Change.m */; };
+		BD46715D25579B6C009E6696 /* NSDate+TianShi.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46715B25579B6C009E6696 /* NSDate+TianShi.m */; };
+		BD46716225579B7E009E6696 /* NSDictionary+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46716025579B7E009E6696 /* NSDictionary+Null.m */; };
+		BD46716725579B90009E6696 /* NSDictionary+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46716525579B90009E6696 /* NSDictionary+Parameters.m */; };
+		BD46716B25579BA6009E6696 /* NSMutableDictionary+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46716A25579BA6009E6696 /* NSMutableDictionary+Null.m */; };
+		BD46717025579BC0009E6696 /* NSUserDefaults+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46716E25579BBF009E6696 /* NSUserDefaults+Null.m */; };
+		BD46717525579BD5009E6696 /* NSNumber+Calcutate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46717425579BD5009E6696 /* NSNumber+Calcutate.m */; };
+		BD46717A25579BE2009E6696 /* NSNumber+moneyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46717825579BE2009E6696 /* NSNumber+moneyValue.m */; };
+		BD46718925579C02009E6696 /* NSString+CheckFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46717D25579C00009E6696 /* NSString+CheckFormat.m */; };
+		BD46718A25579C02009E6696 /* NSString+Encry.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46718125579C01009E6696 /* NSString+Encry.m */; };
+		BD46718B25579C02009E6696 /* NSString+Calcute.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46718425579C01009E6696 /* NSString+Calcute.m */; };
+		BD46718C25579C02009E6696 /* NSString+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46718525579C01009E6696 /* NSString+Edit.m */; };
+		BD46718D25579C02009E6696 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46718625579C01009E6696 /* NSString+Date.m */; };
+		BD46718E25579C02009E6696 /* NSString+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46718825579C01009E6696 /* NSString+Compare.m */; };
+		BD46719B25579C85009E6696 /* NSString+ParseLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46719125579C84009E6696 /* NSString+ParseLanguage.m */; };
+		BD46719C25579C85009E6696 /* NSString+PopularStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46719225579C84009E6696 /* NSString+PopularStyle.m */; };
+		BD46719D25579C85009E6696 /* NSString+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46719625579C85009E6696 /* NSString+Parameters.m */; };
+		BD46719E25579C85009E6696 /* NSString+ShowFit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46719825579C85009E6696 /* NSString+ShowFit.m */; };
+		BD46719F25579C85009E6696 /* NSString+Version.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46719A25579C85009E6696 /* NSString+Version.m */; };
+		BD4671A425579CEA009E6696 /* NSString+tool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671A225579CEA009E6696 /* NSString+tool.m */; };
+		BD4671AE25579D46009E6696 /* NSAttributedString+HeightCalculated.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671AA25579D45009E6696 /* NSAttributedString+HeightCalculated.m */; };
+		BD4671AF25579D46009E6696 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671AB25579D45009E6696 /* NSData+AES256.m */; };
+		BD4671B025579D46009E6696 /* NSIndexPath+Equal.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671AD25579D46009E6696 /* NSIndexPath+Equal.m */; };
+		BD4671BF25579DCD009E6696 /* UIView+SonSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671B325579DCB009E6696 /* UIView+SonSuperView.m */; };
+		BD4671C025579DCD009E6696 /* UIView+i7Rotate360.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671B725579DCC009E6696 /* UIView+i7Rotate360.m */; };
+		BD4671C125579DCD009E6696 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671B825579DCC009E6696 /* UIView+Frame.m */; };
+		BD4671C225579DCD009E6696 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671B925579DCC009E6696 /* UIView+Animation.m */; };
+		BD4671C325579DCD009E6696 /* UIView+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671BC25579DCC009E6696 /* UIView+QuickUI.m */; };
+		BD4671C425579DCD009E6696 /* UIView+CommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */; };
+		BD4671C925579DF2009E6696 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671C825579DF2009E6696 /* UIView+Extension.m */; };
+		BD4671D025579E78009E6696 /* UILabel+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671CE25579E78009E6696 /* UILabel+QuickUI.m */; };
+		BD4671D125579E78009E6696 /* UILabel+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671CF25579E78009E6696 /* UILabel+Gradient.m */; };
+		BD4671D825579F71009E6696 /* UITextView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671D725579F70009E6696 /* UITextView+Style.m */; };
+		BD4671DC25579FAF009E6696 /* UITextField+PlaceHolderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671DB25579FAF009E6696 /* UITextField+PlaceHolderColor.m */; };
+		BD4671E22557A031009E6696 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671DF2557A031009E6696 /* CALayer+Anim.m */; };
+		BD4671E32557A031009E6696 /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671E02557A031009E6696 /* CALayer+Transition.m */; };
+		BD4671E82557A13B009E6696 /* UIImageView+setImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671E62557A13B009E6696 /* UIImageView+setImage.m */; };
+		BD4671F12557A179009E6696 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671EE2557A179009E6696 /* UIButton+Block.m */; };
+		BD4671F22557A179009E6696 /* UIButton+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671EF2557A179009E6696 /* UIButton+Color.m */; };
+		BD4671F32557A179009E6696 /* UIButton+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F02557A179009E6696 /* UIButton+QuickUI.m */; };
+		BD4671FA2557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F62557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m */; };
+		BD4671FB2557A23B009E6696 /* UIViewController+ShiPei.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */; };
 		BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* AppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
 		BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* ViewController.m */; };
@@ -18,6 +67,105 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD46713925579A1B009E6696 /* NSObject+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convert.h"; sourceTree = "<group>"; };
+		BD46713A25579A1B009E6696 /* KeKeKit-Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-Category.h"; sourceTree = "<group>"; };
+		BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
+		BD46713C25579A1C009E6696 /* NSObject+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Convert.m"; sourceTree = "<group>"; };
+		BD46713D25579A1C009E6696 /* UIColor+RGBValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBValues.h"; sourceTree = "<group>"; };
+		BD46713E25579A1C009E6696 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		BD46713F25579A1C009E6696 /* UIColor+HexStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexStr.h"; sourceTree = "<group>"; };
+		BD46714025579A1C009E6696 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		BD46714125579A1C009E6696 /* UIColor+HexStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexStr.m"; sourceTree = "<group>"; };
+		BD46714725579AED009E6696 /* NSArray+IndexOutOfCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IndexOutOfCount.m"; sourceTree = "<group>"; };
+		BD46714825579AED009E6696 /* NSArray+IndexOutOfCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IndexOutOfCount.h"; sourceTree = "<group>"; };
+		BD46714C25579B13009E6696 /* NSArray+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Compare.h"; sourceTree = "<group>"; };
+		BD46714D25579B13009E6696 /* NSArray+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Compare.m"; sourceTree = "<group>"; };
+		BD46715125579B2E009E6696 /* NSArray+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Parse.h"; sourceTree = "<group>"; };
+		BD46715225579B2E009E6696 /* NSArray+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Parse.m"; sourceTree = "<group>"; };
+		BD46715625579B45009E6696 /* NSMutableArray+Change.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Change.m"; sourceTree = "<group>"; };
+		BD46715725579B45009E6696 /* NSMutableArray+Change.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Change.h"; sourceTree = "<group>"; };
+		BD46715B25579B6C009E6696 /* NSDate+TianShi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TianShi.m"; sourceTree = "<group>"; };
+		BD46715C25579B6C009E6696 /* NSDate+TianShi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TianShi.h"; sourceTree = "<group>"; };
+		BD46716025579B7E009E6696 /* NSDictionary+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Null.m"; sourceTree = "<group>"; };
+		BD46716125579B7E009E6696 /* NSDictionary+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Null.h"; sourceTree = "<group>"; };
+		BD46716525579B90009E6696 /* NSDictionary+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Parameters.m"; sourceTree = "<group>"; };
+		BD46716625579B90009E6696 /* NSDictionary+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Parameters.h"; sourceTree = "<group>"; };
+		BD46716925579BA6009E6696 /* NSMutableDictionary+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Null.h"; sourceTree = "<group>"; };
+		BD46716A25579BA6009E6696 /* NSMutableDictionary+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Null.m"; sourceTree = "<group>"; };
+		BD46716E25579BBF009E6696 /* NSUserDefaults+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Null.m"; sourceTree = "<group>"; };
+		BD46716F25579BBF009E6696 /* NSUserDefaults+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Null.h"; sourceTree = "<group>"; };
+		BD46717325579BD5009E6696 /* NSNumber+Calcutate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Calcutate.h"; sourceTree = "<group>"; };
+		BD46717425579BD5009E6696 /* NSNumber+Calcutate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Calcutate.m"; sourceTree = "<group>"; };
+		BD46717825579BE2009E6696 /* NSNumber+moneyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+moneyValue.m"; sourceTree = "<group>"; };
+		BD46717925579BE2009E6696 /* NSNumber+moneyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+moneyValue.h"; sourceTree = "<group>"; };
+		BD46717D25579C00009E6696 /* NSString+CheckFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CheckFormat.m"; sourceTree = "<group>"; };
+		BD46717E25579C00009E6696 /* NSString+Calcute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Calcute.h"; sourceTree = "<group>"; };
+		BD46717F25579C00009E6696 /* NSString+Edit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Edit.h"; sourceTree = "<group>"; };
+		BD46718025579C01009E6696 /* NSString+Encry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encry.h"; sourceTree = "<group>"; };
+		BD46718125579C01009E6696 /* NSString+Encry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encry.m"; sourceTree = "<group>"; };
+		BD46718225579C01009E6696 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
+		BD46718325579C01009E6696 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		BD46718425579C01009E6696 /* NSString+Calcute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Calcute.m"; sourceTree = "<group>"; };
+		BD46718525579C01009E6696 /* NSString+Edit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Edit.m"; sourceTree = "<group>"; };
+		BD46718625579C01009E6696 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		BD46718725579C01009E6696 /* NSString+CheckFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CheckFormat.h"; sourceTree = "<group>"; };
+		BD46718825579C01009E6696 /* NSString+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Compare.m"; sourceTree = "<group>"; };
+		BD46719125579C84009E6696 /* NSString+ParseLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParseLanguage.m"; sourceTree = "<group>"; };
+		BD46719225579C84009E6696 /* NSString+PopularStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PopularStyle.m"; sourceTree = "<group>"; };
+		BD46719325579C84009E6696 /* NSString+ParseLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParseLanguage.h"; sourceTree = "<group>"; };
+		BD46719425579C85009E6696 /* NSString+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Parameters.h"; sourceTree = "<group>"; };
+		BD46719525579C85009E6696 /* NSString+PopularStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PopularStyle.h"; sourceTree = "<group>"; };
+		BD46719625579C85009E6696 /* NSString+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Parameters.m"; sourceTree = "<group>"; };
+		BD46719725579C85009E6696 /* NSString+ShowFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShowFit.h"; sourceTree = "<group>"; };
+		BD46719825579C85009E6696 /* NSString+ShowFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShowFit.m"; sourceTree = "<group>"; };
+		BD46719925579C85009E6696 /* NSString+Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Version.h"; sourceTree = "<group>"; };
+		BD46719A25579C85009E6696 /* NSString+Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Version.m"; sourceTree = "<group>"; };
+		BD4671A225579CEA009E6696 /* NSString+tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+tool.m"; sourceTree = "<group>"; };
+		BD4671A325579CEA009E6696 /* NSString+tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+tool.h"; sourceTree = "<group>"; };
+		BD4671A825579D45009E6696 /* NSAttributedString+HeightCalculated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HeightCalculated.h"; sourceTree = "<group>"; };
+		BD4671A925579D45009E6696 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		BD4671AA25579D45009E6696 /* NSAttributedString+HeightCalculated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HeightCalculated.m"; sourceTree = "<group>"; };
+		BD4671AB25579D45009E6696 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		BD4671AC25579D45009E6696 /* NSIndexPath+Equal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Equal.h"; sourceTree = "<group>"; };
+		BD4671AD25579D46009E6696 /* NSIndexPath+Equal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Equal.m"; sourceTree = "<group>"; };
+		BD4671B325579DCB009E6696 /* UIView+SonSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SonSuperView.m"; sourceTree = "<group>"; };
+		BD4671B425579DCB009E6696 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		BD4671B525579DCB009E6696 /* UIView+CommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CommonUI.h"; sourceTree = "<group>"; };
+		BD4671B625579DCB009E6696 /* UIView+i7Rotate360.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+i7Rotate360.h"; sourceTree = "<group>"; };
+		BD4671B725579DCC009E6696 /* UIView+i7Rotate360.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+i7Rotate360.m"; sourceTree = "<group>"; };
+		BD4671B825579DCC009E6696 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		BD4671B925579DCC009E6696 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		BD4671BA25579DCC009E6696 /* UIView+QuickUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QuickUI.h"; sourceTree = "<group>"; };
+		BD4671BB25579DCC009E6696 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		BD4671BC25579DCC009E6696 /* UIView+QuickUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QuickUI.m"; sourceTree = "<group>"; };
+		BD4671BD25579DCC009E6696 /* UIView+SonSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SonSuperView.h"; sourceTree = "<group>"; };
+		BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonUI.m"; sourceTree = "<group>"; };
+		BD4671C725579DF1009E6696 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BD4671C825579DF2009E6696 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BD4671CC25579E77009E6696 /* UILabel+QuickUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+QuickUI.h"; sourceTree = "<group>"; };
+		BD4671CD25579E77009E6696 /* UILabel+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Gradient.h"; sourceTree = "<group>"; };
+		BD4671CE25579E78009E6696 /* UILabel+QuickUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+QuickUI.m"; sourceTree = "<group>"; };
+		BD4671CF25579E78009E6696 /* UILabel+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Gradient.m"; sourceTree = "<group>"; };
+		BD4671D425579F70009E6696 /* UITextField+PlaceHolderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolderColor.h"; sourceTree = "<group>"; };
+		BD4671D625579F70009E6696 /* UITextView+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Style.h"; sourceTree = "<group>"; };
+		BD4671D725579F70009E6696 /* UITextView+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Style.m"; sourceTree = "<group>"; };
+		BD4671DB25579FAF009E6696 /* UITextField+PlaceHolderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolderColor.m"; sourceTree = "<group>"; };
+		BD4671DE2557A031009E6696 /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
+		BD4671DF2557A031009E6696 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		BD4671E02557A031009E6696 /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
+		BD4671E12557A031009E6696 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		BD4671E62557A13B009E6696 /* UIImageView+setImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+setImage.m"; sourceTree = "<group>"; };
+		BD4671E72557A13B009E6696 /* UIImageView+setImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+setImage.h"; sourceTree = "<group>"; };
+		BD4671EB2557A179009E6696 /* UIButton+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Color.h"; sourceTree = "<group>"; };
+		BD4671EC2557A179009E6696 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		BD4671ED2557A179009E6696 /* UIButton+QuickUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+QuickUI.h"; sourceTree = "<group>"; };
+		BD4671EE2557A179009E6696 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		BD4671EF2557A179009E6696 /* UIButton+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Color.m"; sourceTree = "<group>"; };
+		BD4671F02557A179009E6696 /* UIButton+QuickUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QuickUI.m"; sourceTree = "<group>"; };
+		BD4671F62557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CleanSelectionStyle.m"; sourceTree = "<group>"; };
+		BD4671F72557A23B009E6696 /* UIViewController+ShiPei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShiPei.h"; sourceTree = "<group>"; };
+		BD4671F82557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CleanSelectionStyle.h"; sourceTree = "<group>"; };
+		BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShiPei.m"; sourceTree = "<group>"; };
 		BDDCF60B252DC2B400A1D625 /* KeKeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDCF60E252DC2B400A1D625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDDCF60F252DC2B400A1D625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,8 +231,107 @@
 		BDDCF628252DC2CE00A1D625 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BD4671E12557A031009E6696 /* CALayer+Anim.h */,
+				BD4671DF2557A031009E6696 /* CALayer+Anim.m */,
+				BD4671DE2557A031009E6696 /* CALayer+Transition.h */,
+				BD4671E02557A031009E6696 /* CALayer+Transition.m */,
+				BD46713A25579A1B009E6696 /* KeKeKit-Category.h */,
+				BD46714C25579B13009E6696 /* NSArray+Compare.h */,
+				BD46714D25579B13009E6696 /* NSArray+Compare.m */,
+				BD46714825579AED009E6696 /* NSArray+IndexOutOfCount.h */,
+				BD46714725579AED009E6696 /* NSArray+IndexOutOfCount.m */,
+				BD46715125579B2E009E6696 /* NSArray+Parse.h */,
+				BD46715225579B2E009E6696 /* NSArray+Parse.m */,
+				BD4671A825579D45009E6696 /* NSAttributedString+HeightCalculated.h */,
+				BD4671AA25579D45009E6696 /* NSAttributedString+HeightCalculated.m */,
+				BD4671A925579D45009E6696 /* NSData+AES256.h */,
+				BD4671AB25579D45009E6696 /* NSData+AES256.m */,
+				BD46715C25579B6C009E6696 /* NSDate+TianShi.h */,
+				BD46715B25579B6C009E6696 /* NSDate+TianShi.m */,
+				BD46716125579B7E009E6696 /* NSDictionary+Null.h */,
+				BD46716025579B7E009E6696 /* NSDictionary+Null.m */,
+				BD46716625579B90009E6696 /* NSDictionary+Parameters.h */,
+				BD46716525579B90009E6696 /* NSDictionary+Parameters.m */,
+				BD4671AC25579D45009E6696 /* NSIndexPath+Equal.h */,
+				BD4671AD25579D46009E6696 /* NSIndexPath+Equal.m */,
+				BD46715725579B45009E6696 /* NSMutableArray+Change.h */,
+				BD46715625579B45009E6696 /* NSMutableArray+Change.m */,
+				BD46716925579BA6009E6696 /* NSMutableDictionary+Null.h */,
+				BD46716A25579BA6009E6696 /* NSMutableDictionary+Null.m */,
+				BD46717325579BD5009E6696 /* NSNumber+Calcutate.h */,
+				BD46717425579BD5009E6696 /* NSNumber+Calcutate.m */,
+				BD46717925579BE2009E6696 /* NSNumber+moneyValue.h */,
+				BD46717825579BE2009E6696 /* NSNumber+moneyValue.m */,
+				BD46713925579A1B009E6696 /* NSObject+Convert.h */,
+				BD46713C25579A1C009E6696 /* NSObject+Convert.m */,
+				BD46717E25579C00009E6696 /* NSString+Calcute.h */,
+				BD46718425579C01009E6696 /* NSString+Calcute.m */,
+				BD46718725579C01009E6696 /* NSString+CheckFormat.h */,
+				BD46717D25579C00009E6696 /* NSString+CheckFormat.m */,
+				BD46718225579C01009E6696 /* NSString+Compare.h */,
+				BD46718825579C01009E6696 /* NSString+Compare.m */,
+				BD46718325579C01009E6696 /* NSString+Date.h */,
+				BD46718625579C01009E6696 /* NSString+Date.m */,
+				BD46717F25579C00009E6696 /* NSString+Edit.h */,
+				BD46718525579C01009E6696 /* NSString+Edit.m */,
+				BD46718025579C01009E6696 /* NSString+Encry.h */,
+				BD46718125579C01009E6696 /* NSString+Encry.m */,
 				BDDCF629252DC2EB00A1D625 /* NSString+File.h */,
 				BDDCF62A252DC2EB00A1D625 /* NSString+File.m */,
+				BD46719425579C85009E6696 /* NSString+Parameters.h */,
+				BD46719625579C85009E6696 /* NSString+Parameters.m */,
+				BD46719325579C84009E6696 /* NSString+ParseLanguage.h */,
+				BD46719125579C84009E6696 /* NSString+ParseLanguage.m */,
+				BD46719525579C85009E6696 /* NSString+PopularStyle.h */,
+				BD46719225579C84009E6696 /* NSString+PopularStyle.m */,
+				BD46719725579C85009E6696 /* NSString+ShowFit.h */,
+				BD46719825579C85009E6696 /* NSString+ShowFit.m */,
+				BD4671A325579CEA009E6696 /* NSString+tool.h */,
+				BD4671A225579CEA009E6696 /* NSString+tool.m */,
+				BD46719925579C85009E6696 /* NSString+Version.h */,
+				BD46719A25579C85009E6696 /* NSString+Version.m */,
+				BD46716F25579BBF009E6696 /* NSUserDefaults+Null.h */,
+				BD46716E25579BBF009E6696 /* NSUserDefaults+Null.m */,
+				BD4671EC2557A179009E6696 /* UIButton+Block.h */,
+				BD4671EE2557A179009E6696 /* UIButton+Block.m */,
+				BD4671EB2557A179009E6696 /* UIButton+Color.h */,
+				BD4671EF2557A179009E6696 /* UIButton+Color.m */,
+				BD4671ED2557A179009E6696 /* UIButton+QuickUI.h */,
+				BD4671F02557A179009E6696 /* UIButton+QuickUI.m */,
+				BD46713F25579A1C009E6696 /* UIColor+HexStr.h */,
+				BD46714125579A1C009E6696 /* UIColor+HexStr.m */,
+				BD46713D25579A1C009E6696 /* UIColor+RGBValues.h */,
+				BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */,
+				BD46714025579A1C009E6696 /* UIImage+Color.h */,
+				BD46713E25579A1C009E6696 /* UIImage+Color.m */,
+				BD4671E72557A13B009E6696 /* UIImageView+setImage.h */,
+				BD4671E62557A13B009E6696 /* UIImageView+setImage.m */,
+				BD4671CD25579E77009E6696 /* UILabel+Gradient.h */,
+				BD4671CF25579E78009E6696 /* UILabel+Gradient.m */,
+				BD4671CC25579E77009E6696 /* UILabel+QuickUI.h */,
+				BD4671CE25579E78009E6696 /* UILabel+QuickUI.m */,
+				BD4671F82557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.h */,
+				BD4671F62557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m */,
+				BD4671D425579F70009E6696 /* UITextField+PlaceHolderColor.h */,
+				BD4671DB25579FAF009E6696 /* UITextField+PlaceHolderColor.m */,
+				BD4671D625579F70009E6696 /* UITextView+Style.h */,
+				BD4671D725579F70009E6696 /* UITextView+Style.m */,
+				BD4671BB25579DCC009E6696 /* UIView+Animation.h */,
+				BD4671B925579DCC009E6696 /* UIView+Animation.m */,
+				BD4671B525579DCB009E6696 /* UIView+CommonUI.h */,
+				BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */,
+				BD4671C725579DF1009E6696 /* UIView+Extension.h */,
+				BD4671C825579DF2009E6696 /* UIView+Extension.m */,
+				BD4671B425579DCB009E6696 /* UIView+Frame.h */,
+				BD4671B825579DCC009E6696 /* UIView+Frame.m */,
+				BD4671B625579DCB009E6696 /* UIView+i7Rotate360.h */,
+				BD4671B725579DCC009E6696 /* UIView+i7Rotate360.m */,
+				BD4671BA25579DCC009E6696 /* UIView+QuickUI.h */,
+				BD4671BC25579DCC009E6696 /* UIView+QuickUI.m */,
+				BD4671BD25579DCC009E6696 /* UIView+SonSuperView.h */,
+				BD4671B325579DCB009E6696 /* UIView+SonSuperView.m */,
+				BD4671F72557A23B009E6696 /* UIViewController+ShiPei.h */,
+				BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -158,11 +405,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD46715325579B2E009E6696 /* NSArray+Parse.m in Sources */,
+				BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */,
+				BD4671C325579DCD009E6696 /* UIView+QuickUI.m in Sources */,
+				BD46717A25579BE2009E6696 /* NSNumber+moneyValue.m in Sources */,
+				BD46716225579B7E009E6696 /* NSDictionary+Null.m in Sources */,
 				BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */,
+				BD46719B25579C85009E6696 /* NSString+ParseLanguage.m in Sources */,
+				BD4671BF25579DCD009E6696 /* UIView+SonSuperView.m in Sources */,
+				BD4671E22557A031009E6696 /* CALayer+Anim.m in Sources */,
+				BD46715D25579B6C009E6696 /* NSDate+TianShi.m in Sources */,
+				BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */,
+				BD4671F12557A179009E6696 /* UIButton+Block.m in Sources */,
+				BD4671C025579DCD009E6696 /* UIView+i7Rotate360.m in Sources */,
+				BD4671FA2557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m in Sources */,
+				BD4671F32557A179009E6696 /* UIButton+QuickUI.m in Sources */,
+				BD4671C125579DCD009E6696 /* UIView+Frame.m in Sources */,
+				BD46719D25579C85009E6696 /* NSString+Parameters.m in Sources */,
 				BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */,
 				BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */,
+				BD4671A425579CEA009E6696 /* NSString+tool.m in Sources */,
+				BD4671D125579E78009E6696 /* UILabel+Gradient.m in Sources */,
+				BD46718925579C02009E6696 /* NSString+CheckFormat.m in Sources */,
+				BD46718D25579C02009E6696 /* NSString+Date.m in Sources */,
+				BD46714425579A1C009E6696 /* UIImage+Color.m in Sources */,
+				BD4671B025579D46009E6696 /* NSIndexPath+Equal.m in Sources */,
+				BD4671E32557A031009E6696 /* CALayer+Transition.m in Sources */,
 				BDDCF621252DC2B800A1D625 /* main.m in Sources */,
+				BD46717025579BC0009E6696 /* NSUserDefaults+Null.m in Sources */,
+				BD4671F22557A179009E6696 /* UIButton+Color.m in Sources */,
+				BD4671D025579E78009E6696 /* UILabel+QuickUI.m in Sources */,
+				BD46718B25579C02009E6696 /* NSString+Calcute.m in Sources */,
+				BD46719F25579C85009E6696 /* NSString+Version.m in Sources */,
+				BD4671C925579DF2009E6696 /* UIView+Extension.m in Sources */,
+				BD4671DC25579FAF009E6696 /* UITextField+PlaceHolderColor.m in Sources */,
+				BD4671FB2557A23B009E6696 /* UIViewController+ShiPei.m in Sources */,
+				BD4671E82557A13B009E6696 /* UIImageView+setImage.m in Sources */,
+				BD46716725579B90009E6696 /* NSDictionary+Parameters.m in Sources */,
+				BD4671C225579DCD009E6696 /* UIView+Animation.m in Sources */,
+				BD4671AF25579D46009E6696 /* NSData+AES256.m in Sources */,
+				BD46716B25579BA6009E6696 /* NSMutableDictionary+Null.m in Sources */,
+				BD46714925579AED009E6696 /* NSArray+IndexOutOfCount.m in Sources */,
 				BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */,
+				BD4671D825579F71009E6696 /* UITextView+Style.m in Sources */,
+				BD4671AE25579D46009E6696 /* NSAttributedString+HeightCalculated.m in Sources */,
+				BD46717525579BD5009E6696 /* NSNumber+Calcutate.m in Sources */,
+				BD46719E25579C85009E6696 /* NSString+ShowFit.m in Sources */,
+				BD46719C25579C85009E6696 /* NSString+PopularStyle.m in Sources */,
+				BD4671C425579DCD009E6696 /* UIView+CommonUI.m in Sources */,
+				BD46718C25579C02009E6696 /* NSString+Edit.m in Sources */,
+				BD46718E25579C02009E6696 /* NSString+Compare.m in Sources */,
+				BD46714525579A1C009E6696 /* UIColor+HexStr.m in Sources */,
+				BD46718A25579C02009E6696 /* NSString+Encry.m in Sources */,
+				BD46714E25579B13009E6696 /* NSArray+Compare.m in Sources */,
+				BD46715825579B45009E6696 /* NSMutableArray+Change.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
