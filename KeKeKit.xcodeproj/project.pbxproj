@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EF2EF456DE528AE0638FA17 /* Pods_KeKeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CF6C7E31721D7DB97B3007 /* Pods_KeKeKit.framework */; };
 		BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */; };
 		BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713C25579A1C009E6696 /* NSObject+Convert.m */; };
 		BD46714425579A1C009E6696 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713E25579A1C009E6696 /* UIImage+Color.m */; };
@@ -56,6 +57,12 @@
 		BD4671F32557A179009E6696 /* UIButton+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F02557A179009E6696 /* UIButton+QuickUI.m */; };
 		BD4671FA2557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F62557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m */; };
 		BD4671FB2557A23B009E6696 /* UIViewController+ShiPei.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */; };
+		BD46720C2557ADEE009E6696 /* NSData+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46720B2557ADED009E6696 /* NSData+Common.m */; };
+		BD4672102557AE10009E6696 /* LabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46720E2557AE10009E6696 /* LabelStyle.m */; };
+		BD46721B2557AF65009E6696 /* UibodyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672192557AF65009E6696 /* UibodyDefine.m */; };
+		BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672232557B0D8009E6696 /* GlobalConst.m */; };
+		BD4672282557B10B009E6696 /* InfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672272557B10B009E6696 /* InfoHelper.m */; };
+		BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */; };
 		BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* AppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
 		BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* ViewController.m */; };
@@ -67,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32EB760E7587AA170077480B /* Pods-KeKeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeKeKit.release.xcconfig"; path = "Target Support Files/Pods-KeKeKit/Pods-KeKeKit.release.xcconfig"; sourceTree = "<group>"; };
+		490AC3EFD23E606E68FA57D8 /* Pods-KeKeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeKeKit.debug.xcconfig"; path = "Target Support Files/Pods-KeKeKit/Pods-KeKeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		BD46713925579A1B009E6696 /* NSObject+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convert.h"; sourceTree = "<group>"; };
 		BD46713A25579A1B009E6696 /* KeKeKit-Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-Category.h"; sourceTree = "<group>"; };
 		BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
@@ -166,6 +175,20 @@
 		BD4671F72557A23B009E6696 /* UIViewController+ShiPei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShiPei.h"; sourceTree = "<group>"; };
 		BD4671F82557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CleanSelectionStyle.h"; sourceTree = "<group>"; };
 		BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShiPei.m"; sourceTree = "<group>"; };
+		BD4672052557AC90009E6696 /* KeKeKit-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-PrefixHeader.pch"; sourceTree = "<group>"; };
+		BD46720A2557ADED009E6696 /* NSData+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Common.h"; sourceTree = "<group>"; };
+		BD46720B2557ADED009E6696 /* NSData+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Common.m"; sourceTree = "<group>"; };
+		BD46720E2557AE10009E6696 /* LabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelStyle.m; sourceTree = "<group>"; };
+		BD46720F2557AE10009E6696 /* LabelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelStyle.h; sourceTree = "<group>"; };
+		BD4672132557AE60009E6696 /* ViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDefine.h; sourceTree = "<group>"; };
+		BD4672192557AF65009E6696 /* UibodyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UibodyDefine.m; sourceTree = "<group>"; };
+		BD46721A2557AF65009E6696 /* UibodyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UibodyDefine.h; sourceTree = "<group>"; };
+		BD4672222557B0D8009E6696 /* GlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
+		BD4672232557B0D8009E6696 /* GlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
+		BD4672262557B10B009E6696 /* InfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoHelper.h; sourceTree = "<group>"; };
+		BD4672272557B10B009E6696 /* InfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoHelper.m; sourceTree = "<group>"; };
+		BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAttributeDic.h; sourceTree = "<group>"; };
+		BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAttributeDic.m; sourceTree = "<group>"; };
 		BDDCF60B252DC2B400A1D625 /* KeKeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDCF60E252DC2B400A1D625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDDCF60F252DC2B400A1D625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +203,7 @@
 		BDDCF620252DC2B800A1D625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDDCF629252DC2EB00A1D625 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
 		BDDCF62A252DC2EB00A1D625 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		D4CF6C7E31721D7DB97B3007 /* Pods_KeKeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeKeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,17 +211,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF2EF456DE528AE0638FA17 /* Pods_KeKeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC9288B40C1C2C30B56BABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				490AC3EFD23E606E68FA57D8 /* Pods-KeKeKit.debug.xcconfig */,
+				32EB760E7587AA170077480B /* Pods-KeKeKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70B2A88A2BCD3A8E8AAD7E92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF6C7E31721D7DB97B3007 /* Pods_KeKeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDDCF602252DC2B300A1D625 = {
 			isa = PBXGroup;
 			children = (
 				BDDCF60D252DC2B400A1D625 /* KeKeKit */,
 				BDDCF60C252DC2B400A1D625 /* Products */,
+				0BC9288B40C1C2C30B56BABB /* Pods */,
+				70B2A88A2BCD3A8E8AAD7E92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +275,19 @@
 		BDDCF628252DC2CE00A1D625 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */,
+				BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */,
+				BD4672262557B10B009E6696 /* InfoHelper.h */,
+				BD4672272557B10B009E6696 /* InfoHelper.m */,
+				BD4672222557B0D8009E6696 /* GlobalConst.h */,
+				BD4672232557B0D8009E6696 /* GlobalConst.m */,
+				BD46721A2557AF65009E6696 /* UibodyDefine.h */,
+				BD4672192557AF65009E6696 /* UibodyDefine.m */,
+				BD4672132557AE60009E6696 /* ViewDefine.h */,
+				BD46720F2557AE10009E6696 /* LabelStyle.h */,
+				BD46720E2557AE10009E6696 /* LabelStyle.m */,
+				BD46720A2557ADED009E6696 /* NSData+Common.h */,
+				BD46720B2557ADED009E6696 /* NSData+Common.m */,
 				BD4671E12557A031009E6696 /* CALayer+Anim.h */,
 				BD4671DF2557A031009E6696 /* CALayer+Anim.m */,
 				BD4671DE2557A031009E6696 /* CALayer+Transition.h */,
@@ -332,6 +389,7 @@
 				BD4671B325579DCB009E6696 /* UIView+SonSuperView.m */,
 				BD4671F72557A23B009E6696 /* UIViewController+ShiPei.h */,
 				BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */,
+				BD4672052557AC90009E6696 /* KeKeKit-PrefixHeader.pch */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -343,9 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDCF624252DC2B800A1D625 /* Build configuration list for PBXNativeTarget "KeKeKit" */;
 			buildPhases = (
+				294F3AB69395B8C2599EE01E /* [CP] Check Pods Manifest.lock */,
 				BDDCF607252DC2B400A1D625 /* Sources */,
 				BDDCF608252DC2B400A1D625 /* Frameworks */,
 				BDDCF609252DC2B400A1D625 /* Resources */,
+				22CD7185CE369539373CFCD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,11 +460,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22CD7185CE369539373CFCD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeKeKit/Pods-KeKeKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeKeKit/Pods-KeKeKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeKeKit/Pods-KeKeKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294F3AB69395B8C2599EE01E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeKeKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDDCF607252DC2B400A1D625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4672102557AE10009E6696 /* LabelStyle.m in Sources */,
 				BD46715325579B2E009E6696 /* NSArray+Parse.m in Sources */,
 				BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */,
 				BD4671C325579DCD009E6696 /* UIView+QuickUI.m in Sources */,
@@ -412,16 +515,19 @@
 				BD46716225579B7E009E6696 /* NSDictionary+Null.m in Sources */,
 				BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */,
 				BD46719B25579C85009E6696 /* NSString+ParseLanguage.m in Sources */,
+				BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */,
 				BD4671BF25579DCD009E6696 /* UIView+SonSuperView.m in Sources */,
 				BD4671E22557A031009E6696 /* CALayer+Anim.m in Sources */,
 				BD46715D25579B6C009E6696 /* NSDate+TianShi.m in Sources */,
 				BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */,
 				BD4671F12557A179009E6696 /* UIButton+Block.m in Sources */,
 				BD4671C025579DCD009E6696 /* UIView+i7Rotate360.m in Sources */,
+				BD46720C2557ADEE009E6696 /* NSData+Common.m in Sources */,
 				BD4671FA2557A23B009E6696 /* UITableViewCell+CleanSelectionStyle.m in Sources */,
 				BD4671F32557A179009E6696 /* UIButton+QuickUI.m in Sources */,
 				BD4671C125579DCD009E6696 /* UIView+Frame.m in Sources */,
 				BD46719D25579C85009E6696 /* NSString+Parameters.m in Sources */,
+				BD46721B2557AF65009E6696 /* UibodyDefine.m in Sources */,
 				BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */,
 				BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */,
 				BD4671A425579CEA009E6696 /* NSString+tool.m in Sources */,
@@ -434,6 +540,7 @@
 				BDDCF621252DC2B800A1D625 /* main.m in Sources */,
 				BD46717025579BC0009E6696 /* NSUserDefaults+Null.m in Sources */,
 				BD4671F22557A179009E6696 /* UIButton+Color.m in Sources */,
+				BD4672282557B10B009E6696 /* InfoHelper.m in Sources */,
 				BD4671D025579E78009E6696 /* UILabel+QuickUI.m in Sources */,
 				BD46718B25579C02009E6696 /* NSString+Calcute.m in Sources */,
 				BD46719F25579C85009E6696 /* NSString+Version.m in Sources */,
@@ -450,6 +557,7 @@
 				BD4671D825579F71009E6696 /* UITextView+Style.m in Sources */,
 				BD4671AE25579D46009E6696 /* NSAttributedString+HeightCalculated.m in Sources */,
 				BD46717525579BD5009E6696 /* NSNumber+Calcutate.m in Sources */,
+				BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */,
 				BD46719E25579C85009E6696 /* NSString+ShowFit.m in Sources */,
 				BD46719C25579C85009E6696 /* NSString+PopularStyle.m in Sources */,
 				BD4671C425579DCD009E6696 /* UIView+CommonUI.m in Sources */,
@@ -598,10 +706,13 @@
 		};
 		BDDCF625252DC2B800A1D625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490AC3EFD23E606E68FA57D8 /* Pods-KeKeKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KeKeKit/core/KeKeKit-PrefixHeader.pch";
 				INFOPLIST_FILE = KeKeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,10 +726,13 @@
 		};
 		BDDCF626252DC2B800A1D625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32EB760E7587AA170077480B /* Pods-KeKeKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KeKeKit/core/KeKeKit-PrefixHeader.pch";
 				INFOPLIST_FILE = KeKeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

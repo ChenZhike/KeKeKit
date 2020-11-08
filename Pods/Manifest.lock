@@ -1,0 +1,26 @@
+PODS:
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+  - SVProgressHUD (2.2.5)
+  - Wonderful (1.2.1)
+
+DEPENDENCIES:
+  - SDWebImage
+  - SVProgressHUD
+  - Wonderful
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - SVProgressHUD
+    - Wonderful
+
+SPEC CHECKSUMS:
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Wonderful: e46da4dd601c3ae08da576e451be8f4dc740c206
+
+PODFILE CHECKSUM: 5ae75b066e322285a1623cb078cc1de1a068e954
+
+COCOAPODS: 1.10.0.beta.1
