@@ -5,13 +5,13 @@
 //  Created by 陈志科 on 2020/10/7.
 //
 
-#import "AppDelegate.h"
+#import "KeKeAppDelegate.h"
 
-@interface AppDelegate ()
+@interface KeKeAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation KeKeAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

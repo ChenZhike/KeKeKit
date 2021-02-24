@@ -90,7 +90,7 @@
 #import "UrlsManager.h"
 #import "FunctionDefaultVC.h"
 #import "ChangeVCManager.h"
-#import "AppDelegate.h"
+#import "KeKeAppDelegate.h"
 #import "SVProgressHUD.h"
 #import "MJRefresh.h"
 #endif

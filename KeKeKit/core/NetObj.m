@@ -137,7 +137,7 @@ NSData *GetDataForHex(NSString *hex) {
         [UserInfoManager setToken:nil];
         [UserInfoManager setLoginType:nil];
         [SVProgressHUD showErrorWithStatus:@"您需要重新登录"];
-        AppDelegate*appdelegate=(AppDelegate*)[UIApplication sharedApplication].delegate;
+        KeKeAppDelegate*appdelegate=(KeKeAppDelegate*)[UIApplication sharedApplication].delegate;
 //        [appdelegate firstRequest];
             //        if (!isVisitAccount) {
         [ChangeVCManager showLogin];

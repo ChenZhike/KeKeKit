@@ -63,7 +63,7 @@
 		BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672232557B0D8009E6696 /* GlobalConst.m */; };
 		BD4672282557B10B009E6696 /* InfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672272557B10B009E6696 /* InfoHelper.m */; };
 		BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */; };
-		BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* AppDelegate.m */; };
+		BDDCF610252DC2B400A1D625 /* KeKeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
 		BDDCF616252DC2B400A1D625 /* KeKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* KeKeViewController.m */; };
 		BDDCF619252DC2B400A1D625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDCF617252DC2B400A1D625 /* Main.storyboard */; };
@@ -208,8 +208,8 @@
 		BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAttributeDic.h; sourceTree = "<group>"; };
 		BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAttributeDic.m; sourceTree = "<group>"; };
 		BDDCF60B252DC2B400A1D625 /* KeKeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDDCF60E252DC2B400A1D625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BDDCF60F252DC2B400A1D625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDDCF60E252DC2B400A1D625 /* KeKeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeAppDelegate.h; sourceTree = "<group>"; };
+		BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeKeAppDelegate.m; sourceTree = "<group>"; };
 		BDDCF611252DC2B400A1D625 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BDDCF612252DC2B400A1D625 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		BDDCF614252DC2B400A1D625 /* KeKeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeViewController.h; sourceTree = "<group>"; };
@@ -313,8 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				BDDCF628252DC2CE00A1D625 /* core */,
-				BDDCF60E252DC2B400A1D625 /* AppDelegate.h */,
-				BDDCF60F252DC2B400A1D625 /* AppDelegate.m */,
 				BDDCF611252DC2B400A1D625 /* SceneDelegate.h */,
 				BDDCF612252DC2B400A1D625 /* SceneDelegate.m */,
 				BDDCF617252DC2B400A1D625 /* Main.storyboard */,
@@ -329,6 +327,8 @@
 		BDDCF628252DC2CE00A1D625 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BDDCF60E252DC2B400A1D625 /* KeKeAppDelegate.h */,
+				BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */,
 				BDDCF614252DC2B400A1D625 /* KeKeViewController.h */,
 				BDDCF615252DC2B400A1D625 /* KeKeViewController.m */,
 				BDF8C68925E644C3001D9049 /* ptotoBrowser */,
@@ -634,7 +634,7 @@
 				BD46719D25579C85009E6696 /* NSString+Parameters.m in Sources */,
 				BD46721B2557AF65009E6696 /* UibodyDefine.m in Sources */,
 				BDF8C65225E64029001D9049 /* FunctionDefaultVC.m in Sources */,
-				BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */,
+				BDDCF610252DC2B400A1D625 /* KeKeAppDelegate.m in Sources */,
 				BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */,
 				BD4671A425579CEA009E6696 /* NSString+tool.m in Sources */,
 				BD4671D125579E78009E6696 /* UILabel+Gradient.m in Sources */,

@@ -29,7 +29,7 @@ static ChangeVCManager*sharedChangeVCMa=nil;
 }
 +(void)showLogin
 {
-    AppDelegate*appdelegate=(AppDelegate*)[UIApplication sharedApplication].delegate;
+    KeKeAppDelegate*appdelegate=(KeKeAppDelegate*)[UIApplication sharedApplication].delegate;
    BOOL hasShowLogin=[objc_getAssociatedObject(appdelegate, CFBridgingRetain(@"hasShowLogin")) boolValue];
     if (hasShowLogin) {
         return;
@@ -57,7 +57,7 @@ static ChangeVCManager*sharedChangeVCMa=nil;
 }
 +(void)receiveLogin
 {
-    AppDelegate*delegate= (AppDelegate*) [UIApplication sharedApplication].delegate;
+    KeKeAppDelegate*delegate= (KeKeAppDelegate*) [UIApplication sharedApplication].delegate;
     SEL asel=@selector(showMainPage);
     if ([delegate respondsToSelector:asel]) {
         [delegate performSelector:asel];
