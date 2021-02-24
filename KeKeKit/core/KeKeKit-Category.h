@@ -53,7 +53,7 @@
 #import "NSData+AES256.h"
 #import "NSIndexPath+Equal.h"
 
-
+#import <UIKit/UIKit.h>
 //#import "EBDate.h"
 //
 //
@@ -80,4 +80,17 @@
 #import "UIViewController+ShiPei.h"
 
 
+
+#import "NetObj.h"
+#import "UserInfoManager.h"
+#import "VerticallyAlignedLabel.h"
+#import "SuperOneTableViewCell.h"
+#import "SuperOneVC.h"
+#import "Super2VC.h"
+#import "UrlsManager.h"
+#import "FunctionDefaultVC.h"
+#import "ChangeVCManager.h"
+#import "AppDelegate.h"
+#import "SVProgressHUD.h"
+#import "MJRefresh.h"
 #endif

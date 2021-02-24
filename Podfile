@@ -7,6 +7,7 @@ target 'KeKeKit' do
 pod 'SDWebImage'
 pod 'Wonderful'
 pod 'SVProgressHUD'
+pod 'MJRefresh'
 
   # Pods for KeKeKit
 post_install do |installer|

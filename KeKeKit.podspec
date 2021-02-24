@@ -17,6 +17,7 @@ s.prefix_header_file = 'KeKeKit/core/KeKeKit-PrefixHeader.pch'
 	s.dependency 'SDWebImage'
 	s.dependency 'Wonderful'
 	s.dependency 'SVProgressHUD'
+	s.dependency 'MJRefresh'
     s.requires_arc = true
 
 end

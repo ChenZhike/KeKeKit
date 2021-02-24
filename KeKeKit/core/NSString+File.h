@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSMutableDictionary*)parseBy_QianTao_One;
 -(NSArray*)parseBy_DanHang_Just;
 - (NSArray*)ParseByQianTaoValuesToArr;
+-(NSMutableDictionary*)parseByJustQianTao_One;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,26 +1,30 @@
 PODS:
-  - SDWebImage (5.9.4):
-    - SDWebImage/Core (= 5.9.4)
-  - SDWebImage/Core (5.9.4)
+  - MJRefresh (3.5.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - SVProgressHUD (2.2.5)
   - Wonderful (1.2.1)
 
 DEPENDENCIES:
+  - MJRefresh
   - SDWebImage
   - SVProgressHUD
   - Wonderful
 
 SPEC REPOS:
   trunk:
+    - MJRefresh
     - SDWebImage
     - SVProgressHUD
     - Wonderful
 
 SPEC CHECKSUMS:
-  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Wonderful: e46da4dd601c3ae08da576e451be8f4dc740c206
 
-PODFILE CHECKSUM: 6fc8b137be3695f863fbed866122e1609dee34d1
+PODFILE CHECKSUM: 0b416d343196e6098099a00d9cf1dca4d36d1f81
 
 COCOAPODS: 1.10.0.beta.1

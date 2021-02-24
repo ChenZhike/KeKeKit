@@ -98,4 +98,31 @@
         }
         return result;
 }
+-(NSMutableDictionary*)parseByJustQianTao_One
+{
+//
+    NSString*path=[[NSBundle mainBundle]pathForResource:self ofType:nil];
+    NSString*target=[[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    //去掉所有杠杠
+    target=[target stringByReplacingOccurrencesOfString:@"//" withString:@""];
+
+    //换行符连续两次为单位，分割
+    NSArray*parts=[target componentsSeparatedByString:@"\n"];
+
+    NSMutableDictionary*result=[[NSMutableDictionary alloc]init];
+    for (NSString*apart in parts) {
+        NSArray*eles=[apart componentsSeparatedByString:@"："];
+        if (eles.count==2) {
+            NSString*key=eles[0];
+            NSString*obj=eles[1];
+            [result setObject:obj forKey:key];
+        }
+
+
+    }
+    return result;
+
+}
+
+
 @end

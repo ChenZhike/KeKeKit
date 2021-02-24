@@ -1,0 +1,42 @@
+    //
+    //  NetObj.h
+    //  LaLaLa
+    //
+    //  Created by fengjinbiao on 15/10/27.
+    //  Copyright © 2015年 fengjinbiao. All rights reserved.
+
+
+#import <Foundation/Foundation.h>
+#define  testNet
+
+#ifdef testNet
+#define APPURL  @"http://111.231.2.176:8981"//
+
+#else
+    //测试（外网）
+#define APPURL  @"https://www.baidu.com/app"
+
+#endif
+#define NeedEncryptServerData (NO)
+#define  NetObjTagKey @"NetObjTagKey"
+
+typedef void (^netResponseBlock)(NSDictionary *resnfo);
+typedef enum : NSUInteger {
+    NetObjHttpMethodAuto=0,//自动，由于苹果的post请求bug，NetObj当下会根据参数长度自动决定是使用get或Post。
+    NetObjHttpMethodGet=1,//get方法,估计当下用不着
+    NetObjHttpMethodPost=2//Post方法，用于支持强行设置post方法。
+} NetObjHttpMethod;
+@interface NetObj : NSObject
+@property(nonatomic,strong)UIImage *image;
+@property(nonatomic,strong)NSMutableURLRequest *req;
+@property(nonatomic,strong)NSURLSessionTask* task;
+@property(nonatomic,copy)netResponseBlock nblock;
+@property(nonatomic,assign)int obj_tag;
+@property(nonatomic,copy)NSString*urlstr;
+@property(nonatomic,strong)NSDictionary* parameters;
+- (id)initWithUrlInfo:(NSDictionary*)urlinfo Block:(netResponseBlock)block;
+- (id)initWithUrl:(NSString*)url parameters:(NSDictionary*)parameters Block:(netResponseBlock)block;
+- (void)start;
+-(void)cancel;
+
+@end
