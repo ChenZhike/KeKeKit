@@ -5,13 +5,13 @@
 //  Created by 陈志科 on 2020/10/7.
 //
 
-#import "ViewController.h"
+#import "KeKeViewController.h"
 
-@interface ViewController ()
+@interface KeKeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation KeKeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

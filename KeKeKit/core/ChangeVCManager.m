@@ -38,8 +38,8 @@ static ChangeVCManager*sharedChangeVCMa=nil;
     dispatch_async(dispatch_get_main_queue(), ^{
         SuperOneVC*vc=(SuperOneVC*)[[NSClassFromString(LoginVCName) alloc]init];
         SEL asel=@selector(sharedVC);
-        if ([ViewController respondsToSelector:asel]) {
-            ViewController*avc=(ViewController*)[ViewController performSelector:asel];
+        if ([KeKeViewController respondsToSelector:asel]) {
+            KeKeViewController*avc=(KeKeViewController*)[KeKeViewController performSelector:asel];
 
             UIWindow*win =avc.view.window;
             UIViewController*rootvc= win.rootViewController;
@@ -152,8 +152,8 @@ static ChangeVCManager*sharedChangeVCMa=nil;
 +(UINavigationController*)navc
 {
     SEL asel=@selector(sharedVC);
-    if ([ViewController respondsToSelector:asel]) {
-        ViewController*rootvc=(ViewController*)[ViewController performSelector:asel];
+    if ([KeKeViewController respondsToSelector:asel]) {
+        KeKeViewController*rootvc=(KeKeViewController*)[KeKeViewController performSelector:asel];
         SEL bsel=@selector(nowVC);
         if ([rootvc respondsToSelector:bsel]) {
             UINavigationController*navc=[rootvc performSelector:bsel];

@@ -7,7 +7,7 @@
     //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "KeKeViewController.h"
 typedef NS_ENUM(NSUInteger,FillDataTimeMode)
 {
     FillDataTimeModeDidLoad,
@@ -62,7 +62,7 @@ typedef NS_ENUM(NSUInteger,FillDataTimeMode)
 @property(nonatomic,assign)int total;
 
 
-@property(nonatomic,assign)ViewController* superVC;
+@property(nonatomic,assign)KeKeViewController* superVC;
 @property(nonatomic,strong,nullable)NSDictionary* father_dic;
 
 

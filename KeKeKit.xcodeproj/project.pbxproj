@@ -65,7 +65,7 @@
 		BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */; };
 		BDDCF610252DC2B400A1D625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* AppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
-		BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* ViewController.m */; };
+		BDDCF616252DC2B400A1D625 /* KeKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* KeKeViewController.m */; };
 		BDDCF619252DC2B400A1D625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDCF617252DC2B400A1D625 /* Main.storyboard */; };
 		BDDCF61B252DC2B800A1D625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDCF61A252DC2B800A1D625 /* Assets.xcassets */; };
 		BDDCF61E252DC2B800A1D625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDCF61C252DC2B800A1D625 /* LaunchScreen.storyboard */; };
@@ -212,8 +212,8 @@
 		BDDCF60F252DC2B400A1D625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BDDCF611252DC2B400A1D625 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BDDCF612252DC2B400A1D625 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BDDCF614252DC2B400A1D625 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BDDCF615252DC2B400A1D625 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BDDCF614252DC2B400A1D625 /* KeKeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeViewController.h; sourceTree = "<group>"; };
+		BDDCF615252DC2B400A1D625 /* KeKeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeKeViewController.m; sourceTree = "<group>"; };
 		BDDCF618252DC2B400A1D625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDDCF61A252DC2B800A1D625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDCF61D252DC2B800A1D625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -317,8 +317,6 @@
 				BDDCF60F252DC2B400A1D625 /* AppDelegate.m */,
 				BDDCF611252DC2B400A1D625 /* SceneDelegate.h */,
 				BDDCF612252DC2B400A1D625 /* SceneDelegate.m */,
-				BDDCF614252DC2B400A1D625 /* ViewController.h */,
-				BDDCF615252DC2B400A1D625 /* ViewController.m */,
 				BDDCF617252DC2B400A1D625 /* Main.storyboard */,
 				BDDCF61A252DC2B800A1D625 /* Assets.xcassets */,
 				BDDCF61C252DC2B800A1D625 /* LaunchScreen.storyboard */,
@@ -331,6 +329,8 @@
 		BDDCF628252DC2CE00A1D625 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BDDCF614252DC2B400A1D625 /* KeKeViewController.h */,
+				BDDCF615252DC2B400A1D625 /* KeKeViewController.m */,
 				BDF8C68925E644C3001D9049 /* ptotoBrowser */,
 				BDF8C68525E64445001D9049 /* ChangeVCManager.h */,
 				BDF8C68625E64445001D9049 /* ChangeVCManager.m */,
@@ -618,7 +618,7 @@
 				BDF8C69125E644C3001D9049 /* HZWaitingView.m in Sources */,
 				BDF8C68325E64405001D9049 /* UserInfoManager.m in Sources */,
 				BD46716225579B7E009E6696 /* NSDictionary+Null.m in Sources */,
-				BDDCF616252DC2B400A1D625 /* ViewController.m in Sources */,
+				BDDCF616252DC2B400A1D625 /* KeKeViewController.m in Sources */,
 				BD46719B25579C85009E6696 /* NSString+ParseLanguage.m in Sources */,
 				BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */,
 				BD4671BF25579DCD009E6696 /* UIView+SonSuperView.m in Sources */,

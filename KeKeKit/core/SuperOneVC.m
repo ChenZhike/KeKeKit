@@ -86,7 +86,7 @@
         [self.tableView.mj_header beginRefreshing];
     }
     if (self.needDealHideBottom) {
-        ViewController*vc=(ViewController*)self.navigationController.parentViewController;
+        KeKeViewController*vc=(KeKeViewController*)self.navigationController.parentViewController;
         SEL asel=NSSelectorFromString(@"setBottomHide:who:");
         [vc performSelector:asel withObjects:@[@(NO),self]];
 
@@ -105,7 +105,7 @@
 {
     [super viewWillDisappear:animated];
     if (self.needDealHideBottom) {
-        ViewController*vc=(ViewController*)self.navigationController.parentViewController;
+        KeKeViewController*vc=(KeKeViewController*)self.navigationController.parentViewController;
         SEL asel=NSSelectorFromString(@"setBottomHide:who:");
         [vc performSelector:asel withObjects:@[@(YES),self]];
 //        [vc setBottomHide:YES who:self];
