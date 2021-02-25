@@ -222,9 +222,7 @@ static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 	NSMutableDictionary *attributeQuery = [query mutableCopy];
 	[attributeQuery setObject: (id) kCFBooleanTrue forKey:(id) kSecReturnAttributes];
 	OSStatus status = SecItemCopyMatching((CFDictionaryRef) attributeQuery, (CFTypeRef *) &attributeResult);
-	
-	[attributeResult release];
-	[attributeQuery release];
+
 	
 	if (status != noErr) {
 		// No existing item found--simply return nil for the password
@@ -242,7 +240,8 @@ static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 	NSMutableDictionary *passwordQuery = [query mutableCopy];
 	[passwordQuery setObject: (id) kCFBooleanTrue forKey: (id) kSecReturnData];
   
-	status = SecItemCopyMatching((CFDictionaryRef) passwordQuery, (CFTypeRef *) &resultData);
+//	status = SecItemCopyMatching((CFDictionaryRef) passwordQuery, (CFTypeRef *) &resultData);
+    status = SecItemCopyMatching((__bridge CFDictionaryRef)passwordQuery,(void *)&resultData);
 
 	
 	if (status != noErr) {
