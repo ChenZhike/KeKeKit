@@ -1,9 +1,9 @@
 //
 //  NSArray+IndexOutOfCount.m
-//  JinZi
+//  KeKeKit
 //
 //  Created by KeKe on 15/12/16.
-//  Copyright © 2015年 fengjinbiao. All rights reserved.
+//  Copyright © 2015年 keke. All rights reserved.
 //
 
 #import "NSArray+IndexOutOfCount.h"

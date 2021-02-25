@@ -1,9 +1,9 @@
 //
 //  NSString+CheckFormat.h
-//  JinZi
+//  KeKeKit
 //
 //  Created by KeKe on 15/12/31.
-//  Copyright © 2015年 fengjinbiao. All rights reserved.
+//  Copyright © 2015年 keke. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

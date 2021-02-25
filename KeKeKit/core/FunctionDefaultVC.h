@@ -1,9 +1,9 @@
 //
 //  FunctionDefaultVC.h
-//  JinZi
+//  KeKeKit
 //
 //  Created by CZK on 16/1/13.
-//  Copyright © 2016年 fengjinbiao. All rights reserved.
+//  Copyright © 2016年 keke. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

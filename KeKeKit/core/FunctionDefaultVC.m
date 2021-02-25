@@ -1,16 +1,16 @@
 //
 //  FunctionDefaultVC.m
-//  JinZi
+//  KeKeKit
 //
 //  Created by CZK on 16/1/13.
-//  Copyright © 2016年 fengjinbiao. All rights reserved.
+//  Copyright © 2016年 keke. All rights reserved.
 //
 
 #import "FunctionDefaultVC.h"
 
-@interface FunctionDefaultVC ()<UIWebViewDelegate>
+@interface FunctionDefaultVC ()<WKNavigationDelegate,WKUIDelegate>
 {
-    UIWebView*webVie;
+    WKWebView*webVie;
     UILabel*wangluolab;
     NSString*lastRequestStr;//上次请求的url，因为webview在网络不佳时存储的request不正确。
 }
@@ -128,9 +128,11 @@
 -(void)initWebVie
 {
     if (self.urlStr!=nil) {
-        webVie=[[UIWebView alloc]initWithFrame:RECT(0, NavHeight, WINDOWW, WINDOWH-NavHeight-kHomeBarHeight-(self.isProtol?66:0))];
-        webVie.delegate=self;
-        webVie.scalesPageToFit=YES;
+        CGRect r=RECT(0, NavHeight, WINDOWW, WINDOWH-NavHeight-kHomeBarHeight-(self.isProtol?66:0));
+        webVie=[UIView getAWebViewWithFrame:r delegate:self];
+
+//        webVie.delegate=self;
+//        webVie.scalesPageToFit=YES;
         NSURL*url=[NSURL URLWithString:self.urlStr];
         if (self.isLocalFile==YES) {
             url=[NSURL fileURLWithPath:self.urlStr];
@@ -154,64 +156,71 @@
 
     }
 }
-#pragma mark-webview代理专区
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+//#pragma mark-webview代理专区
+//- (BOOL)webView:(WKWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(WKWebViewNavigationType)navigationType
+//{
+//
+//    LOG(@"REQUEST:%@",request.URL.absoluteString);
+//    showMsg(@"加载中...");
+//    lastRequestStr=request.URL.absoluteString;
+////    showNetworkRequestingStatus();
+//    return YES;
+//}
+//- (void)webViewDidStartLoad:(WKWebView *)webView
+//{
+////    desMsg();
+////    hideNetworkRequestingStatus();
+//}
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
 {
-    
-    LOG(@"REQUEST:%@",request.URL.absoluteString);
-    showMsg(@"加载中...");
-    lastRequestStr=request.URL.absoluteString;
-//    showNetworkRequestingStatus();
-    return YES;
-}
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-//    desMsg();
-//    hideNetworkRequestingStatus();
-}
--(void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    desMsg();
-    if (self.finished_jsstr.length) {
-      NSString*resultstr=  [webView stringByEvaluatingJavaScriptFromString:self.finished_jsstr];
-        NSLog(@"resultstr:%@",resultstr);
-    }
-//    NSString* lJs = @"document.getElementsByTagName('html')[0].innerHTML";
-//    NSString* lHtml1 = [webView stringByEvaluatingJavaScriptFromString:lJs];
     if (self.loadedReadyBeforeShow) {
         [webView removeFromSuperview];
         [self.view addSubview:webVie];
     }
-     //禁用用户选择
-//    [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='none';"];
-//
-//
-//    //禁用长按弹出框
-//    [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitTouchCallout='none';"];
 }
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    if (webView.request.URL.absoluteString.length!=0) {
-        showErrorMsg(@"加载失败");
-    }
-    else
-    {
-        desMsg();
-        UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 140, 30)];
-        alab.text=@"亲，网络不给力哦";
-        alab.textAlignment=NSTextAlignmentCenter;
-        
-        UIButton*btn=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-        btn.center=CGPointMake(WINDOWW/2, WINDOWH/2);
-        [btn setBackgroundImage:[UIImage imageNamed:@"刷新"] forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(refreshClick:) forControlEvents:UIControlEventTouchUpInside];
-        alab.center=CGPointMake(WINDOWW/2, WINDOWH/2-(btn.frame.size.height/2)-(alab.frame.size.height/2));
-        [self.view addSubview:alab];
-        wangluolab=alab;
-        [self.view addSubview:btn];
-    }
-    
-}
+//-(void)webViewDidFinishLoad:(WKWebView *)webView
+//{
+//    desMsg();
+//    if (self.finished_jsstr.length) {
+//      NSString*resultstr=  [webView stringByEvaluatingJavaScriptFromString:self.finished_jsstr];
+//        NSLog(@"resultstr:%@",resultstr);
+//    }
+////    NSString* lJs = @"document.getElementsByTagName('html')[0].innerHTML";
+////    NSString* lHtml1 = [webView stringByEvaluatingJavaScriptFromString:lJs];
+//    if (self.loadedReadyBeforeShow) {
+//        [webView removeFromSuperview];
+//        [self.view addSubview:webVie];
+//    }
+//     //禁用用户选择
+////    [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='none';"];
+////
+////
+////    //禁用长按弹出框
+////    [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitTouchCallout='none';"];
+//}
+//- (void)webView:(WKWebView *)webView didFailLoadWithError:(NSError *)error
+//{
+//    if (webView.request.URL.absoluteString.length!=0) {
+//        showErrorMsg(@"加载失败");
+//    }
+//    else
+//    {
+//        desMsg();
+//        UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 140, 30)];
+//        alab.text=@"亲，网络不给力哦";
+//        alab.textAlignment=NSTextAlignmentCenter;
+//
+//        UIButton*btn=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+//        btn.center=CGPointMake(WINDOWW/2, WINDOWH/2);
+//        [btn setBackgroundImage:[UIImage imageNamed:@"刷新"] forState:UIControlStateNormal];
+//        [btn addTarget:self action:@selector(refreshClick:) forControlEvents:UIControlEventTouchUpInside];
+//        alab.center=CGPointMake(WINDOWW/2, WINDOWH/2-(btn.frame.size.height/2)-(alab.frame.size.height/2));
+//        [self.view addSubview:alab];
+//        wangluolab=alab;
+//        [self.view addSubview:btn];
+//    }
+//
+//}
 #pragma mark-事件处理专区
 
 -(void)handleLeft
@@ -229,16 +238,16 @@
 #pragma mark-断网处理区域
 -(void)refreshClick:(UIButton*)btn
 {
-    btn.userInteractionEnabled=false;
-    [btn removeFromSuperview];
-    [wangluolab removeFromSuperview];
-    showMsg(@"页面加载中...");
-    NSString*newstr=webVie.request.URL.absoluteString;
-    if (newstr&&newstr.length>0&&(![newstr isEqualToString:@"about:blank"])) {
-        lastRequestStr=newstr;
-    }
-    [webVie loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:lastRequestStr] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30]];
-    showMsg(@"页面加载中...");
+//    btn.userInteractionEnabled=false;
+//    [btn removeFromSuperview];
+//    [wangluolab removeFromSuperview];
+//    showMsg(@"页面加载中...");
+////    NSString*newstr=webVie.request.URL.absoluteString;
+//    if (newstr&&newstr.length>0&&(![newstr isEqualToString:@"about:blank"])) {
+//        lastRequestStr=newstr;
+//    }
+//    [webVie loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:lastRequestStr] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30]];
+//    showMsg(@"页面加载中...");
 }
 #pragma mark-协议底部区域
 -(void)initBotArea

@@ -6,7 +6,7 @@
     //  Copyright © 2018 czk. All rights reserved.
     //
 
-
+#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 UIKIT_EXTERN NSString * const SizeSeprator;
@@ -39,6 +39,8 @@ UIKIT_EXTERN NSString * const SizeSeprator;
 #pragma mark-line
 -(void)addLineAtTopOrBottom:(BOOL)topOrBottom space:(CGFloat)space;
 -(void)addLineAtTopOrBottom:(BOOL)topOrBottom left:(CGFloat)left right:(CGFloat)right;
+#pragma mark-webview
++(WKWebView*)getAWebViewWithFrame:(CGRect)frame delegate:(id)delegate;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,6 +1,6 @@
 //
 //  UIButton+Color.h
-//  JinZi
+//  KeKeKit
 //
 //  Created by KeKe on 16/2/24.
 //  Copyright © 2016年 momoda. All rights reserved.

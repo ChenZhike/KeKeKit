@@ -7,6 +7,7 @@
     //
 
 #import "UIView+QuickUI.h"
+
 NSString*const SizeSeprator=@"SizeSepratorSizeSepratorSizeSeprator";
 @implementation UIView (QuickUI)
 -(void)cornerHG2
@@ -358,5 +359,24 @@ NSString*const SizeSeprator=@"SizeSepratorSizeSepratorSizeSeprator";
     UIView*lineview= [[UIView alloc]initWithFrame:RECT(left,topOrBottom?(fatherview.height-0.5):0, fatherview.width-left-right, 0.5)];
     lineview.backgroundColor=LineColor;
     [fatherview addSubview:lineview];
+}
+#pragma mark-webview
++(WKWebView*)getAWebViewWithFrame:(CGRect)frame delegate:(id)delegate {
+    //以下代码适配大小
+    NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+
+    WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+    WKUserContentController *wkUController = [[WKUserContentController alloc] init];
+    [wkUController addUserScript:wkUScript];
+
+    WKWebViewConfiguration *wkWebConfig = [[WKWebViewConfiguration alloc] init];
+    wkWebConfig.userContentController = wkUController;
+    WKWebView*webView = [[WKWebView alloc] initWithFrame:frame configuration:wkWebConfig];
+//    [_webView setUserInteractionEnabled:YES];//是否支持交互
+    webView.UIDelegate=delegate;
+    webView.navigationDelegate=delegate;
+//    [_webView setOpaque:YES];//opaque是不透明的意思
+
+    return webView;
 }
 @end

@@ -1,9 +1,9 @@
     //
     //  NSString+PopularStyle.m
-    //  JinZi
+    //  KeKeKit
     //
     //  Created by KeKe on 16/1/20.
-    //  Copyright © 2016年 fengjinbiao. All rights reserved.
+    //  Copyright © 2016年 keke. All rights reserved.
     //
 
 #import "NSString+PopularStyle.h"

@@ -1,9 +1,9 @@
 //
 //  NSNumber+moneyValue.m
-//  JinZi
+//  KeKeKit
 //
 //  Created by KeKe on 15/12/23.
-//  Copyright © 2015年 fengjinbiao. All rights reserved.
+//  Copyright © 2015年 keke. All rights reserved.
 //
 
 #import "NSNumber+moneyValue.h"
