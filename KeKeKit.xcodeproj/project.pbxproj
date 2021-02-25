@@ -331,7 +331,7 @@
 				BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */,
 				BDDCF614252DC2B400A1D625 /* KeKeViewController.h */,
 				BDDCF615252DC2B400A1D625 /* KeKeViewController.m */,
-				BDF8C68925E644C3001D9049 /* ptotoBrowser */,
+				BDF8C68925E644C3001D9049 /* photoBrowser */,
 				BDF8C68525E64445001D9049 /* ChangeVCManager.h */,
 				BDF8C68625E64445001D9049 /* ChangeVCManager.m */,
 				BDF8C68125E64405001D9049 /* UserInfoManager.h */,
@@ -482,7 +482,7 @@
 			path = core;
 			sourceTree = "<group>";
 		};
-		BDF8C68925E644C3001D9049 /* ptotoBrowser */ = {
+		BDF8C68925E644C3001D9049 /* photoBrowser */ = {
 			isa = PBXGroup;
 			children = (
 				BDF8C68A25E644C3001D9049 /* HZWaitingView.m */,
@@ -493,7 +493,7 @@
 				BDF8C68F25E644C3001D9049 /* HZPhotoBrowserView.m */,
 				BDF8C69025E644C3001D9049 /* HZPhotoBrowser.h */,
 			);
-			path = ptotoBrowser;
+			path = photoBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
