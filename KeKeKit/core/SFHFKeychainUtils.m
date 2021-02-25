@@ -221,7 +221,8 @@ static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 	NSDictionary *attributeResult = NULL;
 	NSMutableDictionary *attributeQuery = [query mutableCopy];
 	[attributeQuery setObject: (id) kCFBooleanTrue forKey:(id) kSecReturnAttributes];
-	OSStatus status = SecItemCopyMatching((CFDictionaryRef) attributeQuery, (CFTypeRef *) &attributeResult);
+//	OSStatus status = SecItemCopyMatching((CFDictionaryRef) attributeQuery, (CFTypeRef *) &attributeResult);
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)attributeQuery,(void *)&attributeResult);
 
 	
 	if (status != noErr) {
