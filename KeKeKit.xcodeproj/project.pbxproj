@@ -392,13 +392,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		BDA823F325EDE017001DAD85 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		BDA823F425EDE02D001DAD85 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,7 +554,6 @@
 				BD46713A25579A1B009E6696 /* KeKeKit-Category.h */,
 				BDA823F725EDE0A9001DAD85 /* category */,
 				BDA823F425EDE02D001DAD85 /* ui */,
-				BDA823F325EDE017001DAD85 /* model */,
 				BDA823F225EDDFFF001DAD85 /* view */,
 				BDA823F125EDDFE5001DAD85 /* shebeihao */,
 				BDA823EF25EDDFB9001DAD85 /* jiami */,
