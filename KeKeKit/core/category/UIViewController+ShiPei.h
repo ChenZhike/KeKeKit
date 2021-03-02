@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (ShiPei)
 - (void)fullScreenWhenPresented;
+- (void)jieping:(UIView*)aview;
 @end
 
 NS_ASSUME_NONNULL_END

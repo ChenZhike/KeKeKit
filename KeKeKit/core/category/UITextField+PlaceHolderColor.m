@@ -7,7 +7,7 @@
     //
 
 #import "UITextField+PlaceHolderColor.h"
-
+#import "SVProgressHUD.h"
 @implementation UITextField (PlaceHolderColor)
 -(void)simplePlaceColorWithStr:(NSString*)str color:(UIColor*)placeColor
 {
@@ -40,5 +40,14 @@
     self.leftView=backView;
     self.leftViewMode=UITextFieldViewModeAlways;
     return backView;
+}
+-(BOOL)checkEmpty
+{
+    if (self.text.length==0) {
+        NSString*tishiwords=self.placeholder;
+        [SVProgressHUD showErrorWithStatus:tishiwords];
+        return NO;
+    }
+    return YES;
 }
 @end

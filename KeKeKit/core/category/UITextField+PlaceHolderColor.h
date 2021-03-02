@@ -13,4 +13,5 @@
 -(UIView*)addXiaLaRightView;
 -(UIView*)addSmallRightImg:(NSString*)imgstr;
 -(BOOL)isPlaceStyle;
+-(BOOL)checkEmpty;
 @end

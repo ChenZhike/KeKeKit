@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)normalStyle;
 -(void)setNormalTextColor:(UIColor*)normalTextColor;
 -(BOOL)isPlaceStyle;
+-(BOOL)checkEmpty;
 @end
 
 NS_ASSUME_NONNULL_END
