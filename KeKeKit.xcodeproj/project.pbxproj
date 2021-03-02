@@ -63,6 +63,7 @@
 		BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672232557B0D8009E6696 /* GlobalConst.m */; };
 		BD4672282557B10B009E6696 /* InfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672272557B10B009E6696 /* InfoHelper.m */; };
 		BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */; };
+		BDA8240525EDE2D0001DAD85 /* DiskArrayCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA8240425EDE2D0001DAD85 /* DiskArrayCenter.m */; };
 		BDDCF610252DC2B400A1D625 /* KeKeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
 		BDDCF616252DC2B400A1D625 /* KeKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* KeKeViewController.m */; };
@@ -207,6 +208,8 @@
 		BD4672272557B10B009E6696 /* InfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoHelper.m; sourceTree = "<group>"; };
 		BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAttributeDic.h; sourceTree = "<group>"; };
 		BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAttributeDic.m; sourceTree = "<group>"; };
+		BDA8240325EDE2D0001DAD85 /* DiskArrayCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskArrayCenter.h; sourceTree = "<group>"; };
+		BDA8240425EDE2D0001DAD85 /* DiskArrayCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskArrayCenter.m; sourceTree = "<group>"; };
 		BDDCF60B252DC2B400A1D625 /* KeKeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDCF60E252DC2B400A1D625 /* KeKeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeAppDelegate.h; sourceTree = "<group>"; };
 		BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeKeAppDelegate.m; sourceTree = "<group>"; };
@@ -291,53 +294,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDDCF602252DC2B300A1D625 = {
+		BDA823E925EDDE68001DAD85 /* vcs */ = {
 			isa = PBXGroup;
 			children = (
-				BDDCF60D252DC2B400A1D625 /* KeKeKit */,
-				BDDCF60C252DC2B400A1D625 /* Products */,
-				0BC9288B40C1C2C30B56BABB /* Pods */,
-				70B2A88A2BCD3A8E8AAD7E92 /* Frameworks */,
+				BDF8C65025E64028001D9049 /* FunctionDefaultVC.h */,
+				BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */,
+				BDF8C68525E64445001D9049 /* ChangeVCManager.h */,
+				BDF8C68625E64445001D9049 /* ChangeVCManager.m */,
+				BDF8C65825E6410A001D9049 /* SuperOneVC.h */,
+				BDF8C65925E6410A001D9049 /* SuperOneVC.m */,
+				BDF8C65425E640F7001D9049 /* Super2VC.h */,
+				BDF8C65525E640F7001D9049 /* Super2VC.m */,
 			);
+			path = vcs;
 			sourceTree = "<group>";
 		};
-		BDDCF60C252DC2B400A1D625 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDDCF60B252DC2B400A1D625 /* KeKeKit.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BDDCF60D252DC2B400A1D625 /* KeKeKit */ = {
-			isa = PBXGroup;
-			children = (
-				BDDCF628252DC2CE00A1D625 /* core */,
-				BDDCF611252DC2B400A1D625 /* SceneDelegate.h */,
-				BDDCF612252DC2B400A1D625 /* SceneDelegate.m */,
-				BDDCF617252DC2B400A1D625 /* Main.storyboard */,
-				BDDCF61A252DC2B800A1D625 /* Assets.xcassets */,
-				BDDCF61C252DC2B800A1D625 /* LaunchScreen.storyboard */,
-				BDDCF61F252DC2B800A1D625 /* Info.plist */,
-				BDDCF620252DC2B800A1D625 /* main.m */,
-			);
-			path = KeKeKit;
-			sourceTree = "<group>";
-		};
-		BDDCF628252DC2CE00A1D625 /* core */ = {
+		BDA823EC25EDDF23001DAD85 /* project_stand */ = {
 			isa = PBXGroup;
 			children = (
 				BDDCF60E252DC2B400A1D625 /* KeKeAppDelegate.h */,
 				BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */,
 				BDDCF614252DC2B400A1D625 /* KeKeViewController.h */,
 				BDDCF615252DC2B400A1D625 /* KeKeViewController.m */,
-				BDF8C68925E644C3001D9049 /* photoBrowser */,
-				BDF8C68525E64445001D9049 /* ChangeVCManager.h */,
-				BDF8C68625E64445001D9049 /* ChangeVCManager.m */,
+			);
+			path = project_stand;
+			sourceTree = "<group>";
+		};
+		BDA823ED25EDDF40001DAD85 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				BDA8240325EDE2D0001DAD85 /* DiskArrayCenter.h */,
+				BDA8240425EDE2D0001DAD85 /* DiskArrayCenter.m */,
+				BD4672222557B0D8009E6696 /* GlobalConst.h */,
+				BD4672232557B0D8009E6696 /* GlobalConst.m */,
+				BD4672262557B10B009E6696 /* InfoHelper.h */,
+				BD4672272557B10B009E6696 /* InfoHelper.m */,
 				BDF8C68125E64405001D9049 /* UserInfoManager.h */,
 				BDF8C68225E64405001D9049 /* UserInfoManager.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		BDA823EE25EDDF99001DAD85 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				BDF8C66425E6427F001D9049 /* NetObj.h */,
+				BDF8C66525E6427F001D9049 /* NetObj.m */,
 				BDF8C67D25E643AE001D9049 /* UrlsManager.h */,
 				BDF8C67E25E643AE001D9049 /* UrlsManager.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		BDA823EF25EDDFB9001DAD85 /* jiami */ = {
+			isa = PBXGroup;
+			children = (
+				BDA823F025EDDFC0001DAD85 /* RNCryptor */,
+			);
+			path = jiami;
+			sourceTree = "<group>";
+		};
+		BDA823F025EDDFC0001DAD85 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
 				BDF8C67325E64362001D9049 /* RNCryptor.h */,
 				BDF8C67525E64363001D9049 /* RNCryptor.m */,
 				BDF8C66F25E64362001D9049 /* RNCryptor+Private.h */,
@@ -347,40 +366,60 @@
 				BDF8C67725E64363001D9049 /* RNDecryptor.m */,
 				BDF8C67125E64362001D9049 /* RNEncryptor.h */,
 				BDF8C67625E64363001D9049 /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		BDA823F125EDDFE5001DAD85 /* shebeihao */ = {
+			isa = PBXGroup;
+			children = (
 				BDF8C66B25E64306001D9049 /* HDeviceIdentifier.h */,
 				BDF8C66925E64306001D9049 /* HDeviceIdentifier.m */,
 				BDF8C66825E64305001D9049 /* SFHFKeychainUtils.h */,
 				BDF8C66A25E64306001D9049 /* SFHFKeychainUtils.m */,
-				BDF8C66425E6427F001D9049 /* NetObj.h */,
-				BDF8C66525E6427F001D9049 /* NetObj.m */,
+			);
+			path = shebeihao;
+			sourceTree = "<group>";
+		};
+		BDA823F225EDDFFF001DAD85 /* view */ = {
+			isa = PBXGroup;
+			children = (
 				BDF8C66025E64208001D9049 /* VerticallyAlignedLabel.h */,
 				BDF8C66125E64208001D9049 /* VerticallyAlignedLabel.m */,
 				BDF8C65C25E64184001D9049 /* SuperOneTableViewCell.h */,
 				BDF8C65D25E64184001D9049 /* SuperOneTableViewCell.m */,
-				BDF8C65825E6410A001D9049 /* SuperOneVC.h */,
-				BDF8C65925E6410A001D9049 /* SuperOneVC.m */,
-				BDF8C65425E640F7001D9049 /* Super2VC.h */,
-				BDF8C65525E640F7001D9049 /* Super2VC.m */,
-				BDF8C65025E64028001D9049 /* FunctionDefaultVC.h */,
-				BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */,
-				BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */,
-				BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */,
-				BD4672262557B10B009E6696 /* InfoHelper.h */,
-				BD4672272557B10B009E6696 /* InfoHelper.m */,
-				BD4672222557B0D8009E6696 /* GlobalConst.h */,
-				BD4672232557B0D8009E6696 /* GlobalConst.m */,
-				BD46721A2557AF65009E6696 /* UibodyDefine.h */,
-				BD4672192557AF65009E6696 /* UibodyDefine.m */,
-				BD4672132557AE60009E6696 /* ViewDefine.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BDA823F325EDE017001DAD85 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BDA823F425EDE02D001DAD85 /* ui */ = {
+			isa = PBXGroup;
+			children = (
 				BD46720F2557AE10009E6696 /* LabelStyle.h */,
 				BD46720E2557AE10009E6696 /* LabelStyle.m */,
-				BD46720A2557ADED009E6696 /* NSData+Common.h */,
-				BD46720B2557ADED009E6696 /* NSData+Common.m */,
+				BD4672132557AE60009E6696 /* ViewDefine.h */,
+				BD46721A2557AF65009E6696 /* UibodyDefine.h */,
+				BD4672192557AF65009E6696 /* UibodyDefine.m */,
+				BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */,
+				BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		BDA823F725EDE0A9001DAD85 /* category */ = {
+			isa = PBXGroup;
+			children = (
 				BD4671E12557A031009E6696 /* CALayer+Anim.h */,
 				BD4671DF2557A031009E6696 /* CALayer+Anim.m */,
 				BD4671DE2557A031009E6696 /* CALayer+Transition.h */,
 				BD4671E02557A031009E6696 /* CALayer+Transition.m */,
-				BD46713A25579A1B009E6696 /* KeKeKit-Category.h */,
 				BD46714C25579B13009E6696 /* NSArray+Compare.h */,
 				BD46714D25579B13009E6696 /* NSArray+Compare.m */,
 				BD46714825579AED009E6696 /* NSArray+IndexOutOfCount.h */,
@@ -391,6 +430,8 @@
 				BD4671AA25579D45009E6696 /* NSAttributedString+HeightCalculated.m */,
 				BD4671A925579D45009E6696 /* NSData+AES256.h */,
 				BD4671AB25579D45009E6696 /* NSData+AES256.m */,
+				BD46720A2557ADED009E6696 /* NSData+Common.h */,
+				BD46720B2557ADED009E6696 /* NSData+Common.m */,
 				BD46715C25579B6C009E6696 /* NSDate+TianShi.h */,
 				BD46715B25579B6C009E6696 /* NSDate+TianShi.m */,
 				BD46716125579B7E009E6696 /* NSDictionary+Null.h */,
@@ -477,6 +518,58 @@
 				BD4671B325579DCB009E6696 /* UIView+SonSuperView.m */,
 				BD4671F72557A23B009E6696 /* UIViewController+ShiPei.h */,
 				BD4671F92557A23B009E6696 /* UIViewController+ShiPei.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		BDDCF602252DC2B300A1D625 = {
+			isa = PBXGroup;
+			children = (
+				BDDCF60D252DC2B400A1D625 /* KeKeKit */,
+				BDDCF60C252DC2B400A1D625 /* Products */,
+				0BC9288B40C1C2C30B56BABB /* Pods */,
+				70B2A88A2BCD3A8E8AAD7E92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDDCF60C252DC2B400A1D625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDCF60B252DC2B400A1D625 /* KeKeKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDCF60D252DC2B400A1D625 /* KeKeKit */ = {
+			isa = PBXGroup;
+			children = (
+				BDDCF628252DC2CE00A1D625 /* core */,
+				BDDCF611252DC2B400A1D625 /* SceneDelegate.h */,
+				BDDCF612252DC2B400A1D625 /* SceneDelegate.m */,
+				BDDCF617252DC2B400A1D625 /* Main.storyboard */,
+				BDDCF61A252DC2B800A1D625 /* Assets.xcassets */,
+				BDDCF61C252DC2B800A1D625 /* LaunchScreen.storyboard */,
+				BDDCF61F252DC2B800A1D625 /* Info.plist */,
+				BDDCF620252DC2B800A1D625 /* main.m */,
+			);
+			path = KeKeKit;
+			sourceTree = "<group>";
+		};
+		BDDCF628252DC2CE00A1D625 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				BD46713A25579A1B009E6696 /* KeKeKit-Category.h */,
+				BDA823F725EDE0A9001DAD85 /* category */,
+				BDA823F425EDE02D001DAD85 /* ui */,
+				BDA823F325EDE017001DAD85 /* model */,
+				BDA823F225EDDFFF001DAD85 /* view */,
+				BDA823F125EDDFE5001DAD85 /* shebeihao */,
+				BDA823EF25EDDFB9001DAD85 /* jiami */,
+				BDA823EE25EDDF99001DAD85 /* net */,
+				BDA823ED25EDDF40001DAD85 /* user */,
+				BDA823EC25EDDF23001DAD85 /* project_stand */,
+				BDA823E925EDDE68001DAD85 /* vcs */,
+				BDF8C68925E644C3001D9049 /* photoBrowser */,
 				BD4672052557AC90009E6696 /* KeKeKit-PrefixHeader.pch */,
 			);
 			path = core;
@@ -651,6 +744,7 @@
 				BD4672282557B10B009E6696 /* InfoHelper.m in Sources */,
 				BD4671D025579E78009E6696 /* UILabel+QuickUI.m in Sources */,
 				BD46718B25579C02009E6696 /* NSString+Calcute.m in Sources */,
+				BDA8240525EDE2D0001DAD85 /* DiskArrayCenter.m in Sources */,
 				BD46719F25579C85009E6696 /* NSString+Version.m in Sources */,
 				BDF8C65E25E64184001D9049 /* SuperOneTableViewCell.m in Sources */,
 				BD4671C925579DF2009E6696 /* UIView+Extension.m in Sources */,
