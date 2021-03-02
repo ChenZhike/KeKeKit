@@ -10,8 +10,7 @@ s.platform     = :ios,'10.0'            #支持的平台及版本
     s.author       = { 'KeKe' => 'a62396@126.com' }
     s.social_media_url   = "https://github.com/ChenZhike/KeKeKit"
 
-    s.source_files  = "KeKeKit/core/*.{h,m}","KeKeKit/core/photoBrowser/*.{h,m}","KeKeKit/core/photoBrowser/*.{h,m}","KeKeKit/core/category/*.{h,m}","KeKeKit/core/ui/*.{h,m}"
-,"KeKeKit/core/view/*.{h,m}","KeKeKit/core/shebeihao/*.{h,m}","KeKeKit/core/jiami/RNCryptor/*.{h,m}","KeKeKit/core/net/*.{h,m}","KeKeKit/core/user/*.{h,m}","KeKeKit/core/project_stand/*.{h,m}","KeKeKit/core/vcs/*.{h,m}"
+    s.source_files  = "KeKeKit/core/*.{h,m}","KeKeKit/core/photoBrowser/*.{h,m}","KeKeKit/core/photoBrowser/*.{h,m}","KeKeKit/core/category/*.{h,m}","KeKeKit/core/ui/*.{h,m}","KeKeKit/core/view/*.{h,m}","KeKeKit/core/shebeihao/*.{h,m}","KeKeKit/core/jiami/RNCryptor/*.{h,m}","KeKeKit/core/net/*.{h,m}","KeKeKit/core/user/*.{h,m}","KeKeKit/core/project_stand/*.{h,m}","KeKeKit/core/vcs/*.{h,m}"
 s.prefix_header_file = 'KeKeKit/core/KeKeKit-PrefixHeader.pch'
 
 	s.frameworks = 'UIKit'
