@@ -28,14 +28,44 @@
     // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
 }
 
+#pragma mark-购买
+-(void)purchaseWantDisAppear:(NSString*)payurl oldWin:(UIWindow*)oldwin tradeNo:(NSString*)tradeNo
+{
+
+    self.askpay=YES;
+    self.tradeNo=[tradeNo mutableCopy];
+    self.window=oldwin;
+    [self.window makeKeyAndVisible];
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:payurl]];
+}
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"applicationDidBecomeActive" object:nil];
+    if (self.askpay) {
+        NSDictionary*info=[UrlsManager getUrlInfoWithKey:@"payStatus"];
+        NSString*url=[info objectForKey:URLKeyName];
+        NSDictionary*paramters=@{@"tradeNo":self.tradeNo?self.tradeNo:@""};
+        self.no1=[[NetObj alloc]initWithUrl:url parameters:paramters Block:^(NSDictionary *resnfo) {
+            self.askpay=NO;
+            self.tradeNo=@"";
+            NSString*retCode=[resnfo objectForKey:@"retCode"];
+            if ([retCode isEqualToString:@"1"]) {
+                [SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
+            }
+            else
+                {
+                [SVProgressHUD showErrorWithStatus:[resnfo objectForKey:@"retMsg"]];
+                }
+        }];
+        [self.no1 start];
+    }
 }
 
 
 - (void)sceneWillResignActive:(UIScene *)scene {
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"applicationWillResignActive" object:nil];
     // Called when the scene will move from an active state to an inactive state.
     // This may occur due to temporary interruptions (ex. an incoming phone call).
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tv_faq</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>desc_1</string>
+			<key>ratio</key>
+			<string>1.829</string>
+		</dict>
+        <dict>
+            <key>name</key>
+            <string>desc_2</string>
+            <key>ratio</key>
+            <string>2.1013</string>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>desc_3</string>
+            <key>ratio</key>
+            <string>0.6373</string>
+        </dict>
+	</array>
+</dict>
+</plist>

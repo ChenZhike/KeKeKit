@@ -8,6 +8,12 @@ pod 'SDWebImage'
 pod 'Wonderful'
 pod 'SVProgressHUD'
 pod 'MJRefresh'
+pod 'UMCommon'
+pod 'AFNetworking'
+pod 'IQKeyboardManager'
+pod 'Masonry'
+pod 'UMAPM'
+
 
   # Pods for KeKeKit
 post_install do |installer|

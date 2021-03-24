@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideVC">
+            <connections>
+                <outlet property="enterB" destination="kmg-Y2-ONx" id="ztJ-9v-ion"/>
+                <outlet property="lab1" destination="DhI-te-bKR" id="5XN-Wy-Cl3"/>
+                <outlet property="lab2" destination="U5d-ge-WqN" id="HUc-AR-IV6"/>
+                <outlet property="lab3" destination="muk-JM-6sY" id="OcW-je-X1T"/>
+                <outlet property="lab4" destination="NPR-Gl-2o8" id="BsW-Ow-boi"/>
+                <outlet property="lab5" destination="tBw-UW-or1" id="Oq7-Vk-A47"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="穿衣助手  让你不再为穿衣而烦恼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-te-bKR">
+                    <rect key="frame" x="63" y="110" width="288" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="288" id="05O-iI-U2T"/>
+                        <constraint firstAttribute="height" constant="22" id="ck1-vp-Asj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是否:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5d-ge-WqN">
+                    <rect key="frame" x="169" y="220" width="76" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="6fQ-8Z-3cl"/>
+                        <constraint firstAttribute="width" constant="76" id="LvZ-vM-ezf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不知道穿什么合适😖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muk-JM-6sY">
+                    <rect key="frame" x="121" y="302" width="172" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="by7-Gb-bKn"/>
+                        <constraint firstAttribute="height" constant="22" id="ef1-5i-OhK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从来没收获过赞美😶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-Gl-2o8">
+                    <rect key="frame" x="118.5" y="384" width="177" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Jxb-zL-97s"/>
+                        <constraint firstAttribute="width" constant="177" id="mPZ-ur-Ecq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌹想证明给他你就是他心里想要的样子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBw-UW-or1">
+                    <rect key="frame" x="47" y="466" width="320" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="U18-kh-Nrm"/>
+                        <constraint firstAttribute="height" constant="22" id="u3l-UF-60J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmg-Y2-ONx">
+                    <rect key="frame" x="142.5" y="720" width="129" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="DpR-Nz-IUw"/>
+                        <constraint firstAttribute="height" constant="34" id="P5X-4f-9nx"/>
+                    </constraints>
+                    <state key="normal" title="开启你的新世界">
+                        <color key="titleColor" red="0.94901960780000005" green="0.2666666667" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoMain:" destination="-1" eventType="touchUpInside" id="FnJ-KH-ADL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tBw-UW-or1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Vs-mF-Sto"/>
+                <constraint firstItem="NPR-Gl-2o8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1hJ-XJ-MGt"/>
+                <constraint firstItem="NPR-Gl-2o8" firstAttribute="top" secondItem="muk-JM-6sY" secondAttribute="bottom" constant="60" id="DBh-zN-VdE"/>
+                <constraint firstItem="U5d-ge-WqN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IgW-hd-LVb"/>
+                <constraint firstItem="tBw-UW-or1" firstAttribute="top" secondItem="NPR-Gl-2o8" secondAttribute="bottom" constant="60" id="JC6-dx-UCG"/>
+                <constraint firstItem="kmg-Y2-ONx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OCM-Tb-DW9"/>
+                <constraint firstItem="muk-JM-6sY" firstAttribute="top" secondItem="U5d-ge-WqN" secondAttribute="bottom" constant="60" id="XGk-91-AUH"/>
+                <constraint firstItem="muk-JM-6sY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zwr-Lt-sFc"/>
+                <constraint firstItem="DhI-te-bKR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="66" id="gbF-yN-tUa"/>
+                <constraint firstItem="DhI-te-bKR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u1P-cc-2Mz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="kmg-Y2-ONx" secondAttribute="bottom" constant="108" id="uLj-Qh-NC7"/>
+                <constraint firstItem="U5d-ge-WqN" firstAttribute="top" secondItem="DhI-te-bKR" secondAttribute="bottom" constant="88" id="zvE-f0-rkC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="47.826086956521742" y="37.5"/>
+        </view>
+    </objects>
+</document>

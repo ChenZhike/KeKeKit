@@ -1,30 +1,68 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.5.6)
+  - Masonry (1.1.0)
   - MJRefresh (3.5.0)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
   - SVProgressHUD (2.2.5)
+  - UMAPM (1.1.1)
+  - UMCommon (7.2.5):
+    - UMDevice
+  - UMDevice (1.1.0)
   - Wonderful (1.2.1)
 
 DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - Masonry
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
+  - UMAPM
+  - UMCommon
   - Wonderful
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
+    - UMAPM
+    - UMCommon
+    - UMDevice
     - Wonderful
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMAPM: d0623e0b3ca8b1a1df855e0bddb91b5c002d097d
+  UMCommon: b5aabdb9fad44330ff8738d9bc46ebf93db14bf2
+  UMDevice: 28d21a568c8e8322e5a03bbd53b138d0c098d3b3
   Wonderful: e46da4dd601c3ae08da576e451be8f4dc740c206
 
-PODFILE CHECKSUM: d44ba52a7d07be961dedf16c841fc7dc2fe33ea3
+PODFILE CHECKSUM: 2d1725b7f6fa98b2bf8fa3794e49f1a21ee0db03
 
-COCOAPODS: 1.10.0.beta.1
+COCOAPODS: 1.10.1
