@@ -1,9 +1,9 @@
 //
 //  UIView+Frame.h
-//  KeKeKit
+//  GYJMusicPlayer
 //
-//  Created by keke on 14-2-25.
-//  Copyright (c) 2014年 KeKeKit. All rights reserved.
+//  Created by 郭亚娟 on 14-2-25.
+//  Copyright (c) 2014年 NetEase. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
