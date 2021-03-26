@@ -7,8 +7,6 @@
 
 #import "KeKeAppDelegate.h"
 #import "AlertWindow.h"
-#import "UMCommon/UMCommon.h"
-#import <UMAPM/UMCrashConfigure.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
@@ -33,7 +31,6 @@
     self.fromCode=@"官方渠道";
 //    [self xianshiExit];
 
-//    [self initUMeng];
 
     [UserInfoManager loadToken];
     [UserInfoManager loadLoginType];
@@ -185,7 +182,7 @@
 }
 -(void)startAll
 {
-    [self initUMeng];
+//    [self initUMeng];
 
 
 //    NSString* deviceID =  [UMConfigure deviceIDForIntegration];
@@ -252,16 +249,7 @@
 //    }];
 //    [manager.reachabilityManager startMonitoring];
 //}
--(void)initUMeng
-{
 
-//    #ifndef testNet
-    [UMConfigure setEncryptEnabled:YES];
-    [UMConfigure initWithAppkey:@"123456" channel:@"开发"];
-    [UMCrashConfigure setCrashCBBlock:nil];
-    //#endif
-
-}
 
 -(void)justWantDisappear:(UIWindow*)oldwin
 {

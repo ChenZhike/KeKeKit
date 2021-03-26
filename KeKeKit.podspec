@@ -18,10 +18,9 @@ s.prefix_header_file = 'KeKeKit/core/KeKeKit-PrefixHeader.pch'
 	s.dependency 'Wonderful'
 	s.dependency 'SVProgressHUD'
 	s.dependency 'MJRefresh'
-	s.dependency 'UMCommon'
 	s.dependency 'AFNetworking'
 	s.dependency 'IQKeyboardManager'
-	s.dependency 'UMAPM'
+
     s.requires_arc = true
 
 end
