@@ -64,6 +64,7 @@ NSString* _Nullable APPDownloadUrlWithAPPID(NSString* _Nullable appid);
 #pragma mark-frame
 CGRect cxFrame(CGFloat cx,CGFloat y,CGFloat width,CGFloat height);
 CGRect cyFrame(CGFloat x,CGFloat cy,CGFloat width,CGFloat height);
+CGRect centerFrame(CGPoint center,CGFloat width,CGFloat height);
 CGRect RectWithCenter(CGPoint center,CGFloat width,CGFloat height);
 CGRect cyFrameRightWH(CGFloat right,CGFloat cy,CGFloat width,CGFloat height);
 CGRect cyFrame(CGFloat x,CGFloat cy,CGFloat width,CGFloat height);

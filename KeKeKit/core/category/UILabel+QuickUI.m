@@ -9,11 +9,82 @@
 #import "UILabel+QuickUI.h"
 
 @implementation UILabel (QuickUI)
--(void)fillLS:(LabelStyle*)ls
++(UILabel*)adjutstWHlabWithSuperView:(UIView*)sv ls:(LabelStyle*)ls  text:(NSString*)text origin:(CGPoint)origin
 {
-    self.textColor=ls.textColor;
-    self.font=ls.font;
-    self.textAlignment=ls.textAlignment;
+
+    CGFloat width=[text boundingRectWithSize:CGSizeMake(WINDOWW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:ls.font} context:nil].size.width;
+    CGFloat h=ls.font.pointSize*1.2;
+    CGFloat x=origin.x;
+    if (x==TopMarginValue) {
+        x=0;
+    }else if (x==CenterMarginValue) {
+        x=(sv.width-width)/2;
+    }
+    else
+        {
+        x=sv.width-width;
+        }
+    CGFloat y=origin.y;
+    if (y==TopMarginValue) {
+        y=0;
+    }else if (y==CenterMarginValue) {
+        y=(sv.height-h)/2;
+    }
+    else
+        {
+        y=sv.height-h;
+        }
+
+    UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(x, y, width, h)];
+    [alab fillLS:ls];
+    alab.text=text;
+    [sv addSubview:alab];
+
+    return alab;
+}
++(UILabel*)adjutstWHlabWithSuperView:(UIView*)sv attribute:(NSDictionary*)attribute  text:(NSString*)text origin:(CGPoint)origin right_edge:(CGFloat)right_edge
+{
+
+    NSMutableAttributedString*attrstr=[[NSMutableAttributedString alloc]initWithString:text attributes:attribute];
+    CGFloat maxw=sv.width-right_edge-origin.x;
+    CGFloat h=[attrstr getHeightWithMaxW:maxw];
+
+    CGFloat width=[attrstr boundingRectWithSize:CGSizeMake(WINDOWW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil].size.width;
+       CGFloat x=origin.x;
+       if (x==TopMarginValue) {
+           x=0;
+       }else if (x==CenterMarginValue) {
+           x=(sv.width-width)/2;
+       }
+       CGFloat y=origin.y;
+       if (y==TopMarginValue) {
+           y=0;
+       }else if (y==CenterMarginValue) {
+           y=(sv.height-h)/2;
+       }
+
+       UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(x, y, width, h)];
+        alab.attributedText=attrstr;
+       [sv addSubview:alab];
+
+       return alab;
+}
+
++(UILabel*)flexableWidthLabWithXOrY:(BOOL)xory value:(CGFloat)value cy:(CGFloat)cy  Text:(NSString*)text font:(UIFont*)font
+{
+
+    CGFloat width=[text boundingRectWithSize:CGSizeMake(WINDOWW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:font} context:nil].size.width;
+
+    CGFloat x=xory?(value-width):(value);
+    CGRect frame=cyFrame(x, cy, width, font.pointSize*1.2);
+    UILabel*alab=[[UILabel alloc]initWithFrame:frame];
+    alab.centerY=cy;
+    alab.font=font;
+    alab.textColor=HexColor(@"");
+    alab.text=text;
+    alab.textAlignment=xory?NSTextAlignmentRight:NSTextAlignmentLeft;
+
+    return alab;
 }
 +(UILabel*)flexableWidthLabWithX:(CGFloat)x cy:(CGFloat)cy  Text:(NSString*)text font:(UIFont*)font
 {
@@ -27,6 +98,12 @@
     alab.text=text;
     alab.textAlignment=NSTextAlignmentLeft;
 
+    return alab;
+}
++(UILabel*)flexableWidthLabWithRight:(CGFloat)right cy:(CGFloat)cy  Text:(NSString*)text font:(UIFont*)font
+{
+
+    UILabel*alab=[UILabel flexableWidthLabWithXOrY:YES value:right cy:cy Text:text font:font];
     return alab;
 }
 //单行label（字符串内容，是标题、简介或者装饰或者key或者value，最大宽度）
@@ -48,6 +125,15 @@
 
     return lab;
 }
+
+
+-(void)fillLS:(LabelStyle*)ls
+{
+    self.textColor=ls.textColor;
+    self.font=ls.font;
+    self.textAlignment=ls.textAlignment;
+}
+
 -(void)prefixStr:(NSString*)str
 {
     NSString*text=self.text;
@@ -80,31 +166,5 @@
     CGFloat w= [text getWidthWithFont:self.font];
     self.frame=RECT(cx-w/2, self.y, w, self.height);
 }
-+(UILabel*)adjutstWHlabWithSuperView:(UIView*)sv attribute:(NSDictionary*)attribute  text:(NSString*)text origin:(CGPoint)origin right_edge:(CGFloat)right_edge
-{
 
-    NSMutableAttributedString*attrstr=[[NSMutableAttributedString alloc]initWithString:text attributes:attribute];
-    CGFloat maxw=sv.width-right_edge-origin.x;
-    CGFloat h=[attrstr getHeightWithMaxW:maxw];
-
-    CGFloat width=[attrstr boundingRectWithSize:CGSizeMake(WINDOWW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil].size.width;
-       CGFloat x=origin.x;
-       if (x==TopMarginValue) {
-           x=0;
-       }else if (x==CenterMarginValue) {
-           x=(sv.width-width)/2;
-       }
-       CGFloat y=origin.y;
-       if (y==TopMarginValue) {
-           y=0;
-       }else if (y==CenterMarginValue) {
-           y=(sv.height-h)/2;
-       }
-
-       UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(x, y, width, h)];
-        alab.attributedText=attrstr;
-       [sv addSubview:alab];
-
-       return alab;
-}
 @end

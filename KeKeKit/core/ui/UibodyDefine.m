@@ -464,6 +464,10 @@ CGRect RectWithCenter(CGPoint center,CGFloat width,CGFloat height)
     CGRect rect= CGRectMake(x, y, width, height);
     return rect;
 }
+CGRect centerFrame(CGPoint center,CGFloat width,CGFloat height)
+{
+    return RectWithCenter(center, width, height);
+}
 CGRect cyFrameRightWH(CGFloat right,CGFloat cy,CGFloat width,CGFloat height)
 {
     CGFloat y=cy-height/2;

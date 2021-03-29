@@ -7,7 +7,8 @@
 
 #ifndef _KeKeKit_PrefixHeader_pch
 #define _KeKeKit_PrefixHeader_pch
-#import "KeKeKit-Category.h"
+//#import "KeKeKit-Category.h"
+#import "KeKeKit-All.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

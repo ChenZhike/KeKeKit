@@ -132,6 +132,7 @@
 		BDDCF61E252DC2B800A1D625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDCF61C252DC2B800A1D625 /* LaunchScreen.storyboard */; };
 		BDDCF621252DC2B800A1D625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF620252DC2B800A1D625 /* main.m */; };
 		BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF62A252DC2EB00A1D625 /* NSString+File.m */; };
+		BDF442A22611AF8900F5B94B /* SVProgressHUD+DIY.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF442A02611AF8800F5B94B /* SVProgressHUD+DIY.m */; };
 		BDF8C65225E64029001D9049 /* FunctionDefaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */; };
 		BDF8C65625E640F8001D9049 /* Super2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65525E640F7001D9049 /* Super2VC.m */; };
 		BDF8C65A25E6410A001D9049 /* SuperOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65925E6410A001D9049 /* SuperOneVC.m */; };
@@ -398,6 +399,9 @@
 		BDDCF620252DC2B800A1D625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDDCF629252DC2EB00A1D625 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
 		BDDCF62A252DC2EB00A1D625 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		BDF442A02611AF8800F5B94B /* SVProgressHUD+DIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+DIY.m"; sourceTree = "<group>"; };
+		BDF442A12611AF8900F5B94B /* SVProgressHUD+DIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+DIY.h"; sourceTree = "<group>"; };
+		BDF442A42611AFF000F5B94B /* KeKeKit-All.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-All.h"; sourceTree = "<group>"; };
 		BDF8C65025E64028001D9049 /* FunctionDefaultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionDefaultVC.h; sourceTree = "<group>"; };
 		BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionDefaultVC.m; sourceTree = "<group>"; };
 		BDF8C65425E640F7001D9049 /* Super2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Super2VC.h; sourceTree = "<group>"; };
@@ -983,8 +987,10 @@
 		BDDCF628252DC2CE00A1D625 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BDF4429E2611AF7400F5B94B /* third */,
 				BD8BA810260AF064002D316D /* service */,
 				BD46713A25579A1B009E6696 /* KeKeKit-Category.h */,
+				BDF442A42611AFF000F5B94B /* KeKeKit-All.h */,
 				BDA823F725EDE0A9001DAD85 /* category */,
 				BDA823F425EDE02D001DAD85 /* ui */,
 				BDA823F225EDDFFF001DAD85 /* view */,
@@ -997,6 +1003,23 @@
 				BD4672052557AC90009E6696 /* KeKeKit-PrefixHeader.pch */,
 			);
 			path = core;
+			sourceTree = "<group>";
+		};
+		BDF4429E2611AF7400F5B94B /* third */ = {
+			isa = PBXGroup;
+			children = (
+				BDF4429F2611AF7C00F5B94B /* svprogresshud */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		BDF4429F2611AF7C00F5B94B /* svprogresshud */ = {
+			isa = PBXGroup;
+			children = (
+				BDF442A12611AF8900F5B94B /* SVProgressHUD+DIY.h */,
+				BDF442A02611AF8800F5B94B /* SVProgressHUD+DIY.m */,
+			);
+			path = svprogresshud;
 			sourceTree = "<group>";
 		};
 		BDF8C68925E644C3001D9049 /* photoBrowser */ = {
@@ -1174,6 +1197,7 @@
 				BD46719D25579C85009E6696 /* NSString+Parameters.m in Sources */,
 				BD8BA889260B1587002D316D /* TouchView.m in Sources */,
 				BD8BA8D7260B17AD002D316D /* StuCollectionViewCell.m in Sources */,
+				BDF442A22611AF8900F5B94B /* SVProgressHUD+DIY.m in Sources */,
 				BD46721B2557AF65009E6696 /* UibodyDefine.m in Sources */,
 				BDF8C65225E64029001D9049 /* FunctionDefaultVC.m in Sources */,
 				BD8BA8E3260B1865002D316D /* CustomNavigationController.m in Sources */,
