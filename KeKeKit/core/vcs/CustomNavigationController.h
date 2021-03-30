@@ -1,9 +1,9 @@
 //
 //  CustomNavigationController.h
-//  FirstProject
+//  KeKeKit
 //
 //  Created by KeKe on 3018/10/5.
-//  Copyright © 3018年 awen. All rights reserved.
+//  Copyright © 2021年 KeKe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

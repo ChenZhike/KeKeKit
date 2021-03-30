@@ -1,6 +1,6 @@
 //
 //  NSString+File.h
-//  FirstProject
+//  KeKeKit
 //
 //  Created by 陈志科 on 2019/12/10.
 //  Copyright © 2019 czk. All rights reserved.

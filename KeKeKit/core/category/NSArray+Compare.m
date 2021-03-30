@@ -1,6 +1,6 @@
 //
 //  NSArray+Compare.m
-//  FirstProject
+//  KeKeKit
 //
 //  Created by CZK on 2019/6/14.
 //  Copyright © 2019 czk. All rights reserved.

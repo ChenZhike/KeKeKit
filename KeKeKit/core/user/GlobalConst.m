@@ -51,6 +51,11 @@ NSString * const ScoreNumsCellTitlesKeyName=@"titles";
 NSString * const ScoreNumsCellNumsKeyName=@"nums";
 static NSString* earnurl=nil;
 @implementation GlobalConst : NSObject
++(UIColor*)topviewBackColor
+{
+    return [UIColor whiteColor];
+}
+
 +(NSArray*)love_colors
 {
     return @[@"红",@"橙",@"黄",@"绿",@"蓝",@"紫",@"白",@"黑",@"花"];

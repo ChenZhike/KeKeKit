@@ -1,9 +1,9 @@
 //
 //  IVLabs.h
-//  FirstProject
+//  KeKeKit
 //
 //  Created by KeKe on 3018/9/15.
-//  Copyright © 3018年 awen. All rights reserved.
+//  Copyright © 2021年 KeKe. All rights reserved.
 //
 #define IVHG2Corner (888)//iv高度/2为corner
 #import <UIKit/UIKit.h>

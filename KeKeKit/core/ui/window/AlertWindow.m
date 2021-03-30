@@ -1,9 +1,9 @@
 //
 //  AlertWindow.m
-//  FirstProject
+//  KeKeKit
 //
 //  Created by KeKe on 3018/9/27.
-//  Copyright © 3018年 awen. All rights reserved.
+//  Copyright © 2021年 KeKe. All rights reserved.
 //
 
 #import "AlertWindow.h"

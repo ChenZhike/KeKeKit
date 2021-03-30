@@ -1,9 +1,9 @@
 //
 //  UserInfoTool.h
-//  FirstProject
+//  KeKeKit
 //
 //  Created by KeKe on 3018/10/11.
-//  Copyright © 3018年 awen. All rights reserved.
+//  Copyright © 2021年 KeKe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

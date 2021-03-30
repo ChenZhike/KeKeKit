@@ -1,6 +1,6 @@
 //
 //  ViewDefine.h
-//  FirstProject
+//  KeKeKit
 //
 //  Created by CZK on 2020/8/8.
 //  Copyright © 2020 czk. All rights reserved.
@@ -45,6 +45,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define HomePageCellDataTextColor  [UIColor colorWithRed:108/255.0 green:108/255.0 blue:108/255.0 alpha:1.0]
 
 #define placeVar @"placeStr"
+#define ViewBackColor [GlobalConst topviewBackColor]
 //配色方案区
 //自然清新如花
 #define NatureColorNormalBack RGB(217,224,191,1)

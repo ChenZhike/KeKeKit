@@ -55,6 +55,7 @@ UIKIT_EXTERN NSString * const ScoreNumsCellTitlesKeyName;
 UIKIT_EXTERN NSString * const ScoreNumsCellNumsKeyName;
 
 @interface GlobalConst:NSObject
++(UIColor*)topviewBackColor;
 +(NSUInteger)current_changhe_index;
 +(NSString*)current_changhe_text;
 +(NSArray*)changhe_imgs;
