@@ -161,5 +161,9 @@ static NSString* earnurl=nil;
         //    班级类型 1=临时班 2=正式班 3=体验班
     return @[@"id",@"value",@"clueUserId"];
 }
++(NSString*)ProtocolUrl
+{
+    return @"";
+}
 @end
 

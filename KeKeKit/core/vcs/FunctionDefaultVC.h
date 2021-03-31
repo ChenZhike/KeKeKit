@@ -17,7 +17,11 @@
 @property(nonatomic,strong)UIColor*themeColor;
 @property(nonatomic,assign)BOOL loadedReadyBeforeShow;
 @property(nonatomic,assign)BOOL isProtol;//是用户协议
+@property(nonatomic,assign)BOOL needSure;//需要确认
+@property(nonatomic,assign)BOOL requestAgain;//根据url获得webview的url
+
 @property(nonatomic,strong,nullable)UIViewController* lastVC;
+@property(nonatomic,assign)BOOL hengping;
 -(id)initWithImageName:(NSString*)imgName;
 -(id)initWithUrl:(NSString*)urlstr;
 +(FunctionDefaultVC*)protoclVC;

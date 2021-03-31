@@ -78,4 +78,5 @@ UIKIT_EXTERN NSString * const ScoreNumsCellNumsKeyName;
 
 
 +(NSArray*)idKeys;
++(NSString*)ProtocolUrl;
 @end

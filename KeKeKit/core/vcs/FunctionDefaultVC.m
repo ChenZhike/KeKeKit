@@ -40,7 +40,22 @@
     self.tableView=nil;
     [self initIV];
     [self initWebVie];
-    if (self.isProtol) {
+    if (self.hengping) {
+            //导航条
+            self.topView.frame=RECT(0, 0, WINDOWH, NavHeight);
+            for (UIView*vie in self.topView.subviews) {
+                if ([vie isKindOfClass:[UILabel class]]) {
+                    vie.centerX=WINDOWH/2;
+                }
+                else
+                    {
+                    vie.width=WINDOWH;
+                    }
+            }
+    //        /web
+            webVie.frame=RECT(0, NavHeight, WINDOWH, WINDOWW-NavHeight-self.vc_bot_h);
+        }
+        if (self.isProtol&&self.needSure) {
         [self initBotArea];
     }
     // Do any additional setup after loading the view.
@@ -133,19 +148,21 @@
 
 //        webVie.delegate=self;
 //        webVie.scalesPageToFit=YES;
-        NSURL*url=[NSURL URLWithString:self.urlStr];
-        if (self.isLocalFile==YES) {
-            url=[NSURL fileURLWithPath:self.urlStr];
-        }
-        if (self.specialCode) {
-            NSStringEncoding enc =CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
-            NSString*htmlstr=[[NSString alloc]initWithContentsOfURL:url encoding:enc error:nil];
-            [webVie loadHTMLString:htmlstr baseURL:url];
-        }
-        else
-            {
-            [webVie loadRequest:[NSURLRequest requestWithURL:url]];
-            }
+        if (!self.requestAgain) {
+                    [self loadRequest];
+                }
+                else
+                {
+                NSString*url=self.urlStr;
+                NSDictionary*paramters=@{};
+                WS(weakSelf);
+                NetObj*no=[[NetObj alloc]initWithUrl:url parameters:paramters Block:^(NSDictionary *resnfo) {
+                    [weakSelf dealServerRequestAgainData:resnfo];
+                }];
+                [no start];
+                [self.nos addObject:no];
+                }
+
 
 
 
@@ -156,6 +173,38 @@
 
     }
 }
+-(void)dealServerRequestAgainData:(NSDictionary*)resnfo
+{
+    NSString*retCode=[resnfo objectForKey:@"retCode"];
+
+    if ([retCode isEqualToString:@"1"]) {
+        NSDictionary*data=[resnfo objectForKey:@"data"];
+        NSString*aggreementUrl=[data objectForKey:@"aggreementUrl"];
+        self.urlStr=aggreementUrl;
+        [self loadRequest];
+    }
+    else
+        {
+        [SVProgressHUD showErrorWithStatus:[resnfo objectForKey:@"retMsg"]];
+        }
+}
+- (void)loadRequest
+{
+    NSURL*url=[NSURL URLWithString:self.urlStr];
+    if (self.isLocalFile==YES) {
+        url=[NSURL fileURLWithPath:self.urlStr];
+    }
+    if (self.specialCode) {
+        NSStringEncoding enc =CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+        NSString*htmlstr=[[NSString alloc]initWithContentsOfURL:url encoding:enc error:nil];
+        [webVie loadHTMLString:htmlstr baseURL:url];
+    }
+    else
+        {
+        [webVie loadRequest:[NSURLRequest requestWithURL:url]];
+        }
+}
+
 //#pragma mark-webview代理专区
 //- (BOOL)webView:(WKWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(WKWebViewNavigationType)navigationType
 //{
@@ -294,9 +343,23 @@
     [self wannengBack];
         //    [self wannengBack];
 }
+#pragma mark-横竖屏
+    //支持旋转
+-(BOOL)shouldAutorotate{
+    return NO;
+}
+
+    //支持的方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.hengping?UIInterfaceOrientationMaskLandscapeRight:UIInterfaceOrientationMaskPortrait;
+}
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return self.hengping?UIInterfaceOrientationLandscapeRight:UIInterfaceOrientationPortrait;
+}
+
 +(FunctionDefaultVC*)protoclVC
 {
-    FunctionDefaultVC*vc=[[FunctionDefaultVC alloc]initWithUrl:ProtocolUrl];
+    FunctionDefaultVC*vc=[[FunctionDefaultVC alloc]initWithUrl:[GlobalConst ProtocolUrl]];
     vc.title=@"请您先阅读隐私协议";
     vc.isProtol=YES;
     vc.requestAgain=YES;
