@@ -294,6 +294,15 @@
     [self wannengBack];
         //    [self wannengBack];
 }
++(FunctionDefaultVC*)protoclVC
+{
+    FunctionDefaultVC*vc=[[FunctionDefaultVC alloc]initWithUrl:ProtocolUrl];
+    vc.title=@"请您先阅读隐私协议";
+    vc.isProtol=YES;
+    vc.requestAgain=YES;
+//    vc.specialCode=YES;
+    return vc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

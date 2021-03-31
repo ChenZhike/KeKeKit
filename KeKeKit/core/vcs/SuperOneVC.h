@@ -161,6 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark-vc
 - (void)addVC:(UIViewController*)vc;
 - (void)pushToVC:(NSString*)classstr;
-
+- (void)recevieSon:(SuperOneVC*)son data:(NSDictionary*)data;
+- (void)recevieSon:(SuperOneVC*)son datas:(NSArray*)datas;
 @end
 NS_ASSUME_NONNULL_END

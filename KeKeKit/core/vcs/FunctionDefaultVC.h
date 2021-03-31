@@ -20,4 +20,5 @@
 @property(nonatomic,strong,nullable)UIViewController* lastVC;
 -(id)initWithImageName:(NSString*)imgName;
 -(id)initWithUrl:(NSString*)urlstr;
++(FunctionDefaultVC*)protoclVC;
 @end

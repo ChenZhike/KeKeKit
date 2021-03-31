@@ -13,6 +13,7 @@ NSString * const closeProtoclnotiname=@"closeProtoclnotiname";
 NSString * const shownguide = @"Guide_Mine_Share";
 NSString * const closeguidenotiname = @"Guide_Cards_Share";
 NSString * const current_xingxiang_text_key = @"current_xingxiang_text_key";
+NSString * const ADFineshNotiName = @"ADFineshNotiName";
 
 
 NSString * const tuichuLoginNotiName = @"tuichuLoginNotiName";

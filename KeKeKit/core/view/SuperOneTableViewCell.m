@@ -27,6 +27,12 @@
         self.constdic=[[self class]constDic];
     }
 }
+- (UILabel*)addLinesLabWithorigin:(CGPoint)origin right_edge:(CGFloat)right_edge text:(NSString*)text  attribute:(NSDictionary*)attribute
+{
+   UILabel*result=[UILabel adjutstWHlabWithSuperView:self.contentView attribute:attribute text:text origin:origin right_edge:right_edge];
+    return result;
+
+}
 - (void)addAttriLabWithframe:(CGRect)frame text:(NSString*)text  perh:(CGFloat)perh
 {
     VerticallyAlignedLabel*alab=[[VerticallyAlignedLabel alloc]initWithFrame:frame];
@@ -75,6 +81,23 @@
     [backview corner:APPCorner];
     [backview shadowWithOffset:5];
     self.backgroundColor=[UIColor clearColor];
+}
+-(void)quickCellBtnClick:(UIButton*)sender
+{
+    NSUInteger tag=sender.tag;
+    [self.actionDelegate SuperOneTableViewCell:self clickAction:tag];
+}
+- (void)quickCellTapClick:(UITapGestureRecognizer*)tapgr
+{
+    NSUInteger tag=tapgr.view.tag;
+    [self.actionDelegate SuperOneTableViewCell:self clickAction:tag];
+}
+- (void)setTypeAndPlayNumWithLab:(UILabel*)lab
+{
+    NSDictionary*obj=self.data;
+    NSString*theme_type=[[obj objectForKey:@"channels"]numOrStringValue];
+    NSString*play_num=[[obj objectForKey:@"openNum"]numOrStringValue];
+    lab.text=[NSString stringWithFormat:@"%@    %@次播放",theme_type,play_num];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -12,6 +12,7 @@ UIKIT_EXTERN NSString * const shownProtocol;
 UIKIT_EXTERN NSString * const closeProtoclnotiname;
 UIKIT_EXTERN NSString * const shownguide;
 UIKIT_EXTERN NSString * const closeguidenotiname;
+UIKIT_EXTERN NSString * const ADFineshNotiName;
 
 
 UIKIT_EXTERN NSString * const tuichuLoginNotiName ;
