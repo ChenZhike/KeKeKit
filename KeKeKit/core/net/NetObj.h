@@ -34,6 +34,7 @@ typedef enum : NSUInteger {
 @property(nonatomic,assign)int obj_tag;
 @property(nonatomic,copy)NSString*urlstr;
 @property(nonatomic,strong)NSDictionary* parameters;
+@property(nonatomic,assign)BOOL responsed;
 - (id)initWithUrlInfo:(NSDictionary*)urlinfo Block:(netResponseBlock)block;
 - (id)initWithUrl:(NSString*)url parameters:(NSDictionary*)parameters Block:(netResponseBlock)block;
 - (void)start;

@@ -28,7 +28,30 @@
     }
     return NO;
 }
+#pragma mark-xy
+- (void)setX:(CGFloat)x
+{
+    CGRect frame = self.frame;
+    frame.origin.x = x;
+    self.frame = frame;
+}
 
+- (CGFloat)x
+{
+    return self.frame.origin.x;
+}
+
+- (void)setY:(CGFloat)ay
+{
+    CGRect frame = self.frame;
+    frame.origin.y = ay;
+    self.frame = frame;
+}
+
+- (CGFloat)y
+{
+    return self.frame.origin.y;
+}
 #pragma mark - Height
 - (CGFloat)height {
     return self.bounds.size.height;
@@ -164,5 +187,12 @@
 -(void)cxHalf:(UIView*)vie
 {
 self.centerX=vie.width/2;
+}
+- (void)updateW:(CGFloat)width h:(CGFloat)height
+{
+    CGRect frame = self.frame;
+    frame.size.width = width;
+    frame.size.height = height;
+    self.frame = frame;
 }
 @end

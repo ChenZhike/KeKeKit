@@ -114,6 +114,7 @@ NSData *GetDataForHex(NSString *hex) {
 }
 -(void)dealWithResultData:(NSData*)resultData
 {
+    self.responsed=YES;
     NSString *strResult = [[NSString alloc]initWithData:resultData encoding:NSUTF8StringEncoding];
     strResult = [strResult stringByReplacingOccurrencesOfString:@":null" withString:@":\"\""];
     NSData *jsonData = [strResult dataUsingEncoding:NSUTF8StringEncoding];
@@ -124,6 +125,7 @@ NSData *GetDataForHex(NSString *hex) {
     dicFromJson=mudic;
     if (dicFromJson==nil) {
         [SVProgressHUD showErrorWithStatus:@"当前网络异常，请检查网络设置"];
+        [ListCellRequestManager sharedInstance].is_request_body=NO;
         return;
     }
     int returncode = [[dicFromJson objectForKey:@"httpCode"] intValue];
@@ -187,11 +189,15 @@ NSData *GetDataForHex(NSString *hex) {
     else
         {
         __block  NSString*message=[dicFromJson objectForKey:@"msg"];
+        if (message.length==0) {
+                    message=@"服务异常，请稍后重试";
+                }
         dispatch_async(dispatch_get_main_queue(), ^{
             [SVProgressHUD showErrorWithStatus:message];
         });
 
             //_nblock(nil);
         }
+    [ListCellRequestManager sharedInstance].is_request_body=NO;
 }
 @end

@@ -44,7 +44,6 @@
 		BD4671C225579DCD009E6696 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671B925579DCC009E6696 /* UIView+Animation.m */; };
 		BD4671C325579DCD009E6696 /* UIView+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671BC25579DCC009E6696 /* UIView+QuickUI.m */; };
 		BD4671C425579DCD009E6696 /* UIView+CommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */; };
-		BD4671C925579DF2009E6696 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671C825579DF2009E6696 /* UIView+Extension.m */; };
 		BD4671D025579E78009E6696 /* UILabel+QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671CE25579E78009E6696 /* UILabel+QuickUI.m */; };
 		BD4671D125579E78009E6696 /* UILabel+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671CF25579E78009E6696 /* UILabel+Gradient.m */; };
 		BD4671D825579F71009E6696 /* UITextView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4671D725579F70009E6696 /* UITextView+Style.m */; };
@@ -133,6 +132,7 @@
 		BDDCF621252DC2B800A1D625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF620252DC2B800A1D625 /* main.m */; };
 		BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF62A252DC2EB00A1D625 /* NSString+File.m */; };
 		BDF442A22611AF8900F5B94B /* SVProgressHUD+DIY.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF442A02611AF8800F5B94B /* SVProgressHUD+DIY.m */; };
+		BDF4430926146E9000F5B94B /* ListCellRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF4430826146E8E00F5B94B /* ListCellRequestManager.m */; };
 		BDF8C65225E64029001D9049 /* FunctionDefaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */; };
 		BDF8C65625E640F8001D9049 /* Super2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65525E640F7001D9049 /* Super2VC.m */; };
 		BDF8C65A25E6410A001D9049 /* SuperOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C65925E6410A001D9049 /* SuperOneVC.m */; };
@@ -229,8 +229,6 @@
 		BD4671BC25579DCC009E6696 /* UIView+QuickUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QuickUI.m"; sourceTree = "<group>"; };
 		BD4671BD25579DCC009E6696 /* UIView+SonSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SonSuperView.h"; sourceTree = "<group>"; };
 		BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonUI.m"; sourceTree = "<group>"; };
-		BD4671C725579DF1009E6696 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		BD4671C825579DF2009E6696 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		BD4671CC25579E77009E6696 /* UILabel+QuickUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+QuickUI.h"; sourceTree = "<group>"; };
 		BD4671CD25579E77009E6696 /* UILabel+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Gradient.h"; sourceTree = "<group>"; };
 		BD4671CE25579E78009E6696 /* UILabel+QuickUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+QuickUI.m"; sourceTree = "<group>"; };
@@ -402,6 +400,8 @@
 		BDF442A02611AF8800F5B94B /* SVProgressHUD+DIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+DIY.m"; sourceTree = "<group>"; };
 		BDF442A12611AF8900F5B94B /* SVProgressHUD+DIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+DIY.h"; sourceTree = "<group>"; };
 		BDF442A42611AFF000F5B94B /* KeKeKit-All.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-All.h"; sourceTree = "<group>"; };
+		BDF4430726146E8C00F5B94B /* ListCellRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCellRequestManager.h; sourceTree = "<group>"; };
+		BDF4430826146E8E00F5B94B /* ListCellRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCellRequestManager.m; sourceTree = "<group>"; };
 		BDF8C65025E64028001D9049 /* FunctionDefaultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionDefaultVC.h; sourceTree = "<group>"; };
 		BDF8C65125E64028001D9049 /* FunctionDefaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionDefaultVC.m; sourceTree = "<group>"; };
 		BDF8C65425E640F7001D9049 /* Super2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Super2VC.h; sourceTree = "<group>"; };
@@ -746,6 +746,8 @@
 		BDA823EE25EDDF99001DAD85 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				BDF4430726146E8C00F5B94B /* ListCellRequestManager.h */,
+				BDF4430826146E8E00F5B94B /* ListCellRequestManager.m */,
 				BDF8C66425E6427F001D9049 /* NetObj.h */,
 				BDF8C66525E6427F001D9049 /* NetObj.m */,
 				BDF8C67D25E643AE001D9049 /* UrlsManager.h */,
@@ -935,8 +937,6 @@
 				BD8BA8E7260B1964002D316D /* UIView+Image.m */,
 				BD4671B525579DCB009E6696 /* UIView+CommonUI.h */,
 				BD4671BE25579DCD009E6696 /* UIView+CommonUI.m */,
-				BD4671C725579DF1009E6696 /* UIView+Extension.h */,
-				BD4671C825579DF2009E6696 /* UIView+Extension.m */,
 				BD4671B425579DCB009E6696 /* UIView+Frame.h */,
 				BD4671B825579DCC009E6696 /* UIView+Frame.m */,
 				BD4671B625579DCB009E6696 /* UIView+i7Rotate360.h */,
@@ -1205,6 +1205,7 @@
 				BDDCF610252DC2B400A1D625 /* KeKeAppDelegate.m in Sources */,
 				BDDCF62B252DC2EB00A1D625 /* NSString+File.m in Sources */,
 				BD4671A425579CEA009E6696 /* NSString+tool.m in Sources */,
+				BDF4430926146E9000F5B94B /* ListCellRequestManager.m in Sources */,
 				BD4671D125579E78009E6696 /* UILabel+Gradient.m in Sources */,
 				BD46718925579C02009E6696 /* NSString+CheckFormat.m in Sources */,
 				BD8BA898260B15E8002D316D /* FiveStarView.m in Sources */,
@@ -1236,7 +1237,6 @@
 				BD8BA8D5260B17AD002D316D /* ChoosePersonVC.m in Sources */,
 				BD8BA882260B1519002D316D /* FileCell.m in Sources */,
 				BDF8C65E25E64184001D9049 /* SuperOneTableViewCell.m in Sources */,
-				BD4671C925579DF2009E6696 /* UIView+Extension.m in Sources */,
 				BD8BA899260B15E8002D316D /* FloatListView.m in Sources */,
 				BD8BA8A8260B1652002D316D /* BlackWhiteSheet.m in Sources */,
 				BD4671DC25579FAF009E6696 /* UITextField+PlaceHolderColor.m in Sources */,

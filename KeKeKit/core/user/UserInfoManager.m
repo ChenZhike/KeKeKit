@@ -78,6 +78,20 @@ static NSString*loginType=nil;
 {
     for (NSString*key in info.allKeys) {
         NSObject*value=[info objectForKey:key];
+        if ([key isEqualToString:@"tel"]) {
+            NSString*tel=(NSString*)tel;
+            if ([tel containsString:@"*"]) {
+                continue;
+            }
+                }
+
+            if ([key isEqualToString:@"tel"]) {
+                NSString*tel=(NSString*)tel;
+                if ([tel containsString:@"*"]) {
+                    continue;
+                }
+            }
+
         [[NSUserDefaults standardUserDefaults]setObject:value forKey:key];
     }
         [[NSUserDefaults standardUserDefaults]synchronize];

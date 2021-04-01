@@ -60,7 +60,6 @@
 #import "UIView+Frame.h"
 #import "UIView+Image.h"
 #import "UIView+CommonUI.h"
-#import "UIView+Extension.h"
 #import "UIView+i7Rotate360.h"
 #import "UIView+SonSuperView.h"
 #import "UIView+Animation.h"
