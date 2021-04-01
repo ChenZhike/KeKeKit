@@ -24,7 +24,11 @@ UIKIT_EXTERN NSString * const SizeSeprator;
 -(void)botCorner:(CGFloat)corner;
 -(UIImageView*)addSmallImg:(NSString*)imgstr w:(CGFloat)imgW
                          h:(CGFloat)imgh;
+-(UIImageView*)addSmallImg:(NSString*)imgstr;
+-(void)addAlphaBackWidth:(CGFloat)w;
 -(void)commonCellBackColor;
+-(void)addLineAtTopOrBottom:(BOOL)topOrBottom space:(CGFloat)space;
+-(void)addLineAtTopOrBottom:(BOOL)topOrBottom left:(CGFloat)left right:(CGFloat)right;
 -(void)addTapGr:(id)target sel:(SEL)sel;
 - (void)addTopPicAndCornerView;
 - (void)addTopPicAndCornerView:(NSString*)imgstr totalH:(CGFloat)totalh;

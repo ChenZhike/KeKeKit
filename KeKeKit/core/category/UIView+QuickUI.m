@@ -86,11 +86,16 @@ NSString*const SizeSeprator=@"SizeSepratorSizeSepratorSizeSeprator";
 }
 -(void)addLineAtTopOrBottom:(BOOL)topOrBottom
 {
-    UIView*fatherview=self;
-    UIView*lineview= [[UIView alloc]initWithFrame:RECT(0,topOrBottom?(fatherview.height-0.5):0, fatherview.width, 0.5)];
-    lineview.backgroundColor=LineColor;
-    [fatherview addSubview:lineview];
+    [self addLineAtTopOrBottom:topOrBottom space:0];
 }
+
+//-(void)addLineAtTopOrBottom:(BOOL)topOrBottom
+//{
+//    UIView*fatherview=self;
+//    UIView*lineview= [[UIView alloc]initWithFrame:RECT(0,topOrBottom?(fatherview.height-0.5):0, fatherview.width, 0.5)];
+//    lineview.backgroundColor=LineColor;
+//    [fatherview addSubview:lineview];
+//}
 -(void)topCorner:(CGFloat)corner{
 
         // 左上和右上为圆角
@@ -133,6 +138,7 @@ NSString*const SizeSeprator=@"SizeSepratorSizeSepratorSizeSeprator";
 -(void)addTapGr:(id)target sel:(SEL)sel
 {
     UITapGestureRecognizer*tap=[[UITapGestureRecognizer alloc]initWithTarget:target action:sel];
+    self.userInteractionEnabled=YES;
     [self addGestureRecognizer:tap];
 }
 - (void)addTopPicAndCornerView:(NSString*)imgstr totalH:(CGFloat)totalh
@@ -154,6 +160,14 @@ NSString*const SizeSeprator=@"SizeSepratorSizeSepratorSizeSeprator";
 - (void)addTopPicAndCornerView
 {
     [self addTopPicAndCornerView:@"pic_beijing2" totalH:pic_beijing_h];
+}
+-(void)addAlphaBackWidth:(CGFloat)w
+{
+    CALayer*layer=[CALayer layer];
+    layer.frame=RECT(2, 0, self.width-w*2, self.height);
+    layer.backgroundColor=[UIColor clearColor].CGColor;
+//    layer.opacity=0.33;
+    [self.layer insertSublayer:layer atIndex:0];
 }
 -(UIView*)getSelfCenterCircleViewWith:(CGFloat)extraW extraColor:(UIColor*)extraColor
 {
