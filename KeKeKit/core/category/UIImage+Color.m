@@ -25,4 +25,43 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+-(NSString*)saveToDisk
+{
+    NSData *imageData;
+    NSString *imageFormat;
+    BOOL ispng=YES;
+    if (UIImagePNGRepresentation(self) != nil) {
+        imageFormat = @"Content-Type: image/png \r\n";
+        imageData = UIImagePNGRepresentation(self);
+
+    }else{
+        ispng=NO;
+        imageFormat = @"Content-Type: image/jpeg \r\n";
+        imageData = UIImageJPEGRepresentation(self, 1.0);
+
+    }
+    NSString*filename=[NSString stringWithFormat:@"%@",getCurrentTime()];
+    filename=[filename stringByAppendingString:ispng?@".png":@".jpeg"];
+    NSString*filepath=[NSString stringWithFormat:@"%@/Documents/%@",NSHomeDirectory(),filename];
+    [imageData writeToFile:filepath atomically:YES];
+    return filepath;
+}
+-(UIImage*)scaledToSize:(CGSize)newSize
+{
+        // Create a graphics image context
+    UIGraphicsBeginImageContext(newSize);
+
+        // Tell the old image to draw in this new context, with the desired
+        // new size
+    [self drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+
+        // Get the new image from the context
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+
+        // End the context
+    UIGraphicsEndImageContext();
+
+        // Return the new image.
+    return newImage;
+}
 @end

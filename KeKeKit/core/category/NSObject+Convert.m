@@ -16,12 +16,17 @@
 }
 -(NSString*)numOrStringValue
 {
+    NSString*result;
     if ([self isKindOfClass:[NSNumber class]]) {
-        return [(NSNumber*)self stringValue];
+        result=[(NSNumber*)self stringValue];
     }else
         {
-        return (NSString*)self;
+        result=(NSString*)self;
         }
+    if (result.length==0) {
+        result=@"";
+    }
+    return result;
 }
 -(id)tryPerformSelWithName:(NSString*)selName
 {

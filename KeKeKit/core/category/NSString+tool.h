@@ -10,4 +10,8 @@
 
 @interface NSString (tool)
 - (void)boda;
+-(NSString *)deleteSpecialCharacters;
+-(NSString*)deleteLastToken;
+-(BOOL)hasTokenSuffix;
+-(BOOL)isimg;
 @end

@@ -66,4 +66,9 @@
         }
 
 }
+-(void)clipCommonMode
+{
+    self.contentMode=UIViewContentModeScaleAspectFill;
+    self.clipsToBounds=YES;
+}
 @end

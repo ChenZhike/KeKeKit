@@ -23,7 +23,7 @@
 - (void)configWithData:(NSArray *)obj
 {
     CGFloat h=[[self class]suggestedHWithData:obj];
-    self.frame=RECT(0, 0, WINDOWW, h);
+    self.frame=RECT(0, self.y, WINDOWW, h);
     [self.contentView removeSubviews];
     CGFloat nowY=0;
     for (int i=0; i<obj.count; i++) {

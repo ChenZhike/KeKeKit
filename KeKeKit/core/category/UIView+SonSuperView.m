@@ -83,4 +83,13 @@
     [self addSubview:iv];
     return iv;
 }
+- (void)zhiding
+{
+    [self.superview bringSubviewToFront:self];
+}
+-(void)underFahter:(UIView*)father
+{
+    [self removeFromSuperview];
+    [father addSubview:self];
+}
 @end

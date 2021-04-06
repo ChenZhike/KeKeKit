@@ -14,4 +14,5 @@
 -(void)setPortraitWithImgstr:(NSString*)imgstr;
 -(void)setTuiguangLevelImg:(int)levelNum;
 -(void)autoSetXuanZhongImg:(NSString*)imgstr;
+-(void)clipCommonMode;
 @end

@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(NSComparisonResult)jilianCompareNums:(NSArray*)arr;
 -(NSString*)nextStrWithNowStr:(NSString*)nowstr;
+-(CGFloat)floatSum;
+-(CGFloat)floatMax;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,7 +9,24 @@
 #import "UIColor+RGBValues.h"
 
 @implementation UIColor (RGBValues)
+- (CGFloat)red {
+    const CGFloat* components = CGColorGetComponents(self.CGColor);
+    return components[0];
+}
 
+- (CGFloat)green {
+    const CGFloat* components = CGColorGetComponents(self.CGColor);
+    return components[1];
+}
+
+- (CGFloat)blue {
+    const CGFloat* components = CGColorGetComponents(self.CGColor);
+    return components[2];
+}
+
+- (CGFloat)alpha {
+    return CGColorGetAlpha(self.CGColor);
+}
 - (BOOL)isClearColor {
     return [self isEqual:[UIColor clearColor]];
 }

@@ -11,7 +11,7 @@
 @implementation UIButton (QuickUI)
 +(UIButton*)getAppCommonBackBtn
 {
-    return [self getAppCommonBackBtnwithColor:nil];
+    return [self getAppCommonBackBtnwithColor:BlackColor];
 }
 +(UIButton*)getAppCommonWhiteBackBtn
 {

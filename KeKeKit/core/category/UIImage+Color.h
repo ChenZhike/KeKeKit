@@ -11,4 +11,6 @@
 @interface UIImage (Color)
 //改变图片颜色
 - (UIImage *)imageWithColor:(UIColor *)color;
+-(UIImage*)scaledToSize:(CGSize)newSize;
+-(NSString*)saveToDisk;
 @end

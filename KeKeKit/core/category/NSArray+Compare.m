@@ -81,4 +81,23 @@
     NSString*result=self[index];
     return result;
 }
+-(CGFloat)floatSum
+{
+    CGFloat total_num=0;
+    for (NSNumber*obj in self) {
+        total_num+=[obj floatValue];
+    }
+    return  total_num;
+}
+-(CGFloat)floatMax
+{
+    CGFloat max_num=0;
+    for (NSNumber*obj in self) {
+        CGFloat now=[obj floatValue];
+        if (now>max_num) {
+            max_num=now;
+        }
+    }
+    return  max_num;
+}
 @end

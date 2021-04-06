@@ -15,4 +15,6 @@
 -(UITableViewCell*)getCell;
 -(UICollectionViewCell*)getCollctionCell;
 -(UIImageView*)addIVWithImgStr:(NSString*)imgstr frame:(CGRect)frame;
+- (void)zhiding;
+-(void)underFahter:(UIView*)father;
 @end
