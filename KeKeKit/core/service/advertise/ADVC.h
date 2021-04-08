@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ADVC : UIViewController
+@property(nonatomic,strong,nullable)NSMutableArray* nos;
 @property(nonatomic,assign)int nowNum;
 @property(nonatomic,strong)NSTimer* timer;
 @property(nonatomic,strong)NSArray* bannerList;
