@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
 @class SuperOneCollectionViewCell;
 @protocol SuperOneCollectionViewCellDelegate
 -(void)SuperOneCollectionViewCell:(SuperOneCollectionViewCell*)cell clickAction:(int )index;
+@end
+NS_ASSUME_NONNULL_BEGIN
 @interface SuperOneCollectionViewCell : UICollectionViewCell
 - (void)configWithData:(NSDictionary *)obj;
 @end
