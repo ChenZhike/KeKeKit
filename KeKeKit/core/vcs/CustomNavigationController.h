@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomNavigationController : UINavigationController
+@property(nonatomic,strong,nullable)UIPanGestureRecognizer* fullScreenGes;
 -(UIImage*)getNaviBarBackImg;
 
 @end

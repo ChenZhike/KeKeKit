@@ -13,6 +13,8 @@
 @end
 NS_ASSUME_NONNULL_BEGIN
 @interface SuperOneCollectionViewCell : UICollectionViewCell
+@property(nonatomic,assign)id<SuperOneCollectionViewCellDelegate> actionDelegate;
+@property(nonatomic,strong,nullable)NSDictionary* data;
 - (void)configWithData:(NSDictionary *)obj;
 @end
 

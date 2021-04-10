@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
        titleFrame:(CGRect)titleFrame  ivStr:(NSString*)ivStr  ivFrame:(CGRect)ivFrame;
 @property(nonatomic,strong)UILabel* lab;
 @property(nonatomic,strong)UIImageView* iv;
+- (void)normalOrHighlightedStyle:(BOOL)normalOrHighlighted;
 
 @end
 

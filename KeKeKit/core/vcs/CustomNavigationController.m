@@ -18,6 +18,7 @@
     [super viewDidLoad];
     id target = self.interactivePopGestureRecognizer.delegate;
     UIPanGestureRecognizer* fullScreenGes = [[UIPanGestureRecognizer alloc]  initWithTarget:target action:@selector(handleNavigationTransition:)];
+    self.fullScreenGes=fullScreenGes;
     [self.view addGestureRecognizer:fullScreenGes];
     fullScreenGes.delegate = self;
     self.interactivePopGestureRecognizer.enabled = NO;

@@ -60,6 +60,15 @@
     }
     return self;
 }
+- (void)normalOrHighlightedStyle:(BOOL)normalOrHighlighted
+{
+    self.iv.highlighted=normalOrHighlighted;
+}
+-(void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self normalOrHighlightedStyle:selected];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
