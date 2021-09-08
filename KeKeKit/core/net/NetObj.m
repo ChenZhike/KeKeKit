@@ -200,4 +200,11 @@ NSData *GetDataForHex(NSString *hex) {
         }
     [ListCellRequestManager sharedInstance].is_request_body=NO;
 }
++(BOOL)ok_return:(NSDictionary*)resnfo
+{
+    NSString*retCode=[resnfo objectForKey:@"retCode"];
+    NSArray*arr=[GlobalConst return_ok_codes];
+    BOOL result=[arr containsObject:retCode];
+    return result;
+}
 @end

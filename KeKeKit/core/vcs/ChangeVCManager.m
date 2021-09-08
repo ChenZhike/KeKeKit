@@ -90,7 +90,7 @@ static ChangeVCManager*sharedChangeVCMa=nil;
 
         cvcm.no=[[NetObj alloc]initWithUrl:url parameters:paramters Block:^(NSDictionary *resnfo) {
             NSString*retCode=[resnfo objectForKey:@"retCode"];
-            if ([retCode isEqualToString:@"1"]) {
+            if ([NetObj ok_return:resnfo]) {
 
             }
             else

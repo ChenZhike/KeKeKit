@@ -50,8 +50,8 @@
         self.no1=[[NetObj alloc]initWithUrl:url parameters:paramters Block:^(NSDictionary *resnfo) {
             self.askpay=NO;
             self.tradeNo=@"";
-            NSString*retCode=[resnfo objectForKey:@"retCode"];
-            if ([retCode isEqualToString:@"1"]) {
+//            NSString*retCode=[resnfo objectForKey:@"retCode"];
+            if ([NetObj ok_return:resnfo]) {
                 [SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
             }
             else

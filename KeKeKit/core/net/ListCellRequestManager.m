@@ -78,8 +78,8 @@ static ListCellRequestManager*sharedCellRequestManager=nil;
 }
 -(void)dealCellUpdateRequest:(NSDictionary*)resnfo
 {
-    NSString*retCode=[resnfo objectForKey:@"retCode"];
-    if ([retCode isEqualToString:@"1"]) {
+//    NSString*retCode=[resnfo objectForKey:@"retCode"];
+    if ([NetObj ok_return:resnfo]) {
         [SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
         if (self.success_replace) {
             [self updateRelatedSavedDataAndUI];

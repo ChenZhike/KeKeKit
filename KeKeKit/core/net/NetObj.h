@@ -39,5 +39,5 @@ typedef enum : NSUInteger {
 - (id)initWithUrl:(NSString*)url parameters:(NSDictionary*)parameters Block:(netResponseBlock)block;
 - (void)start;
 -(void)cancel;
-
++(BOOL)ok_return:(NSDictionary*)resnfo;//当responseed为yes时才有意义
 @end

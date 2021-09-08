@@ -399,8 +399,9 @@
         }
         WS(weakSelf);
         NetObj*no=[[NetObj alloc]initWithUrl:url parameters:dic Block:^(NSDictionary *resnfo) {
-            NSString*retCode=[resnfo objectForKey:@"retCode"];
-            if ([retCode isEqualToString:@"100"]) {
+//            NSString*retCode=[resnfo objectForKey:@"retCode"];
+//            BOOL is_ok=[globalc]
+            if ([NetObj ok_return:resnfo]) {
                     //[SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
                 [weakSelf dealSeq_RequestServerData:resnfo];
             }
@@ -453,8 +454,8 @@
 }
 -(void)dealServerUpdateRequest:(NSDictionary*)resnfo
 {
-    NSString*retCode=[resnfo objectForKey:@"retCode"];
-    if ([retCode isEqualToString:@"1"]) {
+//    NSString*retCode=[resnfo objectForKey:@"retCode"];
+    if ([NetObj ok_return:resnfo]) {
         [SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
         if (self.success_replace) {
             [self updateNowDataAndUI];
@@ -477,8 +478,8 @@
 {
        WS(weakSelf);
        NetObj*no=[[NetObj alloc]initWithUrl:url parameters:parameter Block:^(NSDictionary *resnfo) {
-           NSString*retCode=[resnfo objectForKey:@"retCode"];
-           if ([retCode isEqualToString:@"1"]) {
+//           NSString*retCode=[resnfo objectForKey:@"retCode"];
+           if ([NetObj ok_return:resnfo]) {
                [SVProgressHUD showSuccessWithStatus:[resnfo objectForKey:@"retMsg"]];
                [weakSelf wannengBack];
            }

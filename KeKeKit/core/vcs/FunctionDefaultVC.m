@@ -175,9 +175,9 @@
 }
 -(void)dealServerRequestAgainData:(NSDictionary*)resnfo
 {
-    NSString*retCode=[resnfo objectForKey:@"retCode"];
+//    NSString*retCode=[resnfo objectForKey:@"retCode"];
 
-    if ([retCode isEqualToString:@"1"]) {
+    if ([NetObj ok_return:resnfo]) {
         NSDictionary*data=[resnfo objectForKey:@"data"];
         NSString*aggreementUrl=[data objectForKey:@"aggreementUrl"];
         self.urlStr=aggreementUrl;

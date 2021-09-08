@@ -165,5 +165,9 @@ static NSString* earnurl=nil;
 {
     return @"";
 }
++(NSArray*)return_ok_codes
+{
+    return @[@"100",@"1"];
+}
 @end
 
