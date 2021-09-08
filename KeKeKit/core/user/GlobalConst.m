@@ -51,6 +51,7 @@ NSString * const KeGuNameKeyName=@"courseManagerName";//课程顾问名字
 NSString * const ScoreNumsCellTitlesKeyName=@"titles";
 NSString * const ScoreNumsCellNumsKeyName=@"nums";
 static NSString* earnurl=nil;
+static NSString*aserver_url=nil;
 @implementation GlobalConst : NSObject
 +(UIColor*)topviewBackColor
 {
@@ -168,6 +169,14 @@ static NSString* earnurl=nil;
 +(NSArray*)return_ok_codes
 {
     return @[@"100",@"1"];
+}
++(NSString*)Server_Url
+{
+    return aserver_url;
+}
++(void)setServer_Url:(NSString*)aurl_str
+{
+    aserver_url=[aurl_str mutableCopy];
 }
 @end
 

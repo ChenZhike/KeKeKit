@@ -80,4 +80,6 @@ UIKIT_EXTERN NSString * const ScoreNumsCellNumsKeyName;
 +(NSArray*)idKeys;
 +(NSString*)ProtocolUrl;
 +(NSArray*)return_ok_codes;
++(NSString*)Server_Url;
++(void)setServer_Url:(NSString*)aurl_str;
 @end

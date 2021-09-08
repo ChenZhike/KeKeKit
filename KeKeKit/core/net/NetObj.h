@@ -7,16 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#define  testNet
-
-#ifdef testNet
-#define APPURL  @"http://111.231.2.176:8981"//
-
-#else
-    //测试（外网）
-#define APPURL  @"https://www.baidu.com/app"
-
-#endif
+# define APPURL [GlobalConst Server_Url]
 #define NeedEncryptServerData (NO)
 #define  NetObjTagKey @"NetObjTagKey"
 
