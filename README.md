@@ -13,3 +13,7 @@ UITextView:
 checkEmpty：检验-空
 UIViewController (ShiPei)
 - (void)jieping:(UIView*)aview :截屏
+# 更新记录
+2021年09月08日
+服务器地址APPURL改成外部可修改
+服务器返回的成功码retcode的成功值范围改成外部可修改
