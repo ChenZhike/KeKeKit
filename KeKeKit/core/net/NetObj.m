@@ -72,7 +72,8 @@ NSData *GetDataForHex(NSString *hex) {
         //    dispatch_async(dispatch_get_main_queue(), ^{
         //        [SVProgressHUD showWithStatus:@"正在请求..."];
         //    });
-    NSString*totalurl=[APPURL stringByAppendingString:self.urlstr];
+    NSString*appurl=[[GlobalConst sharedInstance]server_url];
+    NSString*totalurl=[appurl stringByAppendingString:self.urlstr];
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:totalurl]];
     [req setCachePolicy:NSURLRequestReloadIgnoringCacheData];
     self.req=req;
