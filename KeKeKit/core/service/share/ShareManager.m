@@ -68,15 +68,17 @@ static ShareManager*onlyInstance=nil;
     switch (buttonIndex) {
         case 1://赞一下
         {
-        NSString*appurl=APPDownloadUrlWithAPPID(@"1430676587");
+        NSString*appid=[GlobalConst sharedInstance].appid;
+        NSString*appurl=APPDownloadUrlWithAPPID(appid);
         [[UIPasteboard generalPasteboard] setString:appurl];
         [SVProgressHUD showSuccessWithStatus:@"链接已复制到剪切板，请粘贴！"];
         }
             break;
         case 2://联系作者
         {
-        [[UIPasteboard generalPasteboard] setString:@"1234568@qq.com"];
-        [SVProgressHUD showSuccessWithStatus:@"恭喜您获得作者隐藏的邮箱，有任何意见都可以邮件告知作者，请粘贴！"];
+        NSString*email=[GlobalConst sharedInstance].author_email;
+        [[UIPasteboard generalPasteboard] setString:email];
+        [SVProgressHUD showSuccessWithStatus:@"恭喜您获得作者邮箱，有任何意见都可以邮件告知作者，请粘贴！"];
         }
             break;
 

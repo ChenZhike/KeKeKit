@@ -13,8 +13,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "RNDecryptor.h"
 
-
-#define CSPWDSTRING  @"McPeARaUsOiAKwquKr5odl1ZQOg5X6zrn"
+static BOOL needEncryptServerData=NO;
     //data密码
 
 
@@ -38,6 +37,10 @@ NSData *GetDataForHex(NSString *hex) {
         [data appendBytes:&whole_byte length:1];
     }
     return data;
+}
++(void)initConsts:(BOOL)is_needEncryptServerData
+{
+    needEncryptServerData=is_needEncryptServerData;
 }
 
 
@@ -149,11 +152,11 @@ NSData *GetDataForHex(NSString *hex) {
           NSMutableDictionary*mudic=[[NSMutableDictionary alloc]init];
           [mudic setValuesForKeysWithDictionary:dicFromJson];
           [mudic setObject:@(self.obj_tag) forKey:NetObjTagKey];
-        if (NeedEncryptServerData) {
+        if (needEncryptServerData) {
             BOOL needjiemi=[dicFromJson.allKeys containsObject:@"data"];
             if (needjiemi) {
                     //解密替换
-                NSString *password = CSPWDSTRING;
+                NSString *password = [[GlobalConst sharedInstance]CSPWDSTRING];
                 NSString *messageString = [dicFromJson objectForKey:@"data"];
 
                 NSData *message = GetDataForHex(messageString);
@@ -207,4 +210,5 @@ NSData *GetDataForHex(NSString *hex) {
     BOOL result=[arr containsObject:retCode];
     return result;
 }
+
 @end

@@ -12,7 +12,6 @@
 @end
 
 @implementation SuperOneVC
-
 -(void)customViewWantShow
 {
         //    [self viewDidAppear:NO];
@@ -770,7 +769,6 @@
 {
 
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
         // Dispose of any resources that can be recreated.

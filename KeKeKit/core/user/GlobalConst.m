@@ -51,8 +51,19 @@ NSString * const KeGuNameKeyName=@"courseManagerName";//课程顾问名字
 NSString * const ScoreNumsCellTitlesKeyName=@"titles";
 NSString * const ScoreNumsCellNumsKeyName=@"nums";
 static NSString* earnurl=nil;
-static NSString*aserver_url=nil;
+
+static NSString*back_icon_str=nil;
+static GlobalConst*sharedGlobalConst=nil;
 @implementation GlobalConst : NSObject
+    //.m:
++(GlobalConst*)sharedInstance
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedGlobalConst=[[GlobalConst alloc]init];
+    });
+    return sharedGlobalConst;
+}
 +(UIColor*)topviewBackColor
 {
     return [UIColor whiteColor];
@@ -169,14 +180,6 @@ static NSString*aserver_url=nil;
 +(NSArray*)return_ok_codes
 {
     return @[@"100",@"1"];
-}
-+(NSString*)Server_Url
-{
-    return aserver_url;
-}
-+(void)setServer_Url:(NSString*)aurl_str
-{
-    aserver_url=[aurl_str mutableCopy];
 }
 @end
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 # define APPURL [GlobalConst Server_Url]
-#define NeedEncryptServerData (NO)
+//#define NeedEncryptServerData (NO)
 #define  NetObjTagKey @"NetObjTagKey"
 
 typedef void (^netResponseBlock)(NSDictionary *resnfo);
@@ -26,6 +26,7 @@ typedef enum : NSUInteger {
 @property(nonatomic,copy)NSString*urlstr;
 @property(nonatomic,strong)NSDictionary* parameters;
 @property(nonatomic,assign)BOOL responsed;
++(void)initConsts:(BOOL)is_needEncryptServerData;
 - (id)initWithUrlInfo:(NSDictionary*)urlinfo Block:(netResponseBlock)block;
 - (id)initWithUrl:(NSString*)url parameters:(NSDictionary*)parameters Block:(netResponseBlock)block;
 - (void)start;

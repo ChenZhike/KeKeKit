@@ -22,7 +22,7 @@
     UIButton*btn=[[UIButton alloc]initWithFrame:RECT(20, 0, 30, 30)];
     btn.centerY=NavBtnCenterY;
     {
-    NSString*imgstr=@"icon_jiantou";
+    NSString*imgstr=[[GlobalConst sharedInstance]back_icon_str];
     CGFloat imgW=16;
     CGFloat imgH=16;
     UIImageView*iv=[[UIImageView alloc]initWithFrame:RECT(0, 0, imgW, imgH)];
@@ -32,7 +32,7 @@
         image=[image imageWithColor:color];
     }
     iv.image=image;
-    iv.transform=CGAffineTransformMakeRotation(M_PI);
+//    iv.transform=CGAffineTransformMakeRotation(M_PI);
     [btn addSubview:iv];
     }
     return btn;

@@ -80,6 +80,13 @@ UIKIT_EXTERN NSString * const ScoreNumsCellNumsKeyName;
 +(NSArray*)idKeys;
 +(NSString*)ProtocolUrl;
 +(NSArray*)return_ok_codes;
-+(NSString*)Server_Url;
-+(void)setServer_Url:(NSString*)aurl_str;
++(GlobalConst*)sharedInstance;
+#pragma mark-图片
+@property(nonatomic,copy,nullable)NSString*back_icon_str;
+#pragma mark-网络请求
+@property (nonatomic, copy) NSString*server_url;
+@property(nonatomic,copy,nullable)NSString*CSPWDSTRING;
+#pragma mark-分享相关
+@property (nonatomic, copy) NSString*appid;
+@property (nonatomic, copy) NSString*author_email;
 @end
