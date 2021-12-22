@@ -68,12 +68,12 @@ static NSString *const cellID = @"cellID";
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    
+
     self.collectionView.frame = self.bounds;
     self.pageControl.frame = CGRectMake(0, self.bounds.size.height - 30, self.bounds.size.width, 30);
     self.flowLayout.itemSize = CGSizeMake(_itemWidth, self.bounds.size.height);
     self.flowLayout.minimumLineSpacing = self.itemSpace;
-    
+
     if(self.collectionView.contentOffset.x == 0 && _totalItems > 0)
     {
         NSInteger targeIndex = 0;
@@ -104,13 +104,21 @@ static NSString *const cellID = @"cellID";
     if (!self.imgArr.count) return; // 解决清除timer时偶尔会出现的问题
     NSInteger currentPage = [self currentIndex] % self.imgArr.count;
     self.pageControl.currentPage = currentPage;
-    
+
+//    if([self.delegate respondsToSelector:@selector(cycleScrollView:currentPageIndex:)])
+//    {
+//        [self.delegate cycleScrollView:self currentPageIndex:currentPage];
+//    }
+}
+- (void)notiOutPageChanged
+{
+    if (!self.imgArr.count) return; // 解决清除timer时偶尔会出现的问题
+    NSInteger currentPage = [self currentIndex] % self.imgArr.count;
     if([self.delegate respondsToSelector:@selector(cycleScrollView:currentPageIndex:)])
     {
         [self.delegate cycleScrollView:self currentPageIndex:currentPage];
     }
 }
-
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     _oldPoint = scrollView.contentOffset.x;
@@ -134,13 +142,14 @@ static NSString *const cellID = @"cellID";
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     self.collectionView.userInteractionEnabled = YES;
-    if (!self.imgArr.count) return; // 解决清除timer时偶尔会出现的问题
+    [self notiOutPageChanged];
+//    if (!self.imgArr.count) return; // 解决清除timer时偶尔会出现的问题
 }
 
 //手离开屏幕的时候
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
     if(!self.infiniteLoop) return;//如果不是无限轮播，则返回
-    
+
     //如果是向右滑或者滑动距离大于item的一半，则像右移动一个item+space的距离，反之向左
     float currentPoint = scrollView.contentOffset.x;
     float moveWidth = currentPoint-_oldPoint;
@@ -178,7 +187,7 @@ static NSString *const cellID = @"cellID";
     DCCycleScrollViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     long itemIndex = (int) indexPath.item % self.imgArr.count;
     NSString *imagePath = self.imgArr[itemIndex];
-   
+
         if ([imagePath hasPrefix:@"http"]) {
             [cell.imageView sd_setImageWithURL:[NSURL URLWithString:imagePath] placeholderImage:self.cellPlaceholderImage];
         } else {
@@ -208,7 +217,7 @@ static NSString *const cellID = @"cellID";
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     _timer = timer;
-    
+
 }
 //销毁定时器
 - (void)invalidateTimer
@@ -219,11 +228,11 @@ static NSString *const cellID = @"cellID";
 -(void)automaticScroll
 {
     if(_totalItems == 0) return;
-    
+
     NSInteger currentIndex = [self currentIndex];
-    
+
     NSInteger targetIndex = currentIndex + 1;
-    
+
     [self scrollToIndex:targetIndex];
 }
 -(NSInteger)currentIndex
@@ -231,7 +240,7 @@ static NSString *const cellID = @"cellID";
     if(self.collectionView.frame.size.width == 0 || self.collectionView.frame.size.height == 0)
         return 0;
     NSInteger index = 0;
-    
+
     if (_flowLayout.scrollDirection == UICollectionViewScrollDirectionHorizontal) {//水平滑动
         index = (self.collectionView.contentOffset.x + (self.itemWidth + self.itemSpace) * 0.5) / (self.itemSpace + self.itemWidth);
     }else{
@@ -266,7 +275,7 @@ static NSString *const cellID = @"cellID";
 - (void)setPlaceholderImage:(UIImage *)placeholderImage
 {
     _placeholderImage = placeholderImage;
-    
+
     if (!self.backgroundImageView) {
         UIImageView *bgImageView = [UIImageView new];
         bgImageView.frame = self.collectionView.frame;
@@ -308,9 +317,9 @@ static NSString *const cellID = @"cellID";
         self.collectionView.scrollEnabled = NO;
         [self invalidateTimer];
     }
-    
+
     [self.collectionView reloadData];
-        
+
 }
 -(void)setAutoScroll:(BOOL)autoScroll
 {
@@ -319,7 +328,7 @@ static NSString *const cellID = @"cellID";
         _autoScroll = autoScroll;
         //创建之前，停止定时器
         [self invalidateTimer];
-        
+
         if (_autoScroll) {
             [self setupTimer];
         }
@@ -340,7 +349,7 @@ static NSString *const cellID = @"cellID";
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.backgroundColor = [UIColor clearColor];
-        
+
         //注册cell
         [_collectionView registerClass:[DCCycleScrollViewCell class] forCellWithReuseIdentifier:cellID];
 
@@ -370,3 +379,4 @@ static NSString *const cellID = @"cellID";
     return _flowLayout;
 }
 @end
+

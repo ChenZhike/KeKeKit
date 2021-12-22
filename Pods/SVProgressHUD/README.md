@@ -10,7 +10,7 @@
 
 ![SVProgressHUD](http://f.cl.ly/items/2G1F1Z0M0k0h2U3V1p39/SVProgressHUD.gif)
 
-## Demo		
+## Demo
 
 Try `SVProgressHUD` on [Appetize.io](https://appetize.io/app/p8r2cvy8kq74x7q7tjqf5gyatr).
 
@@ -18,7 +18,9 @@ Try `SVProgressHUD` on [Appetize.io](https://appetize.io/app/p8r2cvy8kq74x7q7tjq
 
 ### From CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like `SVProgressHUD` in your projects. First, add the following line to your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of
+using 3rd-party libraries like `SVProgressHUD` in your projects. First, add the following line to
+your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
 
 ```ruby
 pod 'SVProgressHUD'
@@ -40,13 +42,17 @@ pod install
 
 ### Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate `SVProgressHUD` into your Xcode project using Carthage, specify it in your `Cartfile`:
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and
+provides you with binary frameworks. To integrate `SVProgressHUD` into your Xcode project using Carthage, specify it in
+your `Cartfile`:
 
 ```ogdl
 github "SVProgressHUD/SVProgressHUD"
 ```
 
-Run `carthage bootstrap` to build the framework in your repository's Carthage directory. You can then include it in your target's `carthage copy-frameworks` build phase. For more information on this, please see [Carthage's documentation](https://github.com/carthage/carthage#if-youre-building-for-ios-tvos-or-watchos).
+Run `carthage bootstrap` to build the framework in your repository's Carthage directory. You can then include it in your
+target's `carthage copy-frameworks` build phase. For more information on this, please
+see [Carthage's documentation](https://github.com/carthage/carthage#if-youre-building-for-ios-tvos-or-watchos).
 
 ### Manually
 
@@ -56,21 +62,27 @@ Run `carthage bootstrap` to build the framework in your repository's Carthage di
 
 ## Swift
 
-Even though `SVProgressHUD` is written in Objective-C, it can be used in Swift with no hassle. If you use [CocoaPods](http://cocoapods.org) add the following line to your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
+Even though `SVProgressHUD` is written in Objective-C, it can be used in Swift with no hassle. If you
+use [CocoaPods](http://cocoapods.org) add the following line to
+your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
 
 ```ruby
 use_frameworks!
 ```
 
-If you added `SVProgressHUD` manually, just add a [bridging header](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) file to your project with the `SVProgressHUD` header included.
+If you added `SVProgressHUD` manually, just add
+a [bridging header](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html)
+file to your project with the `SVProgressHUD` header included.
 
 ## Usage
 
 (see sample Xcode project in `/Demo`)
 
-`SVProgressHUD` is created as a singleton (i.e. it doesn't need to be explicitly allocated and instantiated; you directly call `[SVProgressHUD method]`).
+`SVProgressHUD` is created as a singleton (i.e. it doesn't need to be explicitly allocated and instantiated; you
+directly call `[SVProgressHUD method]`).
 
-**Use `SVProgressHUD` wisely! Only use it if you absolutely need to perform a task before taking the user forward. Bad use case examples: pull to refresh, infinite scrolling, sending message.**
+**Use `SVProgressHUD` wisely! Only use it if you absolutely need to perform a task before taking the user forward. Bad
+use case examples: pull to refresh, infinite scrolling, sending message.**
 
 Using `SVProgressHUD` in your app will usually look as simple as this (using Grand Central Dispatch):
 
@@ -117,7 +129,8 @@ If you'd like to stack HUDs, you can balance out every show call using:
 
 The HUD will get dismissed once the popActivity calls will match the number of show calls.
 
-Or show a confirmation glyph before before getting dismissed a little bit later. The display time depends on `minimumDismissTimeInterval` and the length of the given string.
+Or show a confirmation glyph before before getting dismissed a little bit later. The display time depends
+on `minimumDismissTimeInterval` and the length of the given string.
 
 ```objective-c
 + (void)showInfoWithStatus:(NSString*)string;
@@ -170,11 +183,13 @@ As standard `SVProgressHUD` offers two preconfigured styles:
 * `SVProgressHUDStyleLight`: White background with black spinner and text
 * `SVProgressHUDStyleDark`: Black background with white spinner and text
 
-If you want to use custom colors use `setForegroundColor` and `setBackgroundColor:`. These implicitly set the HUD's style to `SVProgressHUDStyleCustom`.
+If you want to use custom colors use `setForegroundColor` and `setBackgroundColor:`. These implicitly set the HUD's
+style to `SVProgressHUDStyleCustom`.
 
 ## Haptic Feedback
 
-For users with newer devices (starting with the iPhone 7), `SVProgressHUD` can automatically trigger haptic feedback depending on which HUD is being displayed. The feedback maps as follows:
+For users with newer devices (starting with the iPhone 7), `SVProgressHUD` can automatically trigger haptic feedback
+depending on which HUD is being displayed. The feedback maps as follows:
 
 * `showSuccessWithStatus:` <-> `UINotificationFeedbackTypeSuccess`
 * `showInfoWithStatus:` <-> `UINotificationFeedbackTypeWarning`
@@ -187,23 +202,29 @@ Users with devices prior to iPhone 7 will have no change in functionality.
 ## Notifications
 
 `SVProgressHUD` posts four notifications via `NSNotificationCenter` in response to being shown/dismissed:
+
 * `SVProgressHUDWillAppearNotification` when the show animation starts
 * `SVProgressHUDDidAppearNotification` when the show animation completes
 * `SVProgressHUDWillDisappearNotification` when the dismiss animation starts
 * `SVProgressHUDDidDisappearNotification` when the dismiss animation completes
 
-Each notification passes a `userInfo` dictionary holding the HUD's status string (if any), retrievable via `SVProgressHUDStatusUserInfoKey`.
+Each notification passes a `userInfo` dictionary holding the HUD's status string (if any), retrievable
+via `SVProgressHUDStatusUserInfoKey`.
 
-`SVProgressHUD` also posts `SVProgressHUDDidReceiveTouchEventNotification` when users touch on the overall screen or `SVProgressHUDDidTouchDownInsideNotification` when a user touches on the HUD directly. For this notifications `userInfo` is not passed but the object parameter contains the `UIEvent` that related to the touch.
+`SVProgressHUD` also posts `SVProgressHUDDidReceiveTouchEventNotification` when users touch on the overall screen
+or `SVProgressHUDDidTouchDownInsideNotification` when a user touches on the HUD directly. For this
+notifications `userInfo` is not passed but the object parameter contains the `UIEvent` that related to the touch.
 
 ## App Extensions
 
-When using `SVProgressHUD` in an App Extension, `#define SV_APP_EXTENSIONS` to avoid using unavailable APIs. Additionally call `setViewForExtension:` from your extensions view controller with `self.view`.
+When using `SVProgressHUD` in an App Extension, `#define SV_APP_EXTENSIONS` to avoid using unavailable APIs.
+Additionally call `setViewForExtension:` from your extensions view controller with `self.view`.
 
 ## Contributing to this project
 
-If you have feature requests or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/SVProgressHUD/SVProgressHUD/issues/new). Please take a moment to
-review the guidelines written by [Nicolas Gallagher](https://github.com/necolas):
+If you have feature requests or bug reports, feel free to help out by sending pull requests or
+by [creating new issues](https://github.com/SVProgressHUD/SVProgressHUD/issues/new). Please take a moment to review the
+guidelines written by [Nicolas Gallagher](https://github.com/necolas):
 
 * [Bug reports](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#bugs)
 * [Feature requests](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#features)
@@ -211,8 +232,13 @@ review the guidelines written by [Nicolas Gallagher](https://github.com/necolas)
 
 ## License
 
-`SVProgressHUD` is distributed under the terms and conditions of the [MIT license](https://github.com/SVProgressHUD/SVProgressHUD/blob/master/LICENSE.txt). The success, error and info icons are made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and are licensed under [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+`SVProgressHUD` is distributed under the terms and conditions of
+the [MIT license](https://github.com/SVProgressHUD/SVProgressHUD/blob/master/LICENSE.txt). The success, error and info
+icons are made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and are licensed
+under [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/).
 
 ## Credits
 
-`SVProgressHUD` is brought to you by [Sam Vermette](http://samvermette.com), [Tobias Tiemerding](http://tiemerding.com) and [contributors to the project](https://github.com/SVProgressHUD/SVProgressHUD/contributors). If you're using `SVProgressHUD` in your project, attribution would be very appreciated.
+`SVProgressHUD` is brought to you by [Sam Vermette](http://samvermette.com), [Tobias Tiemerding](http://tiemerding.com)
+and [contributors to the project](https://github.com/SVProgressHUD/SVProgressHUD/contributors). If you're
+using `SVProgressHUD` in your project, attribution would be very appreciated.

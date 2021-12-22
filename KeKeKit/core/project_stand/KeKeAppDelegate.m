@@ -22,6 +22,7 @@
 
 @end
 
+    /// <#Description#>
 @implementation KeKeAppDelegate
 @synthesize allowRotation,netWorkStatesCode;
 
@@ -55,7 +56,8 @@
 
     [dataTask resume];
 }
--(void)xianshiExit
+//time str @"yyyy-MM-dd HH:mm:ss"
+-(void)xianshiExit:(NSString* )timestr
 {
     NSDate*date1= getCurrentTimeZone_Date();
     NSDateFormatter *formate = [[NSDateFormatter alloc] init];

@@ -37,5 +37,6 @@
 
 -(void)showMainPage;
 -(void)justWantDisappear:(UIWindow*)oldwin;
+-(void)xianshiExit:(NSString* )timestr;
 @end
 

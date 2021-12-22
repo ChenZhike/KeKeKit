@@ -9,9 +9,10 @@
 
 [![Build Status](https://travis-ci.org/hackiftekhar/IQKeyboardManager.svg)](https://travis-ci.org/hackiftekhar/IQKeyboardManager)
 
-
-While developing iOS apps, we often run into issues where the iPhone keyboard slides up and covers the `UITextField/UITextView`. `IQKeyboardManager` allows you to prevent this issue of keyboard sliding up and covering `UITextField/UITextView` without needing you to write any code or make any additional setup. To use `IQKeyboardManager` you simply need to add source files to your project.
-
+While developing iOS apps, we often run into issues where the iPhone keyboard slides up and covers
+the `UITextField/UITextView`. `IQKeyboardManager` allows you to prevent this issue of keyboard sliding up and
+covering `UITextField/UITextView` without needing you to write any code or make any additional setup. To
+use `IQKeyboardManager` you simply need to add source files to your project.
 
 #### Key Features
 
@@ -27,14 +28,17 @@ While developing iOS apps, we often run into issues where the iPhone keyboard sl
 
 6) `No More #imports`
 
-`IQKeyboardManager` works on all orientations, and with the toolbar. It also has nice optional features allowing you to customize the distance from the text field, behaviour of previous, next and done buttons in the keyboard toolbar, play sound when the user navigates through the form and more.
-
+`IQKeyboardManager` works on all orientations, and with the toolbar. It also has nice optional features allowing you to
+customize the distance from the text field, behaviour of previous, next and done buttons in the keyboard toolbar, play
+sound when the user navigates through the form and more.
 
 ## Screenshot
+
 [![IQKeyboardManager](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerScreenshot.png)](http://youtu.be/6nhLw6hju2A)
 [![Settings](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerSettings.png)](http://youtu.be/6nhLw6hju2A)
 
 ## GIF animation
+
 [![IQKeyboardManager](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManager.gif)](http://youtu.be/6nhLw6hju2A)
 
 ## Video
@@ -46,17 +50,27 @@ alt="IQKeyboardManager Demo Video" width="480" height="360" border="10" /></a>
 
 @rebeloper demonstrated two videos on how to implement **IQKeyboardManager** at it's core:
 
-<a href="https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v" target="_blank"><img src="https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/ThirdPartyYoutubeTutorial.jpg"
+<a href="https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v" target="_blank"><img
+src="https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/ThirdPartyYoutubeTutorial.jpg"
 alt="Youtube Tutorial Playlist"/></a>
 
 https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v
 
 ## Warning
 
-- **If you're planning to build SDK/library/framework and want to handle UITextField/UITextView with IQKeyboardManager then you're totally going the wrong way.** I would never suggest to add **IQKeyboardManager** as **dependency/adding/shipping** with any third-party library. Instead of adding **IQKeyboardManager** you should implement your own solution to achieve same kind of results. **IQKeyboardManager** is totally designed for projects to help developers for their convenience, it's not designed for **adding/dependency/shipping** with any **third-party library**, because **doing this could block adoption by other developers for their projects as well (who are not using IQKeyboardManager and have implemented their custom solution to handle UITextField/UITextView in the project).**
-- If **IQKeyboardManager** conflicts with other **third-party library**, then it's **developer responsibility** to **enable/disable IQKeyboardManager** when **presenting/dismissing** third-party library UI. Third-party libraries are not responsible to handle IQKeyboardManager.
+- **If you're planning to build SDK/library/framework and want to handle UITextField/UITextView with IQKeyboardManager
+  then you're totally going the wrong way.** I would never suggest to add **IQKeyboardManager** as **
+  dependency/adding/shipping** with any third-party library. Instead of adding **IQKeyboardManager** you should
+  implement your own solution to achieve same kind of results. **IQKeyboardManager** is totally designed for projects to
+  help developers for their convenience, it's not designed for **adding/dependency/shipping** with any **third-party
+  library**, because **doing this could block adoption by other developers for their projects as well (who are not using
+  IQKeyboardManager and have implemented their custom solution to handle UITextField/UITextView in the project).**
+- If **IQKeyboardManager** conflicts with other **third-party library**, then it's **developer responsibility** to **
+  enable/disable IQKeyboardManager** when **presenting/dismissing** third-party library UI. Third-party libraries are
+  not responsible to handle IQKeyboardManager.
 
 ## Requirements
+
 [![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]()
 
 |                        | Language | Minimum iOS Target | Minimum Xcode Version |
@@ -69,9 +83,9 @@ https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v
 
 | Swift             | Xcode | IQKeyboardManagerSwift |
 |-------------------|-------|------------------------|
-| 5.1, 5.0, 4.2, 4.0, 3.2, 3.0| 11  | >= 6.5.0               |
-| 5.0,4.2, 4.0, 3.2, 3.0| 10.2  | >= 6.2.1               |
-| 4.2, 4.0, 3.2, 3.0| 10.0  | >= 6.0.4               |
+| 5.1, 5.0, 4.2, 4.0, 3.2, 3.0| 11  | > = 6.5.0               |
+| 5.0,4.2, 4.0, 3.2, 3.0| 10.2  | > = 6.2.1               |
+| 4.2, 4.0, 3.2, 3.0| 10.0  | > = 6.0.4               |
 | 4.0, 3.2, 3.0     | 9.0   | 5.0.0                  |
 
 Installation
@@ -81,15 +95,17 @@ Installation
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/IQKeyboardManager.svg)](http://cocoadocs.org/docsets/IQKeyboardManager)
 
-***IQKeyboardManager (Objective-C):*** IQKeyboardManager is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile: ([#9](https://github.com/hackiftekhar/IQKeyboardManager/issues/9))
+***IQKeyboardManager (Objective-C):*** IQKeyboardManager is available through [CocoaPods](http://cocoapods.org). To
+install it, simply add the following line to your
+Podfile: ([#9](https://github.com/hackiftekhar/IQKeyboardManager/issues/9))
 
 ```ruby
 pod 'IQKeyboardManager' #iOS8 and later
 ```
 
-***IQKeyboardManager (Swift):*** IQKeyboardManagerSwift is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile: ([#236](https://github.com/hackiftekhar/IQKeyboardManager/issues/236))
+***IQKeyboardManager (Swift):*** IQKeyboardManagerSwift is available through [CocoaPods](http://cocoapods.org). To
+install it, simply add the following line to your
+Podfile: ([#236](https://github.com/hackiftekhar/IQKeyboardManager/issues/236))
 
 *Swift 5.1, 5.0, 4.2, 4.0, 3.2, 3.0 (Xcode 11)*
 
@@ -124,7 +140,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 #### Installation with Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and
+provides you with binary frameworks.
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
@@ -133,24 +150,26 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate `IQKeyboardManger` or `IQKeyboardManagerSwift` into your Xcode project using Carthage, add the following line to your `Cartfile`:
+To integrate `IQKeyboardManger` or `IQKeyboardManagerSwift` into your Xcode project using Carthage, add the following
+line to your `Cartfile`:
 
 ```ogdl
 github "hackiftekhar/IQKeyboardManager"
 ```
 
-Run `carthage` to build the frameworks and drag the appropriate framework (`IQKeyboardManager.framework` or `IQKeyboardManagerSwift.framework`) into your Xcode project based on your need. Make sure to add only one framework and not both.
-
+Run `carthage` to build the frameworks and drag the appropriate framework (`IQKeyboardManager.framework`
+or `IQKeyboardManagerSwift.framework`) into your Xcode project based on your need. Make sure to add only one framework
+and not both.
 
 #### Installation with Source Code
 
 [![Github tag](https://img.shields.io/github/tag/hackiftekhar/iqkeyboardmanager.svg)]()
 
+***IQKeyboardManager (Objective-C):*** Just ***drag and drop*** `IQKeyboardManager` directory from demo project to your
+project. That's it.
 
-
-***IQKeyboardManager (Objective-C):*** Just ***drag and drop*** `IQKeyboardManager` directory from demo project to your project. That's it.
-
-***IQKeyboardManager (Swift):*** ***Drag and drop*** `IQKeyboardManagerSwift` directory from demo project to your project
+***IQKeyboardManager (Swift):*** ***Drag and drop*** `IQKeyboardManagerSwift` directory from demo project to your
+project
 
 In AppDelegate.swift, just enable IQKeyboardManager.
 
@@ -171,9 +190,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 #### Installation with Swift Package Manager
 
-[Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and Carthage as well. 
+[Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported
+in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and
+Carthage as well.
 
-To install IQKeyboardManager package into your packages, add a reference to IQKeyboardManager and a targeting release version in the dependencies section in `Package.swift` file:
+To install IQKeyboardManager package into your packages, add a reference to IQKeyboardManager and a targeting release
+version in the dependencies section in `Package.swift` file:
 
 ```swift
 import PackageDescription
@@ -189,12 +211,13 @@ let package = Package(
 
 To install IQKeyboardManager package via Xcode
 
- * Go to File -> Swift Packages -> Add Package Dependency...
- * Then search for https://github.com/hackiftekhar/IQKeyboardManager.git
- * And choose the version you want
+* Go to File -> Swift Packages -> Add Package Dependency...
+* Then search for https://github.com/hackiftekhar/IQKeyboardManager.git
+* And choose the version you want
 
 Migration Guide
 ==========================
+
 - [IQKeyboardManager 6.0.0 Migration Guide](https://github.com/hackiftekhar/IQKeyboardManager/wiki/IQKeyboardManager-6.0.0-Migration-Guide)
 
 Other Links
@@ -205,9 +228,12 @@ Other Links
 - [Properties and functions usage](https://github.com/hackiftekhar/IQKeyboardManager/wiki/Properties-&-Functions)
 
 ## Flow Diagram
+
 [![IQKeyboardManager CFD](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/IQKeyboardManagerFlowDiagram.jpg)](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/IQKeyboardManagerFlowDiagram.jpg)
 
-If you would like to see detailed Flow diagram then check [Detailed Flow Diagram](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg).
+If you would like to see detailed Flow diagram then
+check [Detailed Flow Diagram](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg)
+.
 
 
 LICENSE

@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-# define APPURL [GlobalConst Server_Url]
+# define APPURL [[GlobalConst sharedInstance]server_url]
 //#define NeedEncryptServerData (NO)
 #define  NetObjTagKey @"NetObjTagKey"
 
