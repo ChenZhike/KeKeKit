@@ -18,9 +18,9 @@
 {
     [self setPreferredFlagName:name value:@""];
 }
-+(NSString*)preferredProName:(NSString*)name
++(id)preferredProName:(NSString*)name
 {
-NSString*obj=  [[NSUserDefaults standardUserDefaults]objectForKey:name];
+id obj=  [[NSUserDefaults standardUserDefaults]objectForKey:name];
     return obj;
 }
 +(void)setPreferredFlagName:(NSString*)name value:(NSString*)value

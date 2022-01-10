@@ -19,14 +19,13 @@ static KeKeViewController*sharedViewController=nil;
 {
     return sharedViewController;
 }
--(NSArray*)ivNames
-{
-    return @[@"未选－哼哼",@"选中－哼哼",@"未选－哈哈",@"选中－哈哈",@"未选－嘻嘻",@"选中－嘻嘻",@"未选－我的",@"选中－我的"];
-}
+//-(NSArray*)ivNames
+//{
+//    return @[@"未选－哼哼",@"选中－哼哼",@"未选－哈哈",@"选中－哈哈",@"未选－嘻嘻",@"选中－嘻嘻",@"未选－我的",@"选中－我的"];
+//}
 -(NSArray*)barnames
 {
     return @[];
-//    return @[@"哼哼",@"哈哈",@"嘻嘻",@"我的"];
 }
 -(int)bar_count
 {
@@ -40,7 +39,9 @@ static KeKeViewController*sharedViewController=nil;
     [self.view addSubview:self.child_content_view];
     [self.view addSubview:self.ad_view];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveTuichuLogin) name:tuichuLoginNotiName object:nil];
-//    [self initAD];
+    if (self.show_launch_ad) {
+        [self initAD];
+    }
     [self initContentUI];
     // Do any additional setup after loading the view, typically from a nib.
 }

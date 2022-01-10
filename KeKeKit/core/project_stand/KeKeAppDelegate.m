@@ -30,14 +30,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.fromCode=@"官方渠道";
-//    [self xianshiExit];
 
-
+    [KeKeCenter sharedInstance];
     [UserInfoManager loadToken];
     [UserInfoManager loadLoginType];
 
 
-//    self.launchOptions=launchOptions;
     [self networkReability];
     // Override point for customization after application launch.
     return YES;
@@ -64,7 +62,7 @@
     [formate setTimeZone:[NSTimeZone systemTimeZone]];
     NSString *formateString = @"yyyy-MM-dd HH:mm:ss";
     [formate setDateFormat:formateString ];
-    NSDate*date=[formate dateFromString:@"2019-03-20 23:59:00"];
+    NSDate*date=[formate dateFromString:timestr];
     if ([date compare:date1]==NSOrderedAscending) {
         [SVProgressHUD showErrorWithStatus:@"体验时间已到！"];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -184,73 +182,13 @@
 }
 -(void)startAll
 {
-//    [self initUMeng];
-
-
-//    NSString* deviceID =  [UMConfigure deviceIDForIntegration];
-//    if ([deviceID isKindOfClass:[NSString class]]) {
-//        NSLog(@"服务器端成功返回deviceID");
-//    }
-//    else{
-//        NSLog(@"服务器端还没有返回deviceID");
-//    }
-
-//    [self configUMPush:self.launchOptions];
         //打开键盘开关
     [IQKeyboardManager sharedManager ].enable = YES;
 
     [UserInfoManager loadToken];
     [UserInfoManager loadLoginType];
 
-
-//    [self firstBusinessRequest];
-
 }
-//-(void)netWorkChangeEvent
-//{
-//    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-//    NSURL *url = [NSURL URLWithString:@"http://baidu.com"];
-//    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:url];
-//    [manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//        self.netWorkStatesCode = status;
-//        switch (status) {
-//            case AFNetworkReachabilityStatusReachableViaWWAN:
-//            {
-//            NSLog(@"当前使用的是流量模式");
-//
-//            }
-//
-//                break;
-//            case AFNetworkReachabilityStatusReachableViaWiFi:
-//            {
-//            NSLog(@"当前使用的是wifi模式");
-//            }
-//
-//                break;
-//            case AFNetworkReachabilityStatusNotReachable:
-//
-//            {
-//            NSLog(@"断网了");
-//            }
-//
-//                break;
-//                break;
-//            case AFNetworkReachabilityStatusUnknown:
-//            {
-//            NSLog(@"变成了未知网络状态");
-//            [self testHttp];
-//
-//            }
-//
-//                break;
-//
-//            default:
-//                break;
-//        }
-//        [[NSNotificationCenter defaultCenter]postNotificationName:@"netWorkChangeEventNotification" object:@(status)];
-//    }];
-//    [manager.reachabilityManager startMonitoring];
-//}
 
 
 -(void)justWantDisappear:(UIWindow*)oldwin

@@ -1,18 +1,18 @@
 //
-//  DCCycleScrollViewCell.m
-//  DCCycleScrollView
+//  KKCycleScrollViewCell.m
+//  KKCycleScrollView
 //
 //  Created by cheyr on 2018/2/27.
 //  Copyright © 2018年 cheyr. All rights reserved.
 //
 
-#import "DCCycleScrollViewCell.h"
+#import "KKCycleScrollViewCell.h"
 #import <AVFoundation/AVFoundation.h>
-@interface DCCycleScrollViewCell()
+@interface KKCycleScrollViewCell()
 
 @end
 
-@implementation DCCycleScrollViewCell
+@implementation KKCycleScrollViewCell
 
 -(instancetype)initWithFrame:(CGRect)frame
 {

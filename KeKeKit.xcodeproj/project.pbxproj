@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2EF2EF456DE528AE0638FA17 /* Pods_KeKeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CF6C7E31721D7DB97B3007 /* Pods_KeKeKit.framework */; };
+		BD040E4627857EEA0009918C /* SkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD040E4527857EEA0009918C /* SkinManager.m */; };
+		BD412E39278AC67C00C62320 /* KKCycleScrollView in Resources */ = {isa = PBXBuildFile; fileRef = BD412E38278AC67C00C62320 /* KKCycleScrollView */; };
 		BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */; };
 		BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713C25579A1C009E6696 /* NSObject+Convert.m */; };
 		BD46714425579A1C009E6696 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46713E25579A1C009E6696 /* UIImage+Color.m */; };
@@ -62,9 +64,6 @@
 		BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672232557B0D8009E6696 /* GlobalConst.m */; };
 		BD4672282557B10B009E6696 /* InfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4672272557B10B009E6696 /* InfoHelper.m */; };
 		BD46722C2557B13C009E6696 /* GlobalAttributeDic.m in Sources */ = {isa = PBXBuildFile; fileRef = BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */; };
-		BD8BA806260AEF63002D316D /* DCCycleScrollViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA803260AEF63002D316D /* DCCycleScrollViewFlowLayout.m */; };
-		BD8BA807260AEF63002D316D /* DCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA804260AEF63002D316D /* DCCycleScrollView.m */; };
-		BD8BA808260AEF63002D316D /* DCCycleScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA805260AEF63002D316D /* DCCycleScrollViewCell.m */; };
 		BD8BA80D260AEFF4002D316D /* JMHoledView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA80B260AEFF3002D316D /* JMHoledView.m */; };
 		BD8BA815260AF09D002D316D /* QRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA814260AF09D002D316D /* QRCodeTool.m */; };
 		BD8BA821260B0E34002D316D /* CarouseViewPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA81B260B0E34002D316D /* CarouseViewPlus.m */; };
@@ -123,6 +122,7 @@
 		BD8BA918260B235E002D316D /* ADVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA916260B235E002D316D /* ADVC.m */; };
 		BD8BA924260B2957002D316D /* SuperJustSimpleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA922260B2957002D316D /* SuperJustSimpleVC.m */; };
 		BDA8240525EDE2D0001DAD85 /* DiskArrayCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA8240425EDE2D0001DAD85 /* DiskArrayCenter.m */; };
+		BDDC0F6D278BC3B400CEAC98 /* KeKeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDC0F6C278BC3B400CEAC98 /* KeKeCenter.m */; };
 		BDDCF610252DC2B400A1D625 /* KeKeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */; };
 		BDDCF613252DC2B400A1D625 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF612252DC2B400A1D625 /* SceneDelegate.m */; };
 		BDDCF616252DC2B400A1D625 /* KeKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDCF615252DC2B400A1D625 /* KeKeViewController.m */; };
@@ -156,6 +156,9 @@
 /* Begin PBXFileReference section */
 		32EB760E7587AA170077480B /* Pods-KeKeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeKeKit.release.xcconfig"; path = "Target Support Files/Pods-KeKeKit/Pods-KeKeKit.release.xcconfig"; sourceTree = "<group>"; };
 		490AC3EFD23E606E68FA57D8 /* Pods-KeKeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeKeKit.debug.xcconfig"; path = "Target Support Files/Pods-KeKeKit/Pods-KeKeKit.debug.xcconfig"; sourceTree = "<group>"; };
+		BD040E4427857EEA0009918C /* SkinManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinManager.h; sourceTree = "<group>"; };
+		BD040E4527857EEA0009918C /* SkinManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinManager.m; sourceTree = "<group>"; };
+		BD412E38278AC67C00C62320 /* KKCycleScrollView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KKCycleScrollView; sourceTree = "<group>"; };
 		BD46713925579A1B009E6696 /* NSObject+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convert.h"; sourceTree = "<group>"; };
 		BD46713A25579A1B009E6696 /* KeKeKit-Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeKeKit-Category.h"; sourceTree = "<group>"; };
 		BD46713B25579A1C009E6696 /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
@@ -267,12 +270,6 @@
 		BD4672272557B10B009E6696 /* InfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoHelper.m; sourceTree = "<group>"; };
 		BD46722A2557B13C009E6696 /* GlobalAttributeDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAttributeDic.h; sourceTree = "<group>"; };
 		BD46722B2557B13C009E6696 /* GlobalAttributeDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalAttributeDic.m; sourceTree = "<group>"; };
-		BD8BA800260AEF63002D316D /* DCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollView.h; sourceTree = "<group>"; };
-		BD8BA801260AEF63002D316D /* DCCycleScrollViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollViewFlowLayout.h; sourceTree = "<group>"; };
-		BD8BA802260AEF63002D316D /* DCCycleScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollViewCell.h; sourceTree = "<group>"; };
-		BD8BA803260AEF63002D316D /* DCCycleScrollViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollViewFlowLayout.m; sourceTree = "<group>"; };
-		BD8BA804260AEF63002D316D /* DCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollView.m; sourceTree = "<group>"; };
-		BD8BA805260AEF63002D316D /* DCCycleScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollViewCell.m; sourceTree = "<group>"; };
 		BD8BA80B260AEFF3002D316D /* JMHoledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHoledView.m; sourceTree = "<group>"; };
 		BD8BA80C260AEFF3002D316D /* JMHoledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHoledView.h; sourceTree = "<group>"; };
 		BD8BA813260AF09D002D316D /* QRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeTool.h; sourceTree = "<group>"; };
@@ -383,6 +380,10 @@
 		BD8BA923260B2957002D316D /* SuperJustSimpleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperJustSimpleVC.h; sourceTree = "<group>"; };
 		BDA8240325EDE2D0001DAD85 /* DiskArrayCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskArrayCenter.h; sourceTree = "<group>"; };
 		BDA8240425EDE2D0001DAD85 /* DiskArrayCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskArrayCenter.m; sourceTree = "<group>"; };
+		BDDC0F6B278BC3B400CEAC98 /* KeKeCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeCenter.h; sourceTree = "<group>"; };
+		BDDC0F6C278BC3B400CEAC98 /* KeKeCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeKeCenter.m; sourceTree = "<group>"; };
+		BDDC0F6E278BE9DD00CEAC98 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		BDDC0F6F278BE9DD00CEAC98 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = "../../../../../../Downloads/归档 2/shiku_im/3rd/alipay/Util/base64.h"; sourceTree = "<group>"; };
 		BDDCF60B252DC2B400A1D625 /* KeKeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDCF60E252DC2B400A1D625 /* KeKeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeKeAppDelegate.h; sourceTree = "<group>"; };
 		BDDCF60F252DC2B400A1D625 /* KeKeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeKeAppDelegate.m; sourceTree = "<group>"; };
@@ -472,17 +473,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD8BA7FF260AEF63002D316D /* DCCycleScrollView */ = {
+		BD040E4327857EC20009918C /* skin */ = {
 			isa = PBXGroup;
 			children = (
-				BD8BA800260AEF63002D316D /* DCCycleScrollView.h */,
-				BD8BA801260AEF63002D316D /* DCCycleScrollViewFlowLayout.h */,
-				BD8BA802260AEF63002D316D /* DCCycleScrollViewCell.h */,
-				BD8BA803260AEF63002D316D /* DCCycleScrollViewFlowLayout.m */,
-				BD8BA804260AEF63002D316D /* DCCycleScrollView.m */,
-				BD8BA805260AEF63002D316D /* DCCycleScrollViewCell.m */,
+				BD040E4427857EEA0009918C /* SkinManager.h */,
+				BD040E4527857EEA0009918C /* SkinManager.m */,
 			);
-			path = DCCycleScrollView;
+			path = skin;
 			sourceTree = "<group>";
 		};
 		BD8BA810260AF064002D316D /* service */ = {
@@ -759,6 +756,8 @@
 		BDA823EF25EDDFB9001DAD85 /* jiami */ = {
 			isa = PBXGroup;
 			children = (
+				BDDC0F6F278BE9DD00CEAC98 /* base64.h */,
+				BDDC0F6E278BE9DD00CEAC98 /* base64.h */,
 				BDA823F025EDDFC0001DAD85 /* RNCryptor */,
 			);
 			path = jiami;
@@ -794,6 +793,7 @@
 		BDA823F225EDDFFF001DAD85 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BD412E38278AC67C00C62320 /* KKCycleScrollView */,
 				BD8BA903260B21D2002D316D /* SectionView.h */,
 				BD8BA904260B21D3002D316D /* SectionView.m */,
 				BD8BA8A6260B1651002D316D /* BlackWhiteSheet.h */,
@@ -813,7 +813,6 @@
 				BD8BA81A260B0E34002D316D /* CarouseView */,
 				BD8BA80C260AEFF3002D316D /* JMHoledView.h */,
 				BD8BA80B260AEFF3002D316D /* JMHoledView.m */,
-				BD8BA7FF260AEF63002D316D /* DCCycleScrollView */,
 				BDF8C66025E64208001D9049 /* VerticallyAlignedLabel.h */,
 				BDF8C66125E64208001D9049 /* VerticallyAlignedLabel.m */,
 				BDF8C65C25E64184001D9049 /* SuperOneTableViewCell.h */,
@@ -825,6 +824,7 @@
 		BDA823F425EDE02D001DAD85 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				BD040E4327857EC20009918C /* skin */,
 				BD8BA8F7260B2035002D316D /* label */,
 				BD8BA8F1260B1FC8002D316D /* window */,
 				BD8BA8B0260B16A1002D316D /* cell */,
@@ -1001,6 +1001,8 @@
 				BDA823EC25EDDF23001DAD85 /* project_stand */,
 				BDA823E925EDDE68001DAD85 /* vcs */,
 				BD4672052557AC90009E6696 /* KeKeKit-PrefixHeader.pch */,
+				BDDC0F6B278BC3B400CEAC98 /* KeKeCenter.h */,
+				BDDC0F6C278BC3B400CEAC98 /* KeKeCenter.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -1103,6 +1105,7 @@
 				BD8BA8D9260B17AD002D316D /* StuCollectionViewCell.xib in Resources */,
 				BD8BA8D6260B17AD002D316D /* TeacherCollectionViewCell.xib in Resources */,
 				BD8BA844260B1010002D316D /* GuideVC.xib in Resources */,
+				BD412E39278AC67C00C62320 /* KKCycleScrollView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1161,11 +1164,11 @@
 				BD8BA84B260B10B2002D316D /* AdvertiseView.m in Sources */,
 				BDF8C67A25E64363001D9049 /* RNEncryptor.m in Sources */,
 				BD46715325579B2E009E6696 /* NSArray+Parse.m in Sources */,
-				BD8BA808260AEF63002D316D /* DCCycleScrollViewCell.m in Sources */,
 				BD46714325579A1C009E6696 /* NSObject+Convert.m in Sources */,
 				BD8BA8D4260B17AD002D316D /* StudentListCell.m in Sources */,
 				BD8BA8C2260B1744002D316D /* SuperTwoCell.m in Sources */,
 				BD4671C325579DCD009E6696 /* UIView+QuickUI.m in Sources */,
+				BDDC0F6D278BC3B400CEAC98 /* KeKeCenter.m in Sources */,
 				BD8BA890260B159E002D316D /* SimpleDatePicker.m in Sources */,
 				BD46717A25579BE2009E6696 /* NSNumber+moneyValue.m in Sources */,
 				BDF8C69125E644C3001D9049 /* HZWaitingView.m in Sources */,
@@ -1181,7 +1184,6 @@
 				BD4671BF25579DCD009E6696 /* UIView+SonSuperView.m in Sources */,
 				BD8BA918260B235E002D316D /* ADVC.m in Sources */,
 				BD4671E22557A031009E6696 /* CALayer+Anim.m in Sources */,
-				BD8BA807260AEF63002D316D /* DCCycleScrollView.m in Sources */,
 				BD8BA839260B0FDC002D316D /* XWGradientLabel.m in Sources */,
 				BD46715D25579B6C009E6696 /* NSDate+TianShi.m in Sources */,
 				BD46714225579A1C009E6696 /* UIColor+RGBValues.m in Sources */,
@@ -1268,7 +1270,6 @@
 				BD4671D825579F71009E6696 /* UITextView+Style.m in Sources */,
 				BD8BA8E8260B1964002D316D /* UIView+Image.m in Sources */,
 				BD4671AE25579D46009E6696 /* NSAttributedString+HeightCalculated.m in Sources */,
-				BD8BA806260AEF63002D316D /* DCCycleScrollViewFlowLayout.m in Sources */,
 				BD8BA8F4260B1FC8002D316D /* AlertWindow.m in Sources */,
 				BD46717525579BD5009E6696 /* NSNumber+Calcutate.m in Sources */,
 				BD4672242557B0D8009E6696 /* GlobalConst.m in Sources */,
@@ -1284,6 +1285,7 @@
 				BD8BA876260B13C9002D316D /* BackColorGradientButton.m in Sources */,
 				BD46718E25579C02009E6696 /* NSString+Compare.m in Sources */,
 				BD46714525579A1C009E6696 /* UIColor+HexStr.m in Sources */,
+				BD040E4627857EEA0009918C /* SkinManager.m in Sources */,
 				BD46718A25579C02009E6696 /* NSString+Encry.m in Sources */,
 				BDF8C67F25E643AE001D9049 /* UrlsManager.m in Sources */,
 				BD8BA8B3260B16BC002D316D /* ImgsCell.m in Sources */,

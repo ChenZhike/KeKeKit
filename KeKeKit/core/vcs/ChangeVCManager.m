@@ -126,6 +126,10 @@ static ChangeVCManager*sharedChangeVCMa=nil;
                 [self navc:navc pushTagsResultInfo:arr];
             }
 }
++(void)navcpushPurchase:(UINavigationController*)navc
+{
+    
+}
 +(void)gotoPicsDetailShowWithDatas:(NSArray*)datas
 {
     HZPhotoBrowser *browser = [[HZPhotoBrowser alloc] init];

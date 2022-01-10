@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 
 @interface KeKeViewController : UIViewController
+@property(nonatomic,strong,nullable)NSArray* ivNames;//底部tabbar的图片名称，依次是tab0-未选中，tab0-选中，tab1-未选中，tab1-选中……
+@property(nonatomic,assign)BOOL show_launch_ad;//展示启动广告
 @property(nonatomic,strong,nullable)UIView* child_content_view;
 @property(nonatomic,strong,nullable)UIView* ad_view;
 @property(nonatomic,strong)UIView* bottomView;

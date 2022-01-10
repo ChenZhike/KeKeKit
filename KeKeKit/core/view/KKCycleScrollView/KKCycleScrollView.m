@@ -1,20 +1,20 @@
 //
-//  DCCycleScrollView.m
-//  DCCycleScrollView
+//  KKCycleScrollView.m
+//  KKCycleScrollView
 //
 //  Created by cheyr on 2018/2/27.
 //  Copyright © 2018年 cheyr. All rights reserved.
 //
 
-#import "DCCycleScrollView.h"
+#import "KKCycleScrollView.h"
 #import "UIImageView+WebCache.h"
-#import "DCCycleScrollViewCell.h"
-#import "DCCycleScrollViewFlowLayout.h"
+#import "KKCycleScrollViewCell.h"
+#import "KKCycleScrollViewFlowLayout.h"
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 
-@interface DCCycleScrollView()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface KKCycleScrollView()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic,strong) UIImageView *backgroundImageView;
-@property (nonatomic,strong) DCCycleScrollViewFlowLayout *flowLayout;
+@property (nonatomic,strong) KKCycleScrollViewFlowLayout *flowLayout;
 //@property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) NSArray *imgArr;//图片数组
 @property (nonatomic,assign) NSInteger totalItems;//item总数
@@ -24,7 +24,7 @@
 
 static NSString *const cellID = @"cellID";
 
-@implementation DCCycleScrollView
+@implementation KKCycleScrollView
 {
     float _oldPoint;
     NSInteger _dragDirection;
@@ -32,7 +32,7 @@ static NSString *const cellID = @"cellID";
 #pragma mark  - life cycle
 +(instancetype)cycleScrollViewWithFrame:(CGRect)frame shouldInfiniteLoop:(BOOL)infiniteLoop imageGroups:(NSArray *)imageGroups
 {
-    DCCycleScrollView *cycleScrollView = [[DCCycleScrollView alloc]initWithFrame:frame];
+    KKCycleScrollView *cycleScrollView = [[KKCycleScrollView alloc]initWithFrame:frame];
     cycleScrollView.infiniteLoop = infiniteLoop;
     cycleScrollView.autoScroll = infiniteLoop;
     cycleScrollView.imgArr = imageGroups;
@@ -184,7 +184,7 @@ static NSString *const cellID = @"cellID";
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    DCCycleScrollViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    KKCycleScrollViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     long itemIndex = (int) indexPath.item % self.imgArr.count;
     NSString *imagePath = self.imgArr[itemIndex];
 
@@ -351,7 +351,7 @@ static NSString *const cellID = @"cellID";
         _collectionView.backgroundColor = [UIColor clearColor];
 
         //注册cell
-        [_collectionView registerClass:[DCCycleScrollViewCell class] forCellWithReuseIdentifier:cellID];
+        [_collectionView registerClass:[KKCycleScrollViewCell class] forCellWithReuseIdentifier:cellID];
 
     }
     return _collectionView;
@@ -366,11 +366,11 @@ static NSString *const cellID = @"cellID";
     }
     return _pageControl;
 }
--(DCCycleScrollViewFlowLayout *)flowLayout
+-(KKCycleScrollViewFlowLayout *)flowLayout
 {
     if(_flowLayout == nil)
     {
-        _flowLayout = [[DCCycleScrollViewFlowLayout alloc]init];
+        _flowLayout = [[KKCycleScrollViewFlowLayout alloc]init];
         _flowLayout.isZoom = self.isZoom;
         _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         _flowLayout.minimumLineSpacing = 0;

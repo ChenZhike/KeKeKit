@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InfoHelper : NSObject
 +(BOOL)onceFlagName:(NSString*)name;
 +(void)setOnceFlagName:(NSString*)name;
-+(NSString*)preferredProName:(NSString*)name;
++(id)preferredProName:(NSString*)name;
 +(void)setPreferredFlagName:(NSString*)name value:(NSString*)value;
 @end
 

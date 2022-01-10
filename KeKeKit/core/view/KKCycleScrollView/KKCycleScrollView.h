@@ -1,6 +1,6 @@
     //
-    //  DCCycleScrollView.h
-    //  DCCycleScrollView
+    //  KKCycleScrollView.h
+    //  KKCycleScrollView
     //
     //  Created by cheyr on 2018/2/27.
     //  Copyright © 2018年 cheyr. All rights reserved.
@@ -8,18 +8,18 @@
 
     #import <UIKit/UIKit.h>
 
-    @class DCCycleScrollView;
-    @protocol DCCycleScrollViewDelegate <NSObject>
+    @class KKCycleScrollView;
+    @protocol KKCycleScrollViewDelegate <NSObject>
     /** 点击图片回调 */
-    - (void)cycleScrollView:(DCCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index;
+    - (void)cycleScrollView:(KKCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index;
 
     @optional
     /**当图片手动滑动或自动切换时回调，返回当前页码，用于外部自定义pageControl时，切换当前页使用*/
-    - (void)cycleScrollView:(DCCycleScrollView *)cycleScrollView currentPageIndex:(NSInteger)index;
+    - (void)cycleScrollView:(KKCycleScrollView *)cycleScrollView currentPageIndex:(NSInteger)index;
     @end
 
 
-    @interface DCCycleScrollView : UIView
+    @interface KKCycleScrollView : UIView
     /**是否无限循环，默认yes  如果设置成NO，则需要自己设置collectionView的pagingEnabled属性*/
     @property (nonatomic,assign) BOOL infiniteLoop;
     //*是否自动滑动，默认yes,如果infiniteLoop = NO，则autoScroll=NO；不能设置成YES；
@@ -43,7 +43,7 @@
     /** 轮播图片的ContentMode，默认为 UIViewContentModeScaleToFill */
     @property (nonatomic, assign) UIViewContentMode bannerImageViewContentMode;
     //代理方法
-    @property (nonatomic,weak) id<DCCycleScrollViewDelegate> delegate;
+    @property (nonatomic,weak) id<KKCycleScrollViewDelegate> delegate;
     @property (nonatomic,strong) UICollectionView *collectionView;
     -(void)setImgArr:(NSArray *)imgArr;
 

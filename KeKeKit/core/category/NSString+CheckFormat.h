@@ -46,4 +46,8 @@
 -(BOOL)isIntFormat;
 -(BOOL)noOkWithLaterDayStr:(NSString*)daystr;
 -(NSInteger)getAppearTimesWithStr:(NSString*)str;
+- (BOOL)isValidPortAddress;
+- (BOOL)checkIntValueRangeWithMin:(int)min max:(int)max;
+- (NSString *)checkValidName;
+- (NSString *)checkValidPhoneNumber;
 @end

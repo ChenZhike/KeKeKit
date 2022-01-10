@@ -5,6 +5,7 @@
     //
     //  Created by keke on 15/10/27.
     //  Copyright © 2015年 keke. All rights reserved.
+
 #define NetObjTimeOutInterval 30
 #import "NetObj.h"
 //#import "LoginVC.h"
@@ -12,6 +13,11 @@
 #import "HDeviceIdentifier.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "RNDecryptor.h"
+
+#pragma mark-netobj
+NSString * const NetObjCodeTokenNeedInt=@"NetObjCodeTokenNeedInt";
+NSString * const NetObjTokenExpriedInts=@"NetObjTokenExpriedInts";
+NSString * const NetObjCodeRequestSucceedInt=@"NetObjCodeRequestSucceedInt";
 
 static BOOL needEncryptServerData=NO;
     //data密码
@@ -38,6 +44,7 @@ NSData *GetDataForHex(NSString *hex) {
     }
     return data;
 }
+
 +(void)initConsts:(BOOL)is_needEncryptServerData
 {
     needEncryptServerData=is_needEncryptServerData;
@@ -116,6 +123,15 @@ NSData *GetDataForHex(NSString *hex) {
     [self.task cancel];
         //    [SVProgressHUD dismiss];
 }
++(NSDictionary*)defaultDic
+{
+    return  @{
+        NetObjCodeRequestSucceedInt:@(200)
+        ,NetObjCodeTokenNeedInt:@(800)
+        ,NetObjTokenExpriedInts:@[@(801),@(401)]
+    };
+
+}
 -(void)dealWithResultData:(NSData*)resultData
 {
     self.responsed=YES;
@@ -133,22 +149,25 @@ NSData *GetDataForHex(NSString *hex) {
         return;
     }
     int returncode = [[dicFromJson objectForKey:@"httpCode"] intValue];
-    if (returncode == 800) {
+    int code_no=[[InfoHelper preferredProName:NetObjCodeTokenNeedInt]intValue];
+    NSArray*token_expires=[InfoHelper preferredProName:NetObjTokenExpriedInts];
+    int succeed_code=[[InfoHelper preferredProName:NetObjCodeRequestSucceedInt]intValue];
+    if (returncode == code_no) {
             //        _nblock(nil);
         [SVProgressHUD showErrorWithStatus:@"未能获取token"];
         [ChangeVCManager showLogin];
-    }else if (returncode == 801||returncode == 401) {//token失效
+    }else if ([token_expires containsObject:@(returncode)]) {//token失效
                                                      //        _nblock(nil);
                                                      //        BOOL isVisitAccount =[UserInfoManager isVisitAccount];
         [UserInfoManager setToken:nil];
         [UserInfoManager setLoginType:nil];
         [SVProgressHUD showErrorWithStatus:@"您需要重新登录"];
-        KeKeAppDelegate*appdelegate=(KeKeAppDelegate*)[UIApplication sharedApplication].delegate;
+//        KeKeAppDelegate*appdelegate=(KeKeAppDelegate*)[UIApplication sharedApplication].delegate;
 //        [appdelegate firstRequest];
             //        if (!isVisitAccount) {
         [ChangeVCManager showLogin];
             //        }
-    }else if (returncode == 200) {//
+    }else if (returncode == succeed_code) {//
           //添加tag
           NSMutableDictionary*mudic=[[NSMutableDictionary alloc]init];
           [mudic setValuesForKeysWithDictionary:dicFromJson];
@@ -207,8 +226,9 @@ NSData *GetDataForHex(NSString *hex) {
 +(BOOL)ok_return:(NSDictionary*)resnfo
 {
     NSString*retCode=[resnfo objectForKey:@"retCode"];
-    NSArray*arr=[GlobalConst return_ok_codes];
-    BOOL result=[arr containsObject:retCode];
+    int code=[[InfoHelper preferredProName:NetObjCodeRequestSucceedInt]intValue];
+//    code
+    BOOL result=(code==[retCode intValue]);
     return result;
 }
 

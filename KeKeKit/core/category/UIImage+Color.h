@@ -13,4 +13,10 @@
 - (UIImage *)imageWithColor:(UIColor *)color;
 -(UIImage*)scaledToSize:(CGSize)newSize;
 -(NSString*)saveToDisk;
+-(UIImage *) imageWithTintColor:(UIColor * )tintColor;
+-(UIImage *) imageWithGradientTintColor:(UIColor *)tintColor;
+
+
+// 控件绘制成图片
++ (UIImage *)imageWithView:(UIView *)view;
 @end

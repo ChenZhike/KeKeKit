@@ -30,8 +30,7 @@
     self.nos=[[NSMutableArray alloc]init];
 
     self.current=1;
-        //    self.view.backgroundColor=WhiteColor;
-    self.view.backgroundColor=NatureColorNearlyWhite;
+    self.view.backgroundColor=[InfoHelper preferredProName:SkinViewBackColor];
     [self createTop];
 
     [self addTable];
@@ -128,7 +127,8 @@
 }
 -(void)topViewAddTitle:(NSString*)title
 {
-    UIFont*titleFont=font(17);
+    
+    UIFont*titleFont=[InfoHelper preferredProName:SkinTopViewTitleFont];
     UILabel*alab=[[UILabel alloc]initWithFrame:CGRectMake(0, kStatusBarHeight, WINDOWW/2, NavHeight-kStatusBarHeight)];
     alab.center=CGPointMake(WINDOWW/2, NavBtnCenterY);
     alab.font=titleFont;
@@ -153,7 +153,7 @@
     self.tableView=[[UITableView alloc]initWithFrame:RECT(0, NavHeight, WINDOWW, WINDOWH-NavHeight-botH)style:UITableViewStyleGrouped];
     self.tableView.tableHeaderView=[[UIView alloc]initWithFrame:RECT(0, 0, WINDOWW, 0.1)];
         //    self.tableView.backgroundColor=[UIColor clearColor];
-    self.tableView.backgroundColor=NatureColorNearlyWhite;
+    self.tableView.backgroundColor=[InfoHelper preferredProName:SkinTableBackColor];
     self.tableView.dataSource=self;
     self.tableView.delegate=self;
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
@@ -675,7 +675,7 @@
             }
         if (self.contentTopSeperatorStyle==ContentTopSeperatorStyle长方形) {
             h=10;
-          color=[GlobalConst topviewBackColor];
+          color=[InfoHelper preferredProName:SkinTopViewBackColor];
            }
         UIView*backView=[[UIView alloc]initWithFrame:RECT(0, NavHeight, WINDOWW, h)];
         backView.backgroundColor=color;
@@ -758,7 +758,7 @@
 -(void)contentWithColor
 {
     self.topView.backgroundColor=WhiteColor;
-    self.view.backgroundColor=ViewBackColor;
+    self.view.backgroundColor=[InfoHelper preferredProName:SkinTopViewBackColor];
     self.tableView.backgroundColor=[UIColor clearColor];
 }
 - (void)recevieSon:(SuperOneVC*)son data:(NSDictionary*)data

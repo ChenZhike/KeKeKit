@@ -1,14 +1,14 @@
 //
-//  DCCycleScrollViewFlowLayout.m
-//  DCCycleScrollView
+//  KKCycleScrollViewFlowLayout.m
+//  KKCycleScrollView
 //
 //  Created by cheyr on 2018/2/28.
 //  Copyright © 2018年 cheyr. All rights reserved.
 //
 
-#import "DCCycleScrollViewFlowLayout.h"
+#import "KKCycleScrollViewFlowLayout.h"
 
-@implementation DCCycleScrollViewFlowLayout
+@implementation KKCycleScrollViewFlowLayout
 //重写方法
 // 这个方法返回所有的布局所需对象,瀑布流也可以重写这个方法实现.
 //1.返回rect中的所有的元素的布局属性

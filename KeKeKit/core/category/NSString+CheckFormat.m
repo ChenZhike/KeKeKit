@@ -130,6 +130,55 @@
     return checkResult;
 }
 #pragma mark-业务专区
+
+- (BOOL)isValidPortAddress
+{
+    return [self  checkIntValueRangeWithMin:1 max:65535];
+}
+
+- (BOOL)checkIntValueRangeWithMin:(int)min max:(int)max
+{
+    if ([self length] < 1)
+        return NO;
+    
+    NSScanner * scanner = [NSScanner scannerWithString:self];
+    if ([scanner scanInt:nil] && [scanner isAtEnd]) {
+//        NSLog(@"min = %u, max = %u, value = %u %@", min, max, [value integerValue], value);
+        return (min <= [self integerValue]) && ([self integerValue] <= max);
+    }
+    
+    return NO;
+}
+
+- (NSString *)checkValidName
+{
+
+        
+    NSString *newString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if ([newString length] > 0) {
+        NSString *str = [newString stringByTrimmingCharactersInSet:[NSCharacterSet alphanumericCharacterSet]];
+        if ([str length] == 0)
+            return newString;
+    }
+    
+    return nil;
+}
+
++ (NSString *)checkValidPhoneNumber:(NSString *)value
+{
+    if ([value length] == 0) {
+        return nil;
+    }
+    
+    NSString *newString = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if ([newString length] > 0) {
+        NSString *str = [newString stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+        if ([str length] == 0)
+            return newString;
+    }
+
+    return nil;
+}
 /**
  *  是否是亏损预警格式
  *
